@@ -1,0 +1,150 @@
+##1##
+SELECT klicove_slovo FROM(
+    SELECT vyraz.text AS klicove_slovo, COUNT(*) AS pocet_knih
+    FROM kniha JOIN klicove_slovo klcs ON (klcs.kniha_id_knihy = kniha.id_knihy)
+                JOIN vyraz ON (klcs.vyraz_id_vyrazu = vyraz.id_vyrazu)
+                JOIN jazyk ON (kniha.jazyk_id_jazyku = jazyk.id_jazyku)
+    WHERE jazyk.nazev != 'čeština'
+    GROUP BY vyraz.text
+    ORDER BY pocet_knih DESC, vyraz.text DESC)
+FETCH FIRST 1 ROW ONLY;
+##2##
+SELECT vyraz.text AS klicova_slova, COUNT(*) AS pocet_exemplaru
+FROM exemplar ex JOIN oddeleni od ON (ex.oddeleni_id_oddeleni=od.id_oddeleni)
+                        JOIN kniha ON (ex.kniha_id_knihy=kniha.id_knihy)
+                        JOIN klicove_slovo klcs ON (klcs.kniha_id_knihy = kniha.id_knihy)
+                        JOIN vyraz ON (klcs.vyraz_id_vyrazu = vyraz.id_vyrazu)
+WHERE od.nazev = 'Telekomunikační ústav'
+GROUP BY vyraz.text
+ORDER BY pocet_exemplaru DESC, vyraz.text DESC
+OFFSET 1 ROWS
+FETCH FIRST 1 ROW ONLY;
+##3##
+SELECT COUNT(DISTINCT vyraz.id_vyrazu) AS pocet_ruznych_vyrazu
+FROM kniha JOIN klicove_slovo klcs ON (klcs.kniha_id_knihy = kniha.id_knihy)
+            JOIN vyraz ON (klcs.vyraz_id_vyrazu = vyraz.id_vyrazu)
+WHERE kniha.nakladatelstvi = 'Oxford University Press';
+##4##
+SELECT COUNT(*) as pocet_vyjpujcek
+FROM vypujcka vyj JOIN exemplar ex ON (vyj.exemplar_id_exemplare=ex.id_exemplare)
+                JOIN kniha ON (ex.kniha_id_knihy=kniha.id_knihy)
+                JOIN klicove_slovo ks ON(ks.kniha_id_knihy=kniha.id_knihy)
+                JOIN vyraz ON (vyraz.id_vyrazu=ks.vyraz_id_vyrazu)
+GROUP BY vyraz.text
+ORDER BY pocet_vyjpujcek DESC
+FETCH FIRST 1 ROWS ONLY;
+##5##
+SELECT kniha.nazev AS nazev_knihy, COUNT(*) AS pocet_vypujcek
+FROM vypujcka vpck JOIN exemplar ex ON (vpck.exemplar_id_exemplare = ex.id_exemplare)
+                    JOIN kniha ON (ex.kniha_id_knihy = kniha.id_knihy)
+                    JOIN oddeleni od ON (ex.oddeleni_id_oddeleni = od.id_oddeleni)
+WHERE od.nazev = 'Oddělení infrastruktury'
+GROUP BY kniha.nazev
+ORDER BY pocet_vypujcek DESC, kniha.nazev DESC
+FETCH FIRST 1 ROW ONLY;
+##6##
+WITH osoby_vypujcky AS(
+    SELECT vyj.osoba_id_osoby as osoby
+    FROM vypujcka vyj JOIN exemplar ex ON (vyj.exemplar_id_exemplare=ex.id_exemplare)
+                         JOIN kniha ON (ex.kniha_id_knihy=kniha.id_knihy)
+    WHERE kniha.pocet_stran >=335 
+    GROUP BY vyj.osoba_id_osoby
+    HAVING COUNT(ex.id_exemplare)>=5) --muže si pujčit klidně vícekrát stejný exmeplář
+
+SELECT COUNT(osoby) as pocet_osob
+FROM osoby_vypujcky;
+##7##
+SELECT COUNT(DISTINCT v1.osoba_id_osoby) AS pocet_osob
+FROM vypujcka v1 JOIN exemplar e1 ON (v1.exemplar_id_exemplare = e1.id_exemplare)
+                    JOIN vypujcka v2 ON (v1.osoba_id_osoby = v2.osoba_id_osoby)
+                    JOIN exemplar e2 ON (v2.exemplar_id_exemplare = e2.id_exemplare)
+WHERE e1.kniha_id_knihy = e2.kniha_id_knihy
+    AND e1.id_exemplare != e2.id_exemplare
+    AND v1.datum_pujceni != v2.datum_pujceni
+    AND EXISTS (
+        SELECT 1
+        FROM exemplar ex_vlastni
+        WHERE ex_vlastni.kniha_id_knihy = e1.kniha_id_knihy
+          AND ex_vlastni.osoba_id_osoby = v1.osoba_id_osoby
+    );
+##8##
+SELECT COUNT(*) AS pocet_delsi_dobu
+FROM vypujcka
+WHERE skutecne_vraceno IS NOT NULL
+  AND (skutecne_vraceno - datum_pujceni) > (
+    SELECT AVG(skutecne_vraceno - datum_pujceni)
+    FROM vypujcka
+    WHERE skutecne_vraceno IS NOT NULL
+  );
+##9##
+SELECT COUNT(*) as neni_edice
+FROM kniha
+WHERE kniha.edice IS NULL;
+##10##
+SELECT MIN(kniha.pocet_stran) as pocet_stran_nejkratsi_kniha
+FROM kniha
+WHERE kniha.pocet_stran IS NOT NULL;
+##11##
+SELECT DISTINCT nakladatelstvi
+FROM kniha
+WHERE nakladatelstvi IS NOT NULL
+ORDER BY LENGTH(nakladatelstvi) DESC, nakladatelstvi ASC
+FETCH FIRST 1 ROW ONLY;
+##12##
+WITH tabulka as(
+    SELECT COUNT(kniha.id_knihy) as celkem,COUNT(kniha.autor) as s_autorem
+    FROM kniha
+    )
+SELECT ROUND((celkem-s_autorem)/celkem*100,2) as procenta
+FROM tabulka;
+##13##
+WITH tabulka as(
+    SELECT COUNT(kniha.id_knihy) as celkem, COUNT(kniha.vydani) as s_vydanim
+    FROM kniha
+    )
+SELECT ROUND(SUM(s_vydanim/celkem*100),3) as procenta
+FROM tabulka;
+##14##
+SELECT kniha.nazev as nazev_knihy
+FROM kniha
+WHERE (rok_vydani=2000 AND (edice IS NOT NULL OR nakladatelstvi IS NULL)
+                    AND length(kniha.isbn) < 19)
+                    OR pocet_stran>=800
+ORDER BY pocet_stran ASC, id_knihy DESC
+FETCH FIRST 1 ROWS ONLY;
+##15##
+SELECT COUNT(*) AS pocet_exemplaru
+FROM exemplar ex1 JOIN kniha k1 ON (k1.id_knihy = ex1.kniha_id_knihy)
+WHERE k1.pocet_stran < (
+    SELECT AVG(k2.pocet_stran)
+    FROM exemplar ex2
+    JOIN kniha k2 ON k2.id_knihy = ex2.kniha_id_knihy
+    WHERE ex2.osoba_id_osoby = ex1.osoba_id_osoby
+);
+##16##
+SELECT COUNT(ex.id_exemplare) as pocet_pozdeji
+FROM exemplar ex JOIN vypujcka vyj ON (ex.id_exemplare=vyj.exemplar_id_exemplare)
+WHERE vyj.skutecne_vraceno>vyj.vratit_do;
+##17##
+SELECT UPPER(jmeno || ' -- ' || prijmeni) AS osoba
+FROM (
+    SELECT os.jmeno, os.prijmeni, os.id_osoby, COUNT(*) AS pocet_vcasnych
+    FROM osoba os
+    JOIN vypujcka vyj ON (os.id_osoby = vyj.osoba_id_osoby)
+    WHERE vyj.skutecne_vraceno IS NOT NULL
+        AND vyj.vratit_do IS NOT NULL
+        AND vyj.skutecne_vraceno = vyj.vratit_do
+    GROUP BY os.jmeno, os.prijmeni, os.id_osoby
+    ORDER BY pocet_vcasnych DESC, os.id_osoby DESC
+)
+FETCH FIRST 1 ROWS ONLY;
+##18##
+SELECT vyraz.text, COUNT(vyraz.text) as pocet
+FROM osoba JOIN exemplar ON (osoba.id_osoby=exemplar.osoba_id_osoby)
+            JOIN kniha ON (exemplar.kniha_id_knihy=kniha.id_knihy)
+            JOIN klicove_slovo ks ON (kniha.id_knihy=ks.kniha_id_knihy)
+            JOIN vyraz ON (ks.vyraz_id_vyrazu=vyraz.id_vyrazu)
+WHERE osoba.jmeno='Petr'
+GROUP BY vyraz.text
+ORDER BY pocet DESC, vyraz.text DESC
+FETCH FIRST 1 ROW ONLY;

@@ -1,0 +1,42 @@
+[
+  {
+    "jazyky_id": "1",
+    "nazev": "čeština"
+  },
+  {
+    "jazyky_id": "2",
+    "nazev": "angličtina"
+  },
+  {
+    "jazyky_id": "3",
+    "nazev": "němčina"
+  },
+  {
+    "jazyky_id": "4",
+    "nazev": "španělština"
+  },
+  {
+    "jazyky_id": "5",
+    "nazev": "francouzština"
+  },
+  {
+    "jazyky_id": "6",
+    "nazev": "italština"
+  },
+  {
+    "jazyky_id": "7",
+    "nazev": "ruština"
+  },
+  {
+    "jazyky_id": "8",
+    "nazev": "portugalština"
+  },
+  {
+    "jazyky_id": "9",
+    "nazev": "slovenština"
+  },
+  {
+    "jazyky_id": "10",
+    "nazev": "finština"
+  }
+]

@@ -1,0 +1,753 @@
+﻿id_knihy;isbn;nazev;pocet_stran;rok_vydani;misto_vydani;nakladatel;vydani;druhy_id;jazyky_id;autor;edice
+4;1-85032-167-1;An Introduction to Neural Computing;21;1995;London;International Thomson Computer Press;2;1;2;Aleksander, Igor -- Morton, Helen;
+5;80-251-0370-6;Moderní programování v C++ : návrhové vzory a generické programování v praxi;340;2004;Brno;Computer Press;1;1;1;Alexandrescu, Andrei;
+6;0-201-73723-X;The CERT guide to system and network security practices;447;2001;Boston, MA;Addison-Wesley;;1;2;Allen, Julia H.;SEI series in software engineering
+9;80-85896-72-9;Mistrovství v CorelDRAW 6;32;1996;Praha;Computer Press;1;1;1;Altman, Rick;
+13;80-7178-804-X;Úvod do filosofie;384;2004;Praha;Portál;2;1;1;Anzenbacher, Arno;
+15;80-247-0301-7;Myslíme v jazyku C# : knihovna programátora;307;2002;Praha;Grada;1;1;1;Archer, Tom;Myslíme v--
+22;0-07-709233-3;Information Systems Development: Methodologies, Techniques and Tools;15;1995;London;The McGraw-Hill Comp.;2;1;2;Avison, David E. -- Fitzgerald, G.;Information Systems Series
+25;80-200-0470-X;Teorie množin;462;2001;Praha;Academia;2;1;1;Balcar, Bohuslav -- Štěpánek, Petr;
+29;80-86324-27-3;e-Learning ve vzdělávání dospělých;173;2003;Praha;VOX;;1;1;Barešová, Andrea;Konference
+30;1-57870-264-X;Writing information security policies;216;2002;Indianapolis, IN;New Riders;;1;2;Barman, Scott;
+31;1-58705-283-0;Cisco LAN switching fundamentals;;2006;;;;2;2;Barnes, David -- Sakandar, Basir;
+32;0-321-32128-6;Preventing web attacks with Apache;582;2006;Upper Saddle River, N.J.;Addison-Wesley;;1;2;Barnett, Ryan C;
+36;80-204-0607-7;Matematické vzorce;831;2002;Praha;Mladá fronta;3;1;1;Bartsch, Hans-Jochen;
+38;80-247-0214-2;Podnikové informační systémy: Podnik v informační společnosti;142;2002;Praha;Grada;1;1;1;Basl, Josef;
+40;0-534-94579-1;Fuzzy Systems Toolbox for use with Matlab;;1994;Boston, MA;PWS Publishing Comp.;;1;2;Beale, Mark -- Demuth, Howard;
+42;80-86419-79-7;Informační systémy pro podporu manažerské práce;223;2005;Praha;Professional Publishing;1;1;1;Bébr, Richard -- Doucek, Petr;
+44;80-247-0901-5;Programování řízené testy;203;2004;Praha;Grada;1;1;1;Beck, Kent;Moderní programování
+45;1-85032-169-8;Neural Networks for Economic and Financial Modelling;13;1996;London;International Thomson Computer Press;;1;2;Beltratti, Andrea -- Margarita, Sergio;
+46;978-0-470-84349-9;Geosimulation : automata-based modelling of urban phenomena;287;2004;Hoboken, N.J.;John Wiley & Sons;;1;1;Benenson, Itzhak -- Torrens, Paul M;
+47;;Aktualizovaný typografický manuál;1;2003;Praha;Kafka design;3;1;1;Beran, Vladimír;
+49;80-200-1062-9;Dobývání znalostí z databází;366;2003;Praha;Academia;1;1;1;Berka, Petr;
+50;80-7079-676-6;Tvorba znalostních systémů;190;1994;Praha;VŠE;1;1;1;Berka, Petr;
+51;80-7079-639-1;Vybrané znalostní systémy SAK, SAZE, KEX;240;1994;Praha;VŠE;;1;1;Berka, Petr;
+56;80-86686-48-5;Šifrování a biometrika: aneb tajemné bity adotyky;168;2005;Brno;Computer Media;1;1;1;Bitto, Ondřej;
+58;978-80-7238-637-6;Fraus praktický ekonomický slovník : anglicko-český, česko-anglický;432;2007;Plzeň;Fraus;1;1;1;Blaheta, Radek;
+60;80-247-1095-1;Jak využít internet v marketingu : krok za krokem k vyšší konkurenceschopnosti;156;2005;Praha;Grada;1;1;1;Blažková, Martina;Manažer
+69;0-8053-5340-2;Object-Oriented Analysis and Design with Applications;10;1998;Reading, MA;Addison-Wesley;2;1;2;Booch, Grady;
+70;0-201-57168-4;The Unified Modeling Language User Guide;22;1998;Reading, MA;Addison-Wesley;;1;2;Booch, Grady -- Rumbaugh, James;
+71;80-85297-63-9;Průvodce Word 6 pro Windows : Tvorba dokonalého dokumentu v Microsoft Word 6 CZ pro Windows;16;1994;Praha;PLUS;;1;1;Borland, Russell;
+72;80-85424-58-4;BIOS IBM PC : Příručka programátora;243;1992;Praha;Grada;;1;1;Boukal, Vítězslav;Nestůjte za dveřmi
+74;80-7169-949-7;XML : kompletní průvodce;537;2000;Praha;Grada;1;1;1;Bradley, Neil;
+78;0-201-40375-7;Prolog Programming for Artificial Intelligence;21;2001;Harlow;Addison-Wesley;3;1;1;Bratko, Ivan;
+79;80-7169-684-6;Delphi 4 : Kompletní kapesní průvodce;598;1999;Praha;Grada;1;1;1;Bráza, Jiří;
+83;0-7645-4590-6;Lotus Notes and Domino 5 Bible;48;1999;Chicago;IDG Books;;1;2;Brown, Kyle -- Brown, Kenyon;
+84;80-7226-352-8;Microsoft Excel 2000 pro manažery a ekonomy;395;2003;Brno;Computer Press;2;1;1;Brož, Milan;
+85;80-85896-26-5;Microsoft Excel 5.0 CZ : Základní příručka uživatele;218;1995;Praha;Computer Press;3;1;1;Brož, Milan;
+88;80-7226-074-X;Microsoft Excel 97 CZ pro manažery a ekonomy;344;1998;Praha;Computer Press;1;1;1;Brož, Milan;
+89;80-251-0230-0;Microsoft Office Excel 2003: podrobná uživatelská příručka;384;2004;Brno;Computer Press;1;1;1;Brož, Milan;
+90;978-80-251-1822-1;Microsoft Office Excel 2007 : podrobná uživatelská příručka;407;2007;Brno;Computer Press;1;1;1;Brož, Milan;
+91;80-251-0140-1;Microsoft Office Word 2003 : podrobná uživatelská příručka;392;2004;Brno;Computer Press;1;1;1;Brož, Milan;
+92;80-7226-270-X;Mistrovství v Microsoft Excel 2000 : kniha pro pokročilé uživatele Excelu a ty, kdo se jimi chtějí stát;727;2000;Praha;Computer Press;1;1;1;Brož, Milan;Kancelář profi
+94;80-251-0164-9;Tvorba WWW stránek pro úplné začátečníky;149;2004;Brno;Computer Press;5;1;1;Broža, Petr;
+99;0-471-36089-9;Virtual reality technology;444;2003;Hoboken, N.J.;Wiley-Interscience;2;1;2;Burdea, Grigore -- Coiffet, Philippe;
+100;80-86324-46-X;Nová generace webových technologií : informace v 21. století;264;2005;Praha;VOX;1;1;1;Bureš, Miroslav -- Morávek, Adam;Webové technologie
+104;0-256-13254-2;Environmental Economics and Management : Theory, Policy, and Applications;12;1996;Chicago;Irwin;;1;2;Callan, Scott J. -- Thomas, Jant M.;
+106;80-85896-42-7;Mistrovství v Delphi - 1. díl;21;1995;Praha;Computer Press;1;1;1;Cantú, Marco;
+107;80-85896-42-7;Mistrovství v Delphi - 2. díl;5;1995;Praha;Computer Press;1;1;1;Cantú, Marco;
+110;1-55860-808-7;HCI models, theories, and frameworks : toward a multidisciplinary science;551;2003;Amsterdam;Morgan Kaufmann Publishers;;1;2;Carroll, John M;
+111;1-58720-100-3;LAN switching first-step;384;2005;Indianapolis, IN;Cisco Press;;1;2;Castelli, Matthew;
+112;978-80-251-1531-2;HTML, XHTML a CSS : názorný průvodce tvorbou WWW stránek;438;2007;Brno;Computer Press;1;1;1;Castro, Elizabeth;
+113;978-0-07-328043-1;Study guide : for use with money, banking, and financial markets;488;2008;Boston, MA;Mc Graw-Hill Book Company;2;1;2;Cecchetti, Stephen G;
+117;1-85032-259-7;Information Systems - Strategy to Design;9;1995;London;International Thomson Computer Press;1;1;2;Clare, Chris -- Stuteley, Gordon;
+120;80-251-1059-1;Adobe InDesign CS2 : názorný průvodce;576;2006;Brno;Computer Press;1;1;1;Cohen, Sandee;
+123;0-948549-88-2;Dictionary of Information Technology;383;1997;Teddington;Peter Collin Publishing;2;1;2;Collin, S. M. H.;
+124;0-8144-0593-2;Corporate portals : revolutionizing information access to increase productivity and drive the bottom line;394;2001;New York, N.Y.;Amacom;;1;2;Collins, Heidi;
+126;0-534-17143-5;The New Software Engineering;13;1994;Belmont;Wadsworth Publishing Company;;1;2;Conger, Sue A.;
+129;80-7169-641-2;Marketingové plánování : praktická příručka manažera;230;1999;Praha;Grada;1;1;1;Cooper, John -- Lane, Peter;
+133;978-80-251-1705-7;Mistrovství v CSS : pokročilé techniky pro webové designéry a vývojáře;409;2007;Brno;Computer Press;1;1;1;Croft, Jeff -- Lloyd, R. Ian;
+135;80-85896-41-9;Microsoft Works 4.0 : Základní průvodce uživatele;8;1995;Praha;Computer Press;1;1;1;Čáp, Jan;
+136;80-7226-231-6;Komprimace dat : Principy a praxe;8;2000;Praha;Computer Press;1;1;1;Čapek, Jan -- Fabian, Peter;Internet
+138;80-85828-27-8;Norton Commander 5.0;127;1995;České Budějovice;Kopp;1;1;1;Černý, Vladislav -- Kvoch, Martin;
+139;80-7232-015-7;Slovník počítačových zkratek;173;1998;České Budějovice;Kopp;2;1;1;Černý, Vladislav;
+142;0-471-43257-1;The Semantic Web: a guide to the futureof XML, Web services, and knowledge management;281;2003;Indianapolis, IN;Wiley Publishing;;1;2;Daconta, Michael C. -- Obrst, Leo Joseph;
+143;0-7506-7864-X;Knowledge management in theory and practise;356;2005;Boston, MA;Elsevier;;1;2;Dalkir, Kimiz;
+144;80-86815-47-1;AJAX a PHP : tvoříme interaktivní webové aplikace profesionálně;320;2006;Brno;Zoner Press;1;1;1;Darie, Cristian a kol.;Encyklopedie webdesignera
+145;3-540-26301-2;Applications and theory of Petri nets 2005. 26th international conference, ICATPN 2005, Miami, USA, June 20-25, 2005: proceedings;474;2005;Berlin;Springer Verlag;;1;2;Darondeau, Philippe;Lecture notes in computer science
+146;80-247-1147-8;Myslíme v jazyku PERL;700;2005;Praha;Grada;1;1;1;Dařena, František;Knihovna programátora
+147;0-201-38590-2;An Introduction to Database Systems;22;2000;Reading, MA;Addison-Wesley;7;1;2;Date, C.J.;
+149;0-534-18954-7;Business Systems Analysis and Design;18;1994;London;International Thomson Computer Press;;1;2;Davis, William S.;
+150;80-7226-389-7;GIS : jak si vytvářet vlastní mapy;112;2000;Praha;Computer Press;1;1;1;Davis, David E.;CAD&GIS
+155;80-86497-64-X;Macromedia Flash MX 2004 : oficiální výukový kurz;544;2004;Praha;Soft Press;1;1;1;Dehaan, Jen;
+156;0-13-032364-0;e-Business and e-Commerce for Managers;37;2000;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Deitel, H.M. -- Deitel, P.J.;
+157;1-58705-285-7;Network securit fundamentals;;2006;Indianapolis, IN;;;2;2;DeLaet, Gert -- Schauwers, Gert;
+159;80-200-0990-6;Grafy a jejich aplikace;257;2002;Praha;Academia;1;1;1;Demel, Jiří;
+160;1-56592-699-4;Programming the Perl DBI;16;2000;Beijing;O\'Reilly Media, Inc.;1;1;2;Descartes, Alligator -- Bunce, Tim;
+162;80-7169-479-7;Ochrana dat v informačních systémech;286;1998;Praha;Grada;1;1;1;Dobda, Luboš;
+166;80-251-0828-7;Velký průvodce infrastrukturou PKI a technologií elektronického podpisu;534;2006;Brno;Computer Press;1;1;1;Dostálek, Libor -- Vohnoutová, Marta;
+167;80-7226-675-6;Velký průvodce protokoly TCP/IP a systémem DNS;542;2002;Brno;Computer Press;3;1;1;Dostálek, Libor -- Kabelová, Alena;Komunikace & sítě
+168;80-7226-849-X;Velký průvodce protokoly TCP/IP. Bezpečnost;571;2003;Praha;Computer Press;2;1;1;Dostálek, Libor a kol.;
+169;80-86419-71-1;Řízení projektu informačních systémů;162;2004;Praha;Professional Publishing;1;1;1;Doucek, Petr;
+171;80-7226-521-0;Logistika : procesy a jejich řízení;334;2003;Brno;Computer Press;1;1;1;Drahotský, Ivo -- Řezníček, Bohumil;Praxe manažera
+172;80-7079-740-1;Objektově orientované metodiky a technologie : 1. díl, části modely a analýza;193;1997;Praha;VŠE;1;1;1;Drbal, Pavel;
+174;0-13-099715-3;Using SET for Secure Electronic Commerce;20;1998;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Drew, Grady N.;
+175;80-251-0130-4;DHCP. Příručka administrátora: [kompletní návod pro konfiguraci a správu DHCP služeb, klientů a serveru];490;2004;Brno;Computer Press;1;1;1;Droms, Ralph -- Lemon, Ted;
+176;80-85603-02-0;Efektivní vedoucí;133;1992;Praha;Management Press;2;1;1;Drucker, Peter F.;
+179;0-19-453333-6;New Success at First Certificate : Workbook;96;1997;Oxford;Oxford University Press;;1;2;Duckworth, Michael -- Gude, Kathy;
+180;80-251-0508-3;Návrh a tvorba webů : vytváříme zákaznicky orientovaný web;672;2005;Brno;CP Books;1;1;1;Duyne, Dougla K. -- Landay, James A.;
+182;978-80-251-1881-8;DTP a předtisková příprava : kompletní průvodce od grafického návrhu po profesionální tisk;288;2008;Brno;Computer Press;1;1;1;Dvořáková, Zdenka;
+184;80-251-0547-4;Profesionální webdesign : techniky a vzorová řešení;421;2005;Brno;CP Books;1;1;1;Eccher, Clint;
+185;80-247-9009-2;Myslíme v jazyku C++ : knihovna programátora;554;2000;Praha;Grada;1;1;1;Eckel, Bruce;Myslíme v
+186;80-247-9009-2;Myslíme v jazyku C++ : knihovna zkušeného programátora;608;2006;Praha;Grada;1;1;1;Eckel, Bruce -- Allison, Chuck;Myslíme v
+187;0-596-00133-9;XML - Pocket Reference;6;2001;Beijing;O\'Reilly Media, Inc.;2;1;2;Eckstein, Robert -- Casabianca, Michel;
+189;978-80-86815-23-7;Photoshop : retušování a restaurování fotografie;464;2008;Brno;Zoner Press;2;1;1;Eismann, Katrin -- Palmer, Wayne;Encyklopedie - grafika a digitální fotografie
+190;80-7204-418-4;Vizuální komunikace - písmo;59;2005;Brno;Akademické nakladatelství CERM;1;1;1;Eliška, Jiří;
+192;80-86817-05-9;Anglicko-český ekonomický výkladový slovník;629;2004;Praha;Sobotáles;1;1;1;Elman, Jiří;
+195;0-471-19161-2;UML Toolkit;17;1998;New York, N.Y.;John Wiley & Sons;;1;2;Eriksson, Hans-erik -- Penker, Magnus;
+197;0-13-185858-0;Service-oriented architecture : concepts, technology, and design;760;2005;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Erl, Thomas;
+200;1-56830-095-6;Net. Speak - The Internet Dictionary;203;1994;Indianapolis, IN;Hayden Books;;1;2;Fahey, Tom;
+201;80-85896-19-2;Internet Roadmap - Průvodce světem Internetu;310;1995;Praha;Computer Press;2;1;1;Falk, Bennett;
+202;978-0-470-03030-1;Agent technology for e-commerce;453;2007;Chichester;John Wiley & Sons;;1;2;Fasli, Maria;
+204;80-7226-725-6;Mistrovství v Microsoft Access 2002 : Access 2002 do nejmenších podrobností a do posledního detailu;604;2002;Praha;Computer Press;1;1;1;Feddema, Helen Bell;Databáze
+206;0321127307;The complete manual of typography : a guide to setting perfect type;360;2003;Berkeley, CA;Peachpit Press;;1;2;Felici, James;
+207;0-13-084846-8;Exploring E-commerce, Global E-business, and E-societies;18;2000;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Fellenstein, Craig -- Wood, Ron;
+208;1-56592-238-7;Advanced Oracle PL/SQL : Programming with Package;26;1996;Cambridge, MA;O\'Reilly Media, Inc.;1;1;2;Feuerstein, Steven;
+209;1-56592-375-8;Oracle Built-in Packages;22;1998;Beijing;O\'Reilly Media, Inc.;1;1;2;Feuerstein, Steven -- Dye, Charles;
+210;0-596-00977-1;Oracle PL/SQL Programming;1171;2005;Beijing;O\'Reilly Media, Inc.;4;1;2;Feuerstein, Steven;
+211;1-56592-335-9;Oracle PL/SQL Programming;33;1997;Beijing;O\'Reilly Media, Inc.;2;1;2;Feuerstein, Steven;
+213;80-86419-19-3;Modelování a analýza produkčních systémů;259;2002;Praha;Professional Publishing;1;1;1;Fiala, Petr;
+214;80-86419-62-2;Modelování dodavatelských řetězců;168;2005;Praha;Professional Publishing;1;1;1;Fiala, Petr;
+218;80-7226-626-8;JavaScript : kompletní průvodce;825;2002;Praha;Computer Press;2;1;1;Flanagan, David;
+221;0-20-184840-6;Computer graphics : principles and practice;1175;1995;Reading, MA;Addison-Wesley;2;1;2;Foley, James D a kol.;Addison-Wesley systems programming series
+223;0-7600-4950-5;Computer Security Management;10;1994;London;International Thomson Computer Press;;1;2;Forcht, Karen A.;
+224;0-521-53361-9;Logic, induction and sets;234;2003;Cambridge, MA;Cambridge University Press;;1;2;Forster, T. E.;London Mathematical Society student texts
+225;80-7226-663-2;Jak získat a udržet zákazníka;117;2002;Praha;Computer Press;1;1;1;Foster, Timothy R. V.;Praxe managera
+226;80-7226-677-2;Macromedia Flash MX : podrobná příručka;355;2002;Praha;Computer Press;1;1;1;Fotr, Jiří;
+227;80-247-0299-1;Refaktoring : zlepšení existujícího kódu;394;2003;Praha;Grada;1;1;1;Fowler, Martin a kol.;Moderní programování
+228;978-80-251-1485-8;Jak zvládnout testy ECDL;155;2007;Brno;Computer Press;1;1;1;Franců, Marie;
+230;80-7226-831-7;Macromedia Flash MX : kompletní průvodce;846;2003;Brno;Computer Press;1;1;1;Franklin, Derek;DTP & grafika
+232;80-86497-43-7;Macromedia Flash MX Actionscript : oficiální výukový kurz pro pokročilé;670;2003;Praha;Soft Press;;1;1;Franklin, Derek -- Makar, Jobe;
+233;80-86815-24-2;RAW s programem Adobe Photoshop CS;248;2005;Brno;ZONER Press;1;1;1;Fraser, Bruce;Encyklopedie - grafika a digitální fotografie
+235;;Správa barev : průvodce profesionála v grafice a pre-pressu;521;2003;Brno;Computer Press;1;1;1;Fraser, Bruce -- Murphy, Chris;
+239;80-85927-54-3;Velký česko-anglický slovník : Comprehensive Czech-English dictionary;1597;2000;Voznice;LEDA;1;1;1;Fronek, Josef;
+242;80-7226-054-5;PGP: Pretty Good Privacy - šifrování pro každého;31;1998;Praha;Computer Press;1;1;1;Garfinkel, Simson;
+243;;Strategické simulace : Hry na PC pro náročné;98;1995;Praha;Vogel Publishing;1;1;1;Gebauer, Reiner;
+244;80-7300-138-1;VRML v příkladech;223;2004;Praha;BEN - technická literatura;1;1;1;Gergelitsová, Šárka;
+246;0-19-457470-9;Basic English for computing;136;2003;Oxford;Oxford University Press;;1;2;Glendinning, Eric H -- McEwan, John;
+251;0-201-85469-4;The LaTeX graphics companion: illustrating documents with TEX andPostScript;554;1997;Boston, MA;Addison-Wesley;;1;2;Goossens, Michel -- Rahtz, Sebastian;Addison-Wesley series on tools and techniques for computer typesetting
+254;0-8493-7839-7;System Engineering Deployment;456;2000;Boca Raton;CRC Press;;1;2;Grady, Jeffrey O.;
+258;978-80-86815-85-5;SEO : Search Engine Optimization : ovládněte SEO a získejte výhodu před konkurencí : optimalizujte své webové stránky pro vyhledávací servery : přiveďte na své stránky zákazníky dříve, než to udělá konkurence;328;2007;Brno;Zoner Press;1;1;1;Grappone, Jennifer -- Couzin, Gradiva;Encyklopedie webdesignera
+259;80-902824-1-5;Profesionální design na webu;223;2000;Brno;Soft Press;;1;1;Gray, Daniel;
+260;0-748-40954-8;Online GIS and spatial metadata;222;2002;London;Taylor & Francis;;1;2;Green, David -- Bossomaier, Terry Richard John;
+261;1-879102-87-0;Open Access : GIS in e-Government;110;2001;Redlands, CA;ESRI Press;1;1;2;Greene, R.W.;
+263;1-56592-708-7;Oracle Essentials : Oracle8 and Oracle 8i;16;1999;Beijing;O\'Reilly Media, Inc.;1;1;2;Greenwald, Rick -- Stackowiak, Robert;
+267;0-13-756412-0;Data Mining : A Hands-On Approach for Business Professionals;29;1997;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Groth, Robert;
+268;80-86497-62-3;Mistrovství v SQL;2;2004;Praha;Soft Press;;1;1;Gruber, Martin;
+269;1-56592-419-3;CGI Programming with Perl;15;2000;Beijing;O\'Reilly Media, Inc.;2;1;2;Guelich, Scott -- Gundavaram, Shishir;
+270;80-7226-985-2;Velká kniha MIDI : standardy, hardware, software;340;2004;Brno;Computer Press;1;1;1;Guérin, Robert;
+271;80-7226088-X;CGI programování webových stránek a aplikací;20;1998;Praha;Computer Press;1;1;1;Gundavaram, Shishir;
+272;1-56592-237-9;Oracle Performance Tuning;22;1996;Beijing;O\'Reilly Media, Inc.;2;1;2;Gurry, Mark -- Corrigan, Peter;
+276;80-7226-445-1;Microsoft Visual Basic 6.0 Professional : Krok za krokem;22;1999;Praha;Computer Press;1;1;1;Halvorson, Michael;
+277;1-55860-901-6;Data mining : concepts and techniques;770;2006;Amsterdam;Elsevier;2;1;2;Han, Jiawei -- Kamber, Micheline;The Morgan Kaufmann series in data management systems
+278;978-0-596-10242-5;"Fonts & encodings : [from unicode to advanced typography and everything in between ; covers PostScript, TrueType, OpenType, AAT, Metafont, and more]";1016;2007;Beijing;O\'Reilly Media, Inc.;1;1;2;Haralambous, Yannis -- Horne, P. Scott;
+280;80-901475-50;Referenční příručka jazyka C;334;1996;Veletiny;SCIENCE;1;1;1;Harbison, Samuel P. -- Steele, Guy L. Jr.;
+284;0-12-326428-6;Object-Oriented Database Design : Clearly Explained;13;2000;San Diego, CA;Morgan Kaufmann Publishers;;1;2;Harrington, Jan L.;
+289;0-672-30862-2;Database Developer\'s Guide with Delphi 2;29;1996;Indianapolis, IN;Sams Publishing;1;1;2;Henderson, Ken;
+290;80-247-0899-X;Myslíme v jazyku SQL - tvorba dotazů;378;2004;Praha;Grada;1;1;1;Hernandez, Michael J. -- Viescas, John L.;Myslíme v--
+292;80-251-0309-9;awk & sed : příručka pro dávkové zpracování textu;254;2004;Brno;Computer Press;1;1;1;Herold, Helmut;
+296;80-7226-272-6;Adobe Photoshop 5.0/5.5 : Referenční příručka;15;2000;Praha;Computer Press;1;1;1;Hlavenka, Jiří -- Hercik, Jaroslav;
+297;80-7226-371-4;Dělejte byznys na Internetu : Jak využít Internet k prospěchu firmy i jednotlivce;226;2001;Praha;Computer Press;1;1;1;Hlavenka, Jiří;
+298;80-7226-182-7;Dělejte byznys na Internetu: Jak využít Internet k prospěchu firmy ijednotlivce;205;1999;Praha;Computer Press;1;1;1;Hlavenka, Jiří;
+301;80-85896-73-7;Používáme Internet s programem Microsoft Internet Explorer 3.0 US/CZ;11;1996;Praha;Computer Press;1;1;1;Hlavenka, Jiří;
+302;80-85896-09-5;QuarkXPress: Podrobná uživatelská příručka : verze 3.1x a 3.3 ZS/CZ pro Windows;6;1996;Praha;Computer Press;1;1;1;Hlavenka, Jiří;
+303;80-7226-023-5;Výkladový slovník výpočetní techniky a komunikací;452;1997;Praha;Computer Press;3;1;1;Hlavenka, Jiří;
+304;80-85896-86-9;Windows NT 4.0 Workstation - Uživatelská příručka;7;1996;Praha;Computer Press;1;1;1;Hlavenka, Jiří;
+305;80-85896-53-2;Windows 95 - Podrobná referenční příručka;310;1996;Praha;Computer Press;2;1;1;Hlavenka, Jiří;
+307;80-85896-44-3;Anglicko-česká terminologie bezpečnosti informačních technologií;95;1996;Praha;Computer Press;1;1;1;Hoenigová, Alena -- Matyáš, Václav - ml.;
+308;80-85986-01-9;Počítačová grafika a animace;86;1995;Praha;Vogel Publishing;1;1;1;Hofman, David;
+313;978-80-251-1850-4;Mistrovství v AJAXu;591;2007;Brno;Computer Press;1;1;1;Holzner, Steven;
+316;0-321-45536-3;Introduction to automata theory, languages, and computation;535;2007;Boston, MA;Pearson/Addison Wesley;3;1;2;Hopcroft, John E. -- Motwani, Rajeev;
+319;80-247-0447-1;Strategický marketing;200;2003;Praha;Grada;2;1;1;Horáková, Helena;
+321;80-7169-340-5;Od DTP k PRE-PRESSU : Průvodce světem tvorby dokumentů;311;1997;Praha;Grada;1;1;1;Horný, Stanislav;
+323;80-86330-12-5;Java 5;1443;2005;Praha;Neocortex;;1;1;Horton, Ivor;
+327;1-58705-304-7;Cisco field manual : catalyst switch configuration;;2006;Indianapolis, IN;;;2;2;Hucaby, Dave -- McQuerry, Steve;
+329;80-7226-560-1;Data warehousing : návrh a implementace;257;2001;Praha;Computer Press;1;1;2;Humphries, Mark;Profi
+331;80-86497-59-3;Linux : síťové servery;672;2003;Praha;Soft Press;;1;1;Hunt, Craig;
+332;1-56592-123-2;Networking Personal Computers with TCP/IP : A Guide for Network Administrators;22;1995;Sebastopol, CA;O\'Reilly Media, Inc.;1;1;2;Hunt, Craig;
+334;80-251-1180-6;Zranitelný kód;207;2006;Brno;Computer Press;1;1;1;Huseby, Sverre H.;
+338;80-7226-051-0;Firewally -principy budování a udržování;10;1998;Praha;Computer Press;1;1;1;Chapman, Brent D. -- Zwicky, Elizabeth D.;Profi
+342;80-85931-68-0;Didaktické testy : příručka pro učitele a studenty učitelství;91;1999;Brno;Paido;;1;1;Chráska, Miroslav;
+343;978-80-247-1369-4;Metody pedagogického výzkumu : základy kvantitativního výzkumu;265;2007;Praha;Grada;1;1;1;Chráska, Miroslav;
+345;80-7261-007-4;Logistika v marketingu;166;2000;Praha;Management Press;1;1;1;Christopher, Martin;
+346;80-7226-519-9;Macromedia Flash 5 pro pokročilé;416;2001;Praha;Computer Press;1;1;1;Chun, Russell;Rychle a jistě
+348;0-256-06671-X;Management : Principles and Functions;17;1989;Homewood;BPI IRWIN;4;1;2;Ivancevich, John M. -- Donnelly, James H.;
+351;978-80-251-1744-6;Plastická chirurgie ve Photoshopu : elegantní úpravy obličeje, pleti i celé postavy na fotografiích;192;2007;Brno;Computer Press;1;1;1;Jackson, Barry;
+354;0-201-57169-2;The Unified Software Development Process;29;1999;Reading, MA;Addison-Wesley;1;1;2;Jacobson, Ivar -- Booch, Grady;
+355;0-201-87686-8;Introduction to Expert Systems;17;1999;Harlow;Addison-Wesley;3;1;2;Jakson, Peter;
+357;80-7169-113-5;UNIX V - Základy operačního systému;242;1995;Praha;Grada;1;1;1;Jelen, Milan;
+358;80-7169-282-4;Systémy automatické identifikace;124;1996;Praha;Grada;1;1;1;Ježek, Vladimír;
+359;80-85623-82-X;Tvorba aplikací v objektovém prostředí;323;1994;Praha;Grada;;1;1;Jilková, Helena -- Ryant, Ivan;
+360;80-251-0843-0;Kytara a počítač : využíváme efekty a hudební programy při hraní, aranžování a skládání;294;2005;Brno;Computer Press;1;1;1;Jirásek, Ondřej;
+362;80-7335-084-X;Principy digitální komunikace;309;2006;Voznice;Leda;1;1;1;Jiroušek, Radim a kol.;
+363;80-7209-863-2;Cestování : příručka pro digitální fotografy;110;2006;Praha;Slovart;;1;1;Joinson, Simon;
+364;80-7209-652-4;Krajiny a scenerie : příručka pro digitální fotografy;112;2004;Praha;Slovart;1;1;1;Joinson, Simon;
+368;80-7226-295-5;Jazyk C;12;2000;Praha;Computer Press;1;1;1;Kačmář, Dalibor;
+370;80-251-0342-0;Agilní programování : metodiky efektivního vývoje softwaru;278;2004;Brno;Computer Press;1;1;1;Kadlec, Václav;
+371;80-7169-356-1;Průvodce nitrem BIOSu;234;1996;Praha;Grada;1;1;1;Kadlec, Zdeněk;
+373;80-251-0074-X;Microsoft Project : kompletní průvodce pro verze 2003 a 2002;597;2003;Brno;Computer Press;1;1;1;Kališ, Jan -- Hyndrák, Karel;Microsoft Office System
+375;80-251-1083-4;UML srozumitelně;176;2006;Brno;Computer Press;2;1;1;Kanisová, Hana -- Müller, Miroslav;
+376;80-251-0231-9;UML srozumitelně;158;2004;Brno;Computer Press;1;1;1;Kanisová, Hana -- Müller, Miroslav;
+377;80-85896-61-3;DOOM II, Heretic, Hexen;11;1996;Praha;Computer Press;1;1;1;Kaňurek, Vít;
+379;0-415-36976-2;Telegeoinformatics : location-based computing and services;377;2004;Boca Raton;CRC Press;;1;2;Karimi, Hassan A;
+380;80-86056-31-7;ZEN a umění Internetu;168;1997;Praha;;1;1;1;Kehoe, Brendan p.;
+382;80-86593-37-1;Photoshop : kniha plná triků;324;2003;Praha;Mobil Media;1;1;1;Kelby, Scott;
+383;978-80-86429-78-6;Vzdělanostní společnost? : chrám, výtah a pojišťovna;183;2008;Praha;Sociologické nakladatelství;1;1;1;Keller, Jan -- Tvrdý, Lubor;
+384;;Datové struktury bez předchozích znalostí;223;2006;Brno;Computer Press;1;1;1;Keogh, James Edward -- Davidson, Ken;
+394;0-76458-424-3;Hacking GPS;337;2005;Indianapolis, IN;Wiley Publishing;;1;2;Kingsley-Hughes, Kathie;
+395;80-86097-15-3;Hacker Proof: váš počítač, vaše sítě a vaše připojení k Internetu. Je to opravdu bezpečné?;648;1998;Brno;UNIS Publishing;1;1;1;Klander, Lars;
+399;0-201-89684-2;Art of computer of programming;762;1997;Boston, MA;Addison-Wesley;;1;2;Knuth, Donald Ervin;
+400;0-201-89683-4;Art of computer of programming;650;1997;Boston, MA;Addison-Wesley;3;1;2;Knuth, Donald Ervin;
+405;978-80-251-2025-5;Umění programování : Základní algoritmy. . 1. díl.;648;2008;Brno;Computer Press;1;1;1;Knuth, Donald Ervin;
+406;80-251-0232-7;Praktická typografie;288;2004;Praha;Computer Press;2;1;1;Kočička, Pavel -- Blažek, Filip;
+408;978-3-8365-0803-2;Photo icons;191;2008;Köln;Taschen;;1;2;Koetzle, Michael;Icons
+409;3-540-67921-9;Self-organizing maps;501;2001;New York, N.Y.;Springer Verlag;3;1;2;Kohonen, Teuvo;Springer series in information sciences
+410;80-251-0391-9;Stavíme si bezdrátovou síť Wi-fi;295;2004;Brno;Computer Press;1;1;1;Köhre, Thomas;
+413;978-0-12374017-5;HCI beyond the GUI : design for haptic, speech, olfactory and other nontraditional interfaces;462;2008;Amsterdam;Elsevier/Morgan Kaufmann;;1;2;Kortum, Philip;
+414;80-7169-608-0;HTML - tvorba dokonalých WWW stránek : podrobný průvodce;291;1998;Praha;Grada;1;1;1;Kosek, Jiří;Průvodce
+416;80-7169-860-1;XML pro každého : podrobný průvodce;163;2000;Praha;Grada;1;1;1;Kosek, Jiří;
+417;80-7226-097-9;Elektronická komerce : Principy a praxe;12;1998;Praha;Computer Press;1;1;1;Kosiur, David;Internet
+423;80-86419-76-2;Segmentujeme spotřební trhy;145;2005;Praha;Professional Publishing;1;1;1;Koudelka, Jan;
+424;80-86815-00-5;Praktický JavaScript;325;2004;Brno;ZONER Press;1;1;1;Kout, Pavel;Encyklopedie webdesignera
+426;80-86083-00-4;Informační systémy : Specifikace, realizace, provoz;358;1998;Brno;SCIENCE;1;1;1;Král, Jaroslav;
+428;80-7226-101-0;Základy komponentní technologie COM;9;1998;Praha;Computer Press;1;1;1;Kraval, Ilja -- Ivachiv, Pavel;
+429;80-7226-047-2;Základy objektově orientovaného programování;251;1998;Praha;Computer Press;1;1;1;Kraval, Ilja;
+430;80-247-0812-4;Linux : tipy a triky pro bezpečnost;207;2004;Praha;Grada;1;1;1;Krčmář, Petr;
+432;1-56592-697-8;Oracle SQL : The Essential Reference;33;2000;Beijing;O\'Reilly Media, Inc.;1;1;2;Kreines, David C.;
+434;80-251-0808-2;PHP : kapesní přehled;107;2006;Brno;Computer Press;1;1;1;Krejčí, Lukáš;
+435;80-251-0345-5;Administrace a diagnostika sítí pomocí OpenSource utilit a nástrojů;216;2004;Brno;Computer Press;1;1;1;Kretchmar, James M. -- Dostálek, Libor;
+438;80-7079-342-2;Úvod do umělých neuronových sítí;49;1996;Praha;VŠE;1;1;1;Křivan, Miloš;
+440;80-86593-06-1;Zvuk na PC : step by step;262;2002;Praha;Mobil Media;1;1;1;Kříž, Miloslav;
+441;978-80-251-2195-5;Velký průvodce SEO : jak dosáhnout nejlepších pozic ve vyhledávačích;318;2008;Brno;Computer Press;1;1;1;Kubíček, Michal;
+443;80-86223-11-6;Brno: Vývoj města, předměstí a připojených vesnic;664;2000;Praha;Baset;1;1;1;Kuča, Karel;
+447;80-7226-816-3;Tipy a triky pro Pocket PC;108;2002;Praha;Computer Press;1;1;1;Kuruc, Jiří -- Janeček, Vladislav;
+449;80-901342-2-X;Sbírka úloh z jazyka Pascal;123;1996;České Budějovice;Kopp;1;1;1;Kvoch, Martin -- Jančík, Jaroslav;
+450;80-247-1170-2;Perl : kompletní kapesní průvodce programátora;134;2005;Praha;Grada;1;1;1;Kysela, Martin;
+452;1-861004-82-6;Expert one-on-one Oracle;1297;2002;Birmingham;Wrox Press;1;1;2;Kyte, Thomas;
+454;978-80-251-2108-5;Ajax : hotová řešení;269;2008;Brno;Computer Press;1;1;1;Lacko, Ľuboslav;
+456;80-7226-969-0;Databáze: datové sklady, OLAP a dolování dat s příklady v Microsoft SQL Serveru a Oracle;486;2003;Brno;Computer Press;1;1;1;Lacko, Luboslav;
+457;80-7226-699-3;Oracle : správa, programování a použití databázového systému;464;2002;Brno;Computer Press;1;1;1;"Lacko, L&#39;uboslav";Rychle a jistě - databáze
+459;80-7226-975-5;SQL : pro SQL Server, Oracle a MySQL;298;2003;Brno;Computer Press;1;1;1;Lacko, Luboslav;Hotová řešení
+460;80-7226-555-5;Web a databáze : programujeme internetové aplikace;12;2001;Praha;Computer Press;1;1;1;"Lacko, L&#39;uboslav";
+464;978-80-251-1542-8;Microsoft Office Outlook 2007 : podrobná uživatelská příručka;342;2007;Brno;Computer Press;1;1;1;Lapáček, Jiří;
+467;0-02-368100-4;Management Information Systems : A Contemporary Perspective;749;1988;New York, N.Y.;Macmillan Publishing Company;1;1;2;Laudon, Kenneth C. -- Laudon, Jane Price;
+468;80-7226-170-3;Tvorba internetových aplikací v XML;14;1999;Brno;Computer Press;1;1;1;Laurent, Simon St.;
+471;80-7226-123-1;Windows NT - Zálohování a obnova dat : Příručka pro správce systémů;9;1998;Praha;Computer Press;1;1;1;Leber, Jody;
+472;80-85896-68-0;CD-ROM : Průvodce začátečníka;10;1996;Praha;Computer Press;1;1;1;Leemon, Sheldon;
+473;80-7226-616-0;Naučte se Perl : za 21 dní;564;2002;Praha;Computer Press;1;1;1;Lemay, Laura;Rychle a jistě - internet
+475;80-7226-172-X;Procesory - architektura, funkce, použití;13;1999;Brno;Computer Press;1;1;1;Ličev, Lačezar -- Morkes, David;Hardware
+483;80-7226-361-7;DELPHI v kostce : Pohotová referenční příručka;15;2000;Praha;Computer Press;1;1;1;Lischner, Ray;
+484;978-0-4153-1681-1;Local models for spatial analysis;244;2007;Boca Raton;CRC/Taylor & Francis;;1;2;Lloyd, Christopher D;
+486;80-7226-635-7;Mistrovství v Oracle : kompletní průvodce tvorbou, správou a údržbou databází;860;2002;Praha;Computer Press;1;1;1;Loney, Kevin -- Theriault, Marlene;
+488;0-13-179292-X;Object-Oriented Software Metrics : A Practical Guide;13;1994;Englewood;Prentice Hall Inc.;;1;2;Lorenz, Mark -- Kidd, Jeff;
+493;80-86056-63-5;Příručka přežití administrátora INFORMIXU;238;1997;Praha;;1;1;1;Lumbley, Joe;
+496;0-300-08898-1;Web style guide: basic design principles for creating web sites;223;2002;New Haven;Yale University Press;;1;2;Lynch, Patrick J. -- Horton, Sarah;
+498;0-256-10509-X;Basic Marketing : A Global-Managerial Approach;763;1993;Homewood;Irwin;1;1;2;Mac Carthy, E. Jerome -- Perreault, William D.;
+499;80-7226-194-0;Softwarové projekty : Jak dodat kvalitní softwarový produkt včas;15;1999;Praha;Computer Press;1;1;1;Mac Carthy, Jim;
+503;80-251-0398-6;Microsoft Office PowerPoint 2003 : podrobná uživatelská příručka;391;2006;Brno;Computer Press;1;1;1;Magera, Ivo;
+506;80-85896-48-6;PowerPoint 7.0 - Příručka uživatele;10;1996;Praha;Computer Press;1;1;1;Magera, Ivo -- Valášková, Irena;
+507;80-901507-1-3;Základy programování v jazyku INFORMIX-4GL;236;1994;Praha;;1;1;1;Mahler, Paul;
+508;978-80-7179-463-9;Prostorově orientované systémy pro podporu manažerského rozhodování;141;2007;Praha;C.H. Beck;1;1;1;Machalová, Jitka;C.H. Beck pro praxi
+509;0-387-24435-2;Data mining and knowledge discovery handbook;1383;2005;New York, N.Y.;Springer Verlag;;1;2;Maimon, Oded Z;
+512;1-58948-022-8;Mapping our world : GIS Lessons for Educators;23;2002;Redlands, CA;ESRI Press;1;1;2;Malone, Lyn -- Palmer, Anita M.;
+513;80-210-1031-2;Kapitoly z metodologie pedagogiky;125;1994;Brno;Masarykova univerzita;;1;1;Maňák, Josef;Spisy Pedagogické fakulty MU v Brně
+517;0-13-221906-9;Photography : a cultural history;544;2006;Upper Saddle River, N.J.;Prentice Hall Inc.;2;1;1;Marien, Mary Warner;
+520;80-200-0502-1;Umělá inteligence;;1993;Praha;Academia;1;1;1;Mařík, Vladimír -- Lažanský, Jiří a kol.;
+522;978-80-210-4556-9;Autorizace elektronických transakcí a autentizace dat i uživatelů;125;2008;Brno;Masarykova univerzita;1;1;1;Matyáš, Vašek -- Krhovják, Jan a kol.;
+525;80-251-1240-3;Odhadování softwarových projektů : jak správně určit rozpočet, termín a zdroje;317;2006;Brno;Computer Press;1;1;1;McConnell, Steve;
+529;0-02-306425-0;Interactive Computer Applications Package: to accompany R.A.Barnett and M.R.Ziegler\'sApplied Mathematics;179;1989;San Francisco, CA;Dellen Publishing Company;;1;2;Meitler, Carolyn L.;
+530;0-8493-8523-7;Handbook of applied cryptography;780;1997;Boca Raton;CRC Press;;1;2;Menezes, A. J -- Vanstone, Scott A;CRC Press series on discrete mathematics and its applications
+531;1-58720-060-0;CCNP practical studies: switching : CCNP self-study;958;2004;Indianapolis, IN;Cisco Press;;1;2;Menga, Justin;Cisco Press practical studies series
+532;80-251-0181-9;Microsoft Office Outlook 2003 : podrobná uživatelská příručka;378;2004;Brno;Computer Press;1;1;1;Městecký, Petr;
+533;978-0-240-81010-2;Creating motion graphics : with after effects;690;2007;Boston, MA;Elsevier;4;1;2;Meyer, Trish -- Meyer, Chris;
+535;80-86815-17-X;Eric Meyer o CSS : pokračujeme s kaskádovými styly: profesionálně!;285;2005;Brno;ZONER Press;1;1;1;Meyer, Eric A.;Encyklopedie webdesignera
+536;0-73571-245-X;Eric Meyer on CSS : mastering the language of Web design;322;2003;Indianapolis, IN;New Riders;;1;2;Meyer, Eric A.;
+538;80-86394-53-0;Internetový obchod pomocí PHP a MySQL;163;2001;Praha;Newsletter;1;1;1;Mihule, Tomáš;
+539;978-3-540-32928-2;Adaptive business intelligence;246;2007;Berlin;Springer Verlag;;1;1;Michalewicz, Zbigniew a kol.;
+543;80-247-1277-6;Jak zvýšit konkurenceschopnost podniku: konkurenční potenciála dynamika podnikání;198;2005;Praha;Grada;1;1;1;Mikoláš, Zdeněk;
+547;80-251-1126-1;Programujeme 3D hry v jazyce C# : [tři kompletní hry od úplných základů];335;2006;Brno;Computer Press;1;1;1;Miller, Tom;
+549;80-7169-178-X;PC - velký průvodce hardwarem;978;1996;Praha;Grada;4;1;1;Minasi, Mark;
+550;80-7169-006-6;Problémy s Windows a jak na ně;429;1993;Praha;Grada;;1;1;Minasi, Mark;
+551;80-247-0326-2;Windows XP Professional;800;2002;Praha;Grada;1;1;1;Minasi, Mark;Profesional
+553;0-596-00129-0;Mastering Oracle SQL;321;2002;Beijing;O\'Reilly Media, Inc.;1;1;2;Mishra, Sanjay -- Beaulieu, Alan;
+554;0-201-36299-6;The LaTeX companion;1090;2004;Boston, MA;Addison-Wesley;2;1;2;Mittelbach, Frank -- Goossens, Michel a kol.;Addison-Wesley series on tools and techniques for computer typesetting
+558;80-247-0087-5;Efektivnost informačních systémů;179;2001;Praha;Grada;2;1;1;Molnár, Zdeněk;
+559;0-201-70331-9;PostgreSQL : introduction and concepts;461;2001;Boston, MA;Addison-Wesley;;1;2;Momjian, Bruce;
+560;80-7226-954-2;PostgreSQL : praktický průvodce;402;2003;Brno;Computer Press;1;1;1;Momjian, Bruce;
+561;80-7226-238-6;Proč mapy lžou;13;2000;Praha;Computer Press;1;1;1;Monmonier, Mark;
+562;0-596-00396-X;ActionScript for Flash MX : the definitive guide;1051;2002;Beijing;O\'Reilly Media, Inc.;2;1;2;Moock, Colin;
+566;80-85896-46-X;Microsoft Schedule + : Základní průvodce uživatele;6;1996;Praha;Computer Press;1;1;1;Morkes, David;
+568;80-85896-92-3;Visual Basic 4.0 - učebnice pros střední školy;168;1997;Praha;Computer;1;1;1;Morkes, David;Učebnice pro střední školy
+569;80-251-0371-4;Naučte se programovat počítačovou hru za 24 hodin;421;2004;Brno;Computer Press;1;1;1;Morrison, Michael;
+572;80-901475-8-5;Distribuované systémy : Výpočty v sítích;178;1997;Veletiny;SCIENCE;1;1;1;Motyčková, Lenka;
+574;80-7226-470-2;Osobní počítač : Nejpodrobnější průvodce hardwarem PC;32;2001;Praha;Computer Press;1;1;1;Mueller, Scott;
+576;0-937175-83-8;X Window System Administrator\'s Guide forX Version 11: Volume Eight;24;1993;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Mui, Linda -- Pearce, Eric;
+577;1-55860-515-0;Database Design for Smarties : Using UML for Data Modeling;17;1999;San Francisco, CA;Morgan Kaufmann Publishers;;1;1;Muller, Robert J.;
+579;80-85896-18-4;Encyklopedie grafických formátů: Součástí knihy je CD-ROM;28;1995;Praha;Computer Press;1;1;1;Murray, James D. -- Ryper, William van;
+580;80-7226-407-9;HTML a XHTML : kompletní průvodce;623;2000;Praha;Computer Press;;1;1;Musciano, Chuck -- Kennedy, Bill;
+581;80-251-0890-2;Fotografujeme krajinu;157;2005;Brno;Computer Press;1;1;1;Myška, Miroslav;Edice digitální fotografie
+585;80-251-1073-7;Vytváříme webové aplikace v PHP5, MySQL a Apache;813;2006;Brno;Computer Press;1;1;1;Naramore, Elizabeth a kol.;
+586;;OpenOffice.org Calc;128;2007;Kralice na Hané;Computer Media;1;1;1;Navrátil, Pavel -- Jiříček, Michal;
+587;0-201-71159-1;Artficial Intelligence : A Guide to Intelligent Systems;14;2002;Harlow;Addison-Wesley;1;1;2;Negnevitsky, Michael;
+588;80-7226-919-4;Linux : kompletní příručka administrátora;828;2004;Brno;Computer Press;1;1;1;Nemeth, Evi -- Snyder, Garth;Administrace
+590;0-87070-381-1;The history of photography : from 1839 to the present;319;1982;New York, N.Y.;"Museum of Modern Art ;";;1;2;Newhall, Beaumont;
+593;80-86497-27-5;Web. Design;382;2002;Praha;Soft Press;1;1;1;Nielsen, Jakob;
+594;3-446-17276-9;Informatik I : Einführung in Algorithmen und Berechenbarkeit;153;1993;München;Carl Hansen Verlag;2;1;2;Noltenmeier, Hartmut;
+595;3-446-15508-2;Informatik II : Einführung in Rechnerstrukturen und Programmierung;219;1993;München;Carl Hansen Verlag;2;1;2;Noltenmeier, Hartmut -- Laue, Reinhard;
+599;80-85424-95-9;Neuronové sítě a informační systémy živých organismů;265;1993;Praha;Grada;1;1;1;Novák, Mirko -- Faber, Josef;
+601;80-247-1094-3;Business Intelligence: jak využít bohatství ve vašich datech;254;2005;Praha;Grada;1;1;1;Novotný, Ota -- Pour, Jan;Management v informační společnosti
+614;1-58720-122-4;Routing first-step;414;2005;Indianapolis, IN;Cisco Press;;1;2;Parkhurst, William R;First-step series
+615;80-7226-636-5;Testování softwaru;313;2002;Praha;Computer Press;1;1;1;Patton, Ron;Programování pro každého uživatele
+617;0-596-00355-2;XSL-FO;263;2002;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Pawson, Dave;
+618;80-7226-605-5;Naučte se ASP. NET za 21 dní;22;2002;Praha;Computer Press;1;1;1;Payne, Chris;
+619;80-856-05-42-2;Macmillanův slovník moderní ekonomie;549;1994;Praha;Victoria Publishing;;1;1;Pearce, David W.;
+621;80-247-0941-4;Myslíme objektově v jazyku Java 5.0;601;2004;Praha;Grada;1;1;1;Pecinovský, Rudolf;Myslíme v--
+622;978-80-251-1582-4;Návrhové vzory : [33 vzorových postupů pro objektové programování];527;2007;Brno;Computer Press;1;1;1;Pecinovský, Rudolf;
+623;80-7169-366-9;Objektové programování 1 : Učebnice s příklady v Turbo Pascalu a Borland C++;228;1996;Praha;Grada;1;1;1;Pecinovský, Rudolf -- Virius, Miroslav;
+624;80-7169-366-9;Objektové programování 2 : Učebnice s příklady v Turbo Pascalu a Borland C++;261;1996;Praha;Grada;1;1;1;Pecinovský, Rudolf -- Virius, Miroslav;
+627;0-8493-0880-1;Information security risk analysis;281;2001;Boca Raton;Auerbach;;1;2;Peltier, Thomas R.;
+629;80-7169-415-0;Java : Tvorba dokonalých WWW stránek;327;1996;Praha;Grada;1;1;1;Perry, Paul J.;
+632;80-7226-206-8;Programování ve Windows : WIN32 API;23;1999;Brno;Computer Press;1;1;1;Petzold, Charles;
+636;80-903210-8-9;Mistrovství práce s DSLR : vše, co jste chtěli vědět o digitální zrcadlovce a nikdo vám to neuměl vysvětlit;230;2006;Praha;IDIF;1;1;1;Pihan, Roman;
+637;80-7169-799-0;Počítačové zkratky : Kompletní kapesní průvodce;233;1999;Praha;Grada;1;1;1;Pilař, Alexander;
+638;0-596-00795-7;UML 2. 0 in a nutshell : [a desktop quick reference ];216;2005;Sebastopol, CA;O\'Reilly Media, Inc.;1;1;2;Pilone, Dan;
+641;80-7232-145-5;Síťové programování pod Windows a programování Internetu;357;2001;České Budějovice;Kopp;1;1;1;Pirkl, Josef;
+643;80-85649-28-4;Access 2.0 : Průvodce systémem;316;1995;Praha;GComp;;1;1;Plecháč, Vladimír;
+644;80-85649-34-9;Access 2.0 : Tipy, triky v příkladech;254;1995;Praha;GComp;;1;1;Plecháč, Vladimír -- Hernady, Robert;
+646;80-7300-173-X;Budování úspěšného firemního webu : strategie, tvorba, propagace;127;2005;Praha;BEN - technická literatura;1;1;1;Plotěný, Luboš;
+648;80-01-02789-9;Databázové systémy;148;2003;Praha;Vydavatelství ČVUT;2;1;1;Pokorný, Jaroslav -- Halaška, Ivan;
+652;80-01-02898-4;Konstrukce databázových systémů;166;2004;Praha;Vydavatelství ČVUT;2;1;1;Pokorný, Jaroslav;
+653;80-85649-15-2;FoxPro 2.5 : Učebnice programování DOS;285;1995;Praha;GComp;1;1;1;Pokrupa, Petr;GComp
+654;80-85424-36-3;Prolog;335;1992;Praha;Grada;;1;1;Polák, Jiří;Nestůjte za dveřmi
+663;80-7261-126-7;Budoucnost konkurence : spoluvytváření jedinečné hodnoty se zákazníkem;277;2005;Praha;Management Press;1;1;1;Prahalad, C. K. -- Ramaswamy, Venkatram;Knihovna světového managementu
+664;978-80-251-1749-1;Mistrovství v C++;1119;2007;Brno;Computer Press;3;1;1;Prata, Stephen;
+666;80-7226-682-9;Počítačový útok : detekce, obrana a okamžitá náprava;410;2002;Praha;Computer Press;1;1;1;Prosise, Chris -- Mandia, Kevin;Profi - komunikace&sítě
+669;80-85896-21-4;Novell Netware 3.x a 4.x : Kompletní průvodce;494;1995;Praha;Computer Press;1;1;1;Přichystal, Oldřich;
+670;80-200-0203-0;Komunikace s počítačem mluvenou řečí;287;1995;Praha;Academia;1;1;1;Psutka, Josef;
+671;;Algoritmizace;128;2007;Kralice na Hané;Computer Media;1;1;1;Pšenčíková, Jana;
+678;0-596-00205-X;Perl & XML;202;2002;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Ray, Erik T. -- McIntosh, Jason;
+680;80-85896-29-X;Corel Ventura 5.0 : Podrobná uživatelská příručka;8;1996;Praha;Computer Press;1;1;1;Rázus, Michal;
+681;0-12-585263-0;High dynamic range imaging : acquisition, display, and image-based lighting;502;2006;San Francisco, CA;Elsevier;;1;2;Reinhard, Erik a kol.;
+682;0-7645-3656-7;Flash MX bible;1270;2002;Indianapolis, IN;Wiley Publishing;1;1;2;Reinhardt, Robert -- Dowd, Snow;
+683;80-7169-216-6;PowerPoint 4.0 : Snadno a dobře;167;1995;Praha;Grada;1;1;1;Renda, Miroslav -- Mareček, Martin;
+684;978-80-251-1824-5;JavaScript a Ajax : moerní programování webových aplikací;360;2007;Brno;Computer Press;1;1;1;Resig, John;
+685;0-13-488172-9;The Art of Electronic Publishing : The Internet and Beyond;17;1997;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Ressler, Sandy;
+686;1-55860-588-6;Spatial databases : with application to GIS;410;2002;San Francisco, CA;Morgan Kaufmann Publishers;;1;2;Rigaux, Philippe -- Scholl, Michel O.;The Morgan Kaufmann series in data management systems
+687;80-85896-89-3;Windows pro pokročilé a experty: Architektura 32bitových systémů Windows 95 aWindows NT;33;1997;Praha;Computer Press;1;1;1;Richter, Jeffrey;
+688;80-7226-360-9;Vytváříme relační databázové aplikace;280;2000;Praha;Computer Press;1;1;1;Riordan, Rebecca M.;Databáze
+690;0-12-593115-8;Object-oriented neural networks in C++;310;1997;San Diego, CA;Academic Press;;1;2;Rogers, Joey;
+693;80-7226-218-1;Řízení projektů : příprava a plánování, zahájení, výběr lidí a jejich řízení, kontrola a změny, vyhodnocení a ukončení;344;2000;Praha;Computer Press;1;1;1;Rosenau, Milton D.;Business books
+697;0-941049-03-5;The business rule book : classifying, defining and modeling rules;394;1997;Boston, MA;Database Research Group;2;1;2;Ross, Ronald G;
+699;978-80-251-1544-2;Windows Vista : rychle hotovo! : [názorný průvodce všemi běžnými činnostmi];224;2007;Brno;Computer Press;1;1;1;Roubal, Pavel;Rychle hotovo!
+700;80-7226-577-6;Data Mining: praktický průvodce dolování dat pro efektivní prodej, cílený marketinga podporu zákazníků (CRM);329;2001;Praha;Computer Press;1;1;1;Rud, Olivia Parr;Rychle a jistě
+702;0-201-30998-X;The Unified Modeling Language Reference Manual;17;1999;Reading, MA;Addison-Wesley;1;1;2;Rumbaugh, James -- Jacobson, Ivar;
+714;0-07-054554-5;Secure UNIX;14;1997;New York, N.Y.;Mc Graw-Hill Book Company;;1;2;Samalin, Samuel;
+715;0-07-054877-3;Macroeconomics : A Version of Economics;573;1989;New York, N.Y.;Mc Graw-Hill Book Company;1;1;2;Samuelson, Paul A. -- Nordhaus, William D.;
+716;0-07-054878-1;Microeconomics : A Version of Economics;658;1989;New York, N.Y.;Mc Graw-Hill Book Company;1;1;2;Samuelson, Paul A. -- Nordhaus, William D.;
+718;80-902230-0-1;Linux - Internet server;413;1996;Praha;Neocortex;;1;1;Satrapa, Pavel -- Randus, Jiří A.;
+720;80-86330-02-8;Perl pro zelenáče;224;2000;Praha;Neocortex;2;1;1;Satrapa, Pavel;
+723;0-471-02556-9;Coping with chaos : analysis of chaotic data and the exploitation of chaotic systems;418;1994;New York, N.Y.;Wiley Publishing;;1;2;Sauer, Tim;Wiley series in nonlinear science
+725;80-7226-769-8;Hacking bez tajemství: webové aplikace;328;2003;Praha;Computer Press;1;1;1;Scambray, Joel -- Shema, Mike;
+728;978-80-86815-93-0;Nová pravidla marketingu a PR : naučte se využívat vydávání zpráv, blogy, podcasty, virální marketing a online média pro přímé oslovení zákazníků;272;2008;Brno;Zoner Press;1;1;1;Scott, David Meerman;Encyklopedie Zoner Press
+729;80-247-0081-6;B2B Internetová tržiště : Revoluce v obchodování mezi firmami;187;2001;Praha;Grada;1;1;1;Scully, Arthur B. -- Woods, W.William A.;
+730;80-7300-195-0;E-komerce, internetový a mobil marketing od A do Z;351;2006;Praha;BEN - technická literatura;1;1;1;Sedláček, Jiří;
+731;80-7277-078-6;Mapy Čech, Moravy a Slezska v zrcadle staletí;263;2001;Praha;Libri;1;1;1;Semotanová, Eva;
+735;80-86497-16-X;Nauč se sám C;620;2001;Praha;Soft Press;;1;1;Schildt, Herbert;Poznej - vyzkoušej - používej
+736;80-86497-13-5;Nauč se sám C++;623;2001;Praha;Soft Press;;1;1;Schildt, Herbert;
+737;80-86815-14-5;Pokročilé programování v PHP 5;640;2004;Brno;ZONER Press;1;1;1;Schlossnagle, George;Encyklopedie webdesignera
+739;80-247-0810-8;Vytváříme hry ve Flashi : podrobný průvodce začínajícího uživatele;202;2004;Praha;Grada;1;1;1;Schneider, Zdeněk -- Jirka, Lukáš;
+741;80-85605-87-2;Logistika;301;1994;Praha;Victoria Publishing;1;1;1;Schulte, Christof;
+742;1-56592-284-0;Learning Perl;29;1997;Beijing;O\'Reilly Media, Inc.;2;1;2;Schwartz, Randal L. -- Christiansen, Tom;
+743;0-596-00132-0;Learning Perl;316;1997;Beijing;O\'Reilly Media, Inc.;3;1;2;Schwartz, Randal L. -- Phoenix, Tom;
+746;3-446-15782-4;Relationale Datenbanksysteme;9;1992;München;Carl Hansen Verlag;;1;3;Schwinn, Hans;
+747;80-7226-227-0;Linux v kostce;14;1999;Praha;Computer Press;1;1;1;Siever, Ellen;
+748;1-56592-286-7;PERL in a Nutshell : A Desktop Quick Reference;18;1999;Beijing;O\'Reilly Media, Inc.;1;1;2;Siever, Ellen -- Spainhour, Stephen;
+753;978-80-251-1772-9;Fotomontáže a trikové fotografie ve Photoshopu : [vytváříme obrazy z fotek, fantasy ilustrace a další neobvyklé efekty];160;2007;Brno;Computer Press;1;1;1;Siroň, Michal;
+754;978-80-251-2083-5;SEO v PHP : programujeme profesionálně;380;2008;Brno;Computer Press;1;1;1;Sirovich, Jaimie -- Darie, Cristian;Programmer to programmer
+755;80-251-0573-3;Logistika : teorie a praxe;315;2005;Brno;CP Books;1;1;1;Sixta, Josef -- Mačát, Václav;Business books
+757;80-7179-409-0;Data, informace, znalosti a Internet;507;2001;Praha;C.H. Beck;1;1;1;Sklenák, Vilém a kol.;
+758;80-901475-0-X;Principy a problémy operačního systému UNIX;288;1993;Veletiny;SCIENCE;1;1;1;Skočovský, Luděk;
+763;80-239-2961-5;Optimalizace pro vyhledávače - SEO : jak zvýšit návštěvnost webu;126;2004;Dubany;Jaroslava Smičková;1;1;1;Smička, Radim;
+764;1-85032-277-5;An Introduction to Knowledge Engineering;7;1996;London;International Thomson Computer Press;1;1;2;Smith, Peter;
+766;80-7226-190-8;Linux : praktický průvodce;946;1999;Praha;Computer Press;1;1;1;Sobell, Mark G.;
+768;80-85828-58-8;Grafické formáty;157;1996;České Budějovice;Kopp;1;1;1;Sobota, Branislav -- Milián, Ján;
+771;80-86083-03-9;Tvorba a reengineering objektově orientovaných obchodních procesů;201;1999;Veletiny;SCIENCE;1;1;1;Sokolovský, Peter;
+773;80-7226-025-1;Tvorba aplikací v Microsoft Office 97 pomocí jazyka Visual Basic;22;1998;Praha;Computer Press;1;1;1;Solomon, Christine;
+777;80-7226-251-3;Webmaster v kostce : Pohotová referenční příručka;16;1999;Praha;Computer Press;1;1;1;Spainhour, Stephen -- Eckstein, Robert;
+778;0-201-38600-3;The computer in the visual arts;500;1999;Reading, MA;Addison-Wesley;;1;2;Spalter, Anne Morgan;
+779;80-7226-667-5;Java : programujeme profesionálně;1022;2002;Praha;Computer Press;1;1;1;Spell, Brett;
+780;0-201-05932-0;Economics : Study Guide;11;1990;Reading, MA;Addison-Wesley;;1;2;Spencer, David E.;
+781;0-19-850840-9;Chaos and time-series analysis;507;2003;Oxford;Oxford University Press;;1;2;Sprott, Julien C;
+782;1-56592-220-4;Advanced Perl Programming;23;1997;Cambridge, MA;O\'Reilly Media, Inc.;1;1;2;Srinivasan, Sriram;
+783;80-7226-079-0;Programování v Perlu pro pokročilé;25;1998;Praha;Computer Press;1;1;1;Srinivasan, Sriram;
+784;0-87709-825-5;Principles of Informations Systems : A Managerial Approach;29;1996;Cambridge, MA;Inter.Thompson Publ.Company;2;1;2;Stair, Ralph M.;
+785;0-13-869017-0;Cryptography and Network Security: Principles and Practice;17;1998;London;Prentice Hall Inc.;2;1;2;Stallings, William;
+786;0-13-571274-2;Data and Computer Communications;18;1997;London;Prentice Hall Inc.;5;1;2;Stallings, William;
+787;80-86497-25-9;Správa operačního systému Linux;704;2002;Praha;Soft Press;;1;1;Standfield, Vicki;Craig Hunt Linux Library
+789;80-7226-872-4;CSS kaskádové styly : kompletní průvodce;178;2003;Praha;Computer Press;1;1;1;Staníček, Petr;
+791;0-201-63346-9;TCP/IP Illustrated, Volume 1 : The Protocols;19;1994;Reading, MA;Addison-Wesley;;1;2;Stevens, Richard W.;Addison-Wesley professional computing series
+792;0-201-63495-3;TCP/IP Illustrated, Volume 3 : TCP for Transactions, HTTP, NNTP, and the UNIX Domain Protocols;19;1996;Reading, MA;Addison-Wesley;;1;2;Stevens, W. Richard;Addison-Wesley professional computing series
+795;80-901507-4-8;Objektově-relační SŘBD: analýza příští velké vlny;279;2000;Praha;Softwarové aplikace a systémy;;1;1;Stonebraker, Michael -- Brown, Paul;
+796;80-7169-813-X;Řízení vztahů se zákazníky: (customer relationshipmanagement);167;2002;Praha;Grada;1;1;1;Storbacka, Kaj -- Lehtinen, Jarmo R.;Expert
+799;80-85834-60-X;Základy kvalitativního výzkumu : postupy a techniky metody zakotvené teorie;196;1999;Brno;Sdružení podané ruce;1;1;1;Strauss, Anselm -- Corbinová, Juliet;
+800;80-7226-983-6;Firewally a proxy-servery : praktický průvodce;450;2003;Brno;Computer Press;1;1;1;Strebe, Matthew -- Perkins, Charles Arthur;
+801;80-85424-75-4;Architektury procesorů RISC;173;1992;Praha;Grada;;1;1;Strelec, Josef -- Líška, Miroslav;Nestůjte za dveřmi
+805;80-85896-40-0;Počítače a komunikace;13;1996;Praha;Computer Press;1;1;1;Stuchlý, Vladimír;
+806;80-7226-752-3;Tipy a triky pro Macromedia Flash;128;2002;Praha;Computer Press;1;1;1;Sudacki, Lukáš;Rychle a jistě
+807;0-471-13326-4;ISDN - How to Get a High-Speed Connectionto the Internet;13;1996;New York, N.Y.;John Wiley & Sons;;1;2;Summers, Charles -- Dunetz, Bryant;
+809;80-86815-28-5;C++ : 101 programovacích technik;231;2005;Brno;Zoner Press;1;1;1;Sutter, Herb -- Alexandrescu, Andrei;Encyklopedie Zoner Press
+810;80-7226-288-2;Přecházíme na Delphi 5;190;2000;Praha;Computer Press;1;1;1;Svoboda, Luděk;
+812;80-247-0389-0;Flash s využitím XML : podrobný průvodce začínajícího uživatele;240;2003;Praha;Grada;1;1;1;Swan, Craig -- Caines, Greg;
+815;80-247-0049-2;Datové modelování v příkladech : Obchodování, pojišťovnictví, účetnictví, sociální podpora, silniční síť, plynárenství, strojírenská výroba;151;2001;Praha;Grada;1;1;1;Šešera, Lubomír -- Mičovský, Aleš;
+818;80-85896-10-9;Microsoft Acces 2.0 CZ : Základní příručka uživatele;148;1995;Praha;Computer Press;;1;1;Šimek, Tomáš;
+819;80-85896-03-6;Microsoft Word 6.0 CZ : Základní příručka uživatele;115;1995;Praha;Computer Press;;1;1;Šimek, Tomáš -- Bříza, Vladimír;
+820;80-7226-009-X;Microsoft Word 97 : Základní průvodce uživatele;12;1997;Praha;Computer Press;1;1;1;Šimek, Tomáš;
+821;80-85896-35-4;MS Word 7.0 - Základní příručka uživatele;126;1996;Praha;Computer Press;1;1;1;Šimek, Tomáš;
+827;80-251-0144-4;JavaScript: programujeme internetovéaplikace;224;2004;Brno;Computer Press;2;1;1;Škultéty, Rastislav;
+828;80-7226-048-0;MicroStation 95 CZ : Referenční příručka uživatele;459;1998;Praha;Computer Press;1;1;1;Šlegr, Jan;
+830;80-85828-09-X;Internetworking pomocí TCP/IP;134;1994;České Budějovice;Kopp;1;1;1;Šmrha, Pavel -- Rudolf, Vladimír;
+834;978-80-7238-553-9;Cvičebnice anglické gramatiky;191;2008;Plzeň;Fraus;1;1;2;Špačková, Daniela;
+836;80-85623-15-3;Object Professional pro Pascal - příručka programátora;520;1992;Praha;Grada;;1;1;Štolcpart, Petr;
+837;80-85424-66-5;Jednočipové mikropočítače INTEL 8048-8096;205;1992;Praha;Grada;;1;1;Šubrt, Vladimír;Nestůjte za dveřmi
+840;80-251-0022-7;Návrh a realizace sítí Cisco : autorizovaný výukový průvodce;758;2003;Brno;Computer Press;1;1;1;Teare, Diane;Samostudium
+844;80-86097-36-6;Borland Delphi : příručka vývojáře;287;1999;Praha;UNIS Publishing;1;1;1;Teixeira, Steve -- Pacheco, Xavier;
+849;1-58720-099-6;Network security first-step;456;2004;Indianapolis, IN;Cisco Press;;1;2;Thomas, Thomas M;First-step series
+850;0-596-00803-1;Designing interfaces;331;2006;Beijing;O\'Reilly Media, Inc.;1;1;2;Tidwell, Jenifer;
+851;80-854-24-45-2;Strukturální analýza : Úvod do projektu řízení;224;1992;Praha;Grada;;1;1;Tietze, Petr;
+852;1-56592-753-2;Oracle Net8 : Configuration and Troubleshooting;17;2001;America;;;1;2;Toledo, Hugo;
+854;80-7226-716-7;Bezpečnost v LINUXU : prevence a odvracení napadení systému;849;2003;Brno;Computer Press;1;1;1;Toxen, Bob;Security
+855;80-86419-67-3;Znalostní podnik ve znalostní společnosti;312;2004;Praha;Professional Publishing;2;1;1;Truneček, Jan;
+858;978-80-251-1784-2;Počítačová grafika a design : průvodce začínajícího grafika;155;2007;Brno;Computer Press;1;1;1;Tůma, Tomáš;
+859;0-256-06256-0;Fundamentals of Management Science;19;1988;Homewood;Bussines Publications;4;1;2;Turban, Efraim -- Meredith, Jack R.;
+862;80-247-0080-8;Metriky v informatice : jak objektivně zjistit přínosy informačního systému;139;2001;Praha;Grada;1;1;1;Učeň, Pavel a kol.;Management v informační společnosti
+866;978-80-903962-4-1;Teoretické základy informatiky;431;2007;Praha;Kernberg Publishing;1;1;1;Vaníček, Jiří a kol.;Informatika studium
+867;80-251-0519-9;Česko-anglický, anglicko-český slovník managementu : Czech-English, English-Czech dictionary of management;363;2006;Brno;Computer Press;1;1;1;Vavrečka, Mojmír -- Lednický, Václav a kol.;Jazyky
+873;80-7226-107-X;Mistrovství v Microsoft Access 97;26;1998;Praha;Computer Press;1;1;1;Viescas, John L.;
+874;80-251-0537-7;Mistrovství v Microsoft Office Access 2003;960;2005;Brno;CP Books;1;1;1;Viescas, John;Microsoft
+875;80-902230-9-5;Java pro zelenáče;240;2001;Praha;;1;1;1;Virius, Miroslav;
+877;80-7232-110-2;Od C k C++;227;2004;České Budějovice;Kopp;2;1;1;Virius, Miroslav;
+880;80-7226-750-7;Adobe InDesign 2 : uživatelská příručka;311;2002;Praha;Computer Press;1;1;1;Vlach, Martin -- Švéda, Petr;
+881;80-7226-791-4;Adobe Photoshop 7 : uživatelská příručka;368;2002;Praha;Computer Press;1;1;1;Vlach, Martin;
+882;80-85623-12-9;Softwarové právo pro každý den;105;1993;Praha;Grada;;1;1;Vlček, Martin;
+883;80-01-01905-5;Systémové inženýrství;291;1999;Praha;ČVUT;1;1;1;Vlček, Jaroslav;
+885;0-596-00252-1;XML schema;379;2002;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Vlist, Eric van der;
+886;80-7261-041-4;Management : teorie a praxe v informační společnosti;314;2001;Praha;Management Press;4;1;1;"Vodáček, Leo -- Vodáčková, Ol&#39;ga";
+887;3-446-16163-5;PostScript : Konzeption und Anwendungen;212;1991;München;Carl Hansen Verlag;2;1;3;Vollenweider, Peter;
+891;80-85943-40-9;Strategické řízení informačního systému a systémová integrace;323;1997;Praha;Management Press;1;1;1;Voříšek, Jiří;
+892;80-85896-11-7;Lotus Notes 3.x.: Podrobná příručka uživatele;4;1996;Praha;Computer Press;1;1;1;Vosáhlo, Pavel;
+893;80-7169-229-8;Internet: -CZ: Průvodce českého uživatele;210;1995;Praha;Grada;1;1;1;Vrabec, Vladimír -- Čepek, Aleš;
+895;80-247-1103-6;Zásady a postupy zavádění podnikových informačních systémů : praktická příručka pro podnikové manažery;187;2005;Praha;Grada;1;1;1;Vrana, Ivan -- Richta, Karel;Management v informační společnosti
+897;978-80-251-1945-7;GIMP : praktická uživatelská příručka;223;2008;Brno;Computer Press;2;1;1;Vybíral, Josef;
+899;80-7226-250-5;Microsoft Excel 2000 : programování ve VBA;679;1999;Praha;Computer Press;1;1;1;Walkenbach, John;Programování
+900;0-596-00027-8;Programming PERL;33;2000;Beijing;O\'Reilly Media, Inc.;3;1;2;Wall, Larry -- Christiansen, Tom;
+901;80-85896-95-8;Programování v jazyce Perl;18;1997;Praha;Computer;1;1;1;Wall, Larry -- Christiansen, Tom;
+902;1-56592-478-9;Programming Web Graphics with Perl and GNU Software;14;1999;Beijing;O\'Reilly Media, Inc.;1;1;2;Wallace, Shawn P.;
+903;80-251-0136-3;Programujeme grafiku v Microsoft Direct3D;358;2004;Brno;Computer Press;1;1;1;Walnum, Clayton;
+904;1-56592-314-6;Learning Perl/Tk;16;1999;Beijing;O\'Reilly Media, Inc.;1;1;2;Walsh, Nancy;
+906;0-13-148874-0;Web services platform architecture : SOAP, WSDL, WS-Policy, WS-Addressing, WS-BPEL, WS-Reliable Messaging, and more;416;2005;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Weerawarana, Sanjiva a kol.;
+910;80-86497-20-8;PHP a MySQL : rozvoj webových aplikací;718;2001;Praha;Soft Press;;1;1;Welling, Luke -- Thomson, Laura;
+913;80-7226-952-6;Zebezpečení sítí Cisco : autorizovaný samostudijní výukový kurz;753;2003;Praha;Computer Press;1;1;1;Wenstrom, Michael;
+915;0-7356-2267-1;More about software requirements : thorny issues and practical advice;201;2006;Redmond, WA;Microsoft Press;;1;2;Wiegers, Karl Eugene;
+917;80-247-1682-8;Prezentace : jak překonat obvyklé problémy a působit přesvědčivě;112;2006;Praha;Grada;1;1;1;Wieke, Thomas;No problem!
+918;80-7226-745-0;Velká kniha k Adobe Photoshop 7.0 : manuál k programu a škola výtvarných technik;540;2002;Praha;Computer Press;1;1;1;Willmore, Ben;
+919;978-0-471-32188-0;Terrain analysis : principles and applications;479;2000;New York, N.Y.;Wiley Publishing;;1;2;Wilson, John P;
+921;80-7169-089-9;Metody manažerského rozhodování;507;1996;Praha;Grada;1;1;1;Wisniewski, Mik;
+925;0-201-63354-X;TCP/IP Illustrated, Volume 2 : The Implementation;22;1995;Reading, MA;Addison-Wesley;;1;2;Wright, Gary R. -- Stevens, W. Richard;Addison-Wesley professional computing series
+926;80-251-0343-9;Algoritmy : datové struktury a programovací techniky;351;2004;Brno;Computer Press;1;1;1;Wróblewski, Piotr;
+927;0-7356-1185-8;XML Programming : core reference;704;2002;Washington, D.C.;Microsoft Press;;1;2;Wyke, Allen R. -- Rehman, Sultan;
+928;9781599047171;Intelligent complex adaptive systems;364;2008;Hershey, PA;IGI Pub.;;1;1;Yang, Ang;
+929;1-56592-434-7;MySQL & mSQL;15;1999;Beijing;O\'Reilly Media, Inc.;1;1;2;Yarger, Randy Jay -- Reese, George;
+931;80-7169-626-9;Microsoft Office 97. Tvorba dokonalých WWW stránek : Kompletní průvodce;475;1998;Praha;Grada;1;1;1;Young, Michael J.;
+934;80-86593-28-2;XML krok za krokem;471;2002;Praha;Mobil Media;1;1;1;Young, Michael J.;
+938;80-7300-133-0;MATLAB : tvorba uživatelských aplikací;215;2004;Praha;BEN - technická literatura;1;1;1;Zaplatílek, Karel -- Doňar, Bohuslav;
+940;80-7226-151-7;Microsoft Visual C++ 6.0 : Příručka programátora;25;1999;Praha;Computer Press;1;1;1;Zaratian, Beck;
+941;981-02-3029-X;Modeling, simulation, and control of flexible manufacturing systems : a Petri net approach;409;1999;Singapore;World Scientific;;1;2;Zhou, MengChu -- Venkatesh, Kurapati;Series in intelligent control and intelligent automation
+943;80-213-0244-5;Cvičení z metod operační analýzy;245;1995;Praha;PEF ČZU;3;1;1;Získal, Jan -- Kosková, Ivanka;
+944;80-213-0252-6;Metody optimálního rozhodování;259;1995;Praha;PEF ČZU;2;1;1;Získal, Jan;
+947;80-7169-643-9;VRML - tvorba dokonalých WWW stránek : Podrobný průvodce;202;1999;Praha;Grada;1;1;1;Zrzavý, Jakub;
+948;80-7226-049-9;Moderní počítačová grafika;16;1998;Praha;Computer Press;1;1;1;Žára, Jiří -- Beneš, Bedřich;
+949;80-7226-143-6;VRML 97 : Laskavý průvodce virtuálními světy;11;1999;Praha;Computer Press;1;1;1;Žára, Jiří;
+951;80-86497-66-6;Adobe Illustrator CS : oficiální výukový kurz;544;2004;Praha;Soft Press;;1;1;;
+954;80-86497-86-0;Adobe InDesign CS2 : [oficiální výukový kurz;454;2006;Praha;Soft Press;;1;1;;
+957;80-04-23997-8;Anglicko-český a česko-anglický slovník;1015;1994;Praha;SPN;9;1;1;;
+958;80-85896-98-2;Architektura PC 97 : Microsoft Corporation;23;1997;Praha;Computer Press;1;1;1;;
+962;;Co v manuálu nenajdete: Příručkajazyka C++ pro začátečníky i profesionály;762;1993;Brno;UNIS Publishing;1;1;1;;
+965;978-80-86815-79-4;DSLR : naučte se fotografovat digitální zrcadlovkou;256;2007;Brno;Zoner press;1;1;1;Freeman, Michael;Encycklopedie grafika a fotografie
+967;80-7238-361-2;Fraus Ilustrovaný studijní slovník: anglicko-český, česko-anglický: cenově výhodné vydání;1120;2004;Plzeň;FRAUS;;1;1;;
+969;1-58488-090-2;Handbook of graph theory;1167;2004;Boca Raton;CRC Press;;1;2;;Discrete mathematics and its applications
+971;80-7209-824-1;Ikony, symboly a piktogramy : vizuální komunikace ve všech jazycích;320;2006;Praha;Slovart;;1;1;;
+974;80-86119-03-3;Internet - ekonomické, marketingové a finanční aplikace : Strategie vyhledávání a prezentace;220;1998;Praha;Ekopress;1;1;1;;
+975;80-7200-027-6;Kapesní anglicko-český a česko-anglický slovník;479;1996;Havlíčkův Brod;Fragment;2;1;1;;
+977;80-7226-503-2;Linux : Dokumentační projekt;19;2001;Praha;Computer Press;2;1;1;;
+978;3-85084-134-0;London: City Map 1: 13 500;1;2001;Wien;Freytag & Berndt;;1;1;;
+980;80-7226-017-0;Microsoft Office 97 - Resource Kit;42;1997;Praha;Computer Press;1;1;1;;
+984;80-7226-002-2;Microsoft Windows NT Server Resource Kit - Díl IIB : Průvodce sítěmi : pro Windows NT Server verze 4.0;403;1997;Praha;Computer Press;1;1;1;;
+985;80-7226-002-2;Microsoft Windows NT Server Resource Kit - Díl III : Průvodce Internetem : pro Windows NT Server verze 4.0;18;1997;Praha;Computer Press;1;1;1;;
+987;80-85896-38-9;Microsoft Windows NT 3.5 : Návod pro správu, bezpečnost a kontrolu systému;11;1996;Praha;Computer Press;1;1;1;;
+988;80-7226-076-6;Microsoft Windows NT 4.0 Training Kit : Administrace sítě;40;1998;Praha;Computer Press;1;1;1;;
+989;80-7226-608-X;Microsoft Windows XP Professional: Resource Kit;34;2002;Praha;Computer Press;1;1;1;;
+990;80-7226-608-X;Microsoft Windows XP Professional Resource Kit;1468;2004;Brno;Computer Press;2;1;1;;
+992;80-85896-27-3;Microsoft Windows95 Resource Kit - 2. díl;583;1995;Praha;Computer Press;1;1;1;;
+993;80-7226-102-9;Microsoft Windows98 Resource Kit - 1. díl;36;1998;Praha;Computer Press;1;1;1;;
+994;80-7226-102-9;Microsoft Windows98 Resource Kit - 2. díl;32;1998;Praha;Computer Press;1;1;1;;
+1000;80-7201-039-5;Odborný česko-anglický slovník : z oblasti ekonomické, obchodní, finanční a právní;917;1996;Praha;Linde;2;1;1;;
+1001;80-85896-71-0;Oficiální duhové stránky Internetu;837;1996;Praha;Computer Press;1;1;1;;
+1006;80-251-0100-2;Poznejte svůj počítač;215;2004;Brno;Computer Press;1;1;1;;
+1011;80-85896-52-4;Programování ve Windows 95: Podrobná příručka programátora ve Windows95;18;1996;Praha;Computer Press;1;1;1;;
+1013;80-251-0227-0;S počítačem do Evropy;152;2004;Brno;Computer Press;1;1;1;Fejtová, Marcela a kol.;
+1014;80-85111-27-6;Seznam českých norem : Stav k 1.1.1996;707;1996;Praha;Český normalizační institut;;1;1;;
+1015;;Standardy státního informačního systému České republiky;259;1995;Praha;Ministerstvo hospodářství;;1;1;;
+1017;80-7049-041-1;Statistická ročenka České a Slovenské Federativní Republiky 1992;735;1992;Praha;SEVT;;1;1;;
+1018;80-7183-218-9;Statistická ročenka České republiky 2000;759;2000;Praha;Scientia;1;1;1;;
+1020;80-7223-760-8;Statistická ročenka České republiky 2002;793;2002;Praha;Scientia;1;1;1;;
+1021;80-250-0195-4;Statistická ročenka České republiky 2003;739;2003;Praha;Scientia;1;1;1;;
+1024;80-250-1258-1;Statistická ročenka České republiky 2006;799;2006;Praha;Scientia;1;1;1;;
+1025;80-202-0453-9;Statistická ročenka České republiky \'93;441;1993;Praha;Český statistický úřad;1;1;1;;
+1026;80-202-0524-1;Statistická ročenka České republiky \'94 : Statistical Yearbook of the Czech Republic;504;1994;Praha;Český statistický úřad;1;1;1;;
+1028;80-7183-061-5;Statistická ročenka České republiky \'96 : Statistical yearbook of the Czech Republik \'96;707;1996;Praha;Český statistický úřad;1;1;1;;
+1029;80-7183-105-0;Statistická ročenka České republiky \'97 : Statistical yearbook of the Czech Republic \'97;711;1997;Praha;Český statistický úřad;1;1;1;;
+1030;80-7183-145-X;Statistická ročenka České republiky 98 : Statistical yerbook of the Czech Republic;743;1998;Praha;;1;1;1;;
+1033;978-0-06-083309-1;The big book of new design ideas;384;2005;New York, N.Y.;Collins Design;;1;2;;
+1035;0-226-10403-6;The Chicago manual of style;956;2003;Chicago;The University of Chicago Press;1;1;2;;
+1036;1-55860-647-5;The Object Data Standard : ODMG 3.0;6;2000;San Francisco, CA;Morgan Kaufmann Publishers;;1;2;;
+1037;0-07-037644-1;The UNIX Dictionary of Commands, Terms, andAcronyms;10;1996;New York, N.Y.;Mc Graw-Hill Book Company;;1;2;;
+1040;80-200-0502-3;Umelá inteligence 1;264;1993;Praha;Aurora;1;1;1;Vladimír Mařík, Olga Štepánková, Jiří Lažanský;
+1041;80-200-0504-8;Umělá inteligence 2;373;1997;Praha;;1;1;1;;
+1042;80-200-0502-1;Umělá inteligence 3;328;2001;Praha;Academia;1;1;1;Mařík, Vladimír -- Štěpánková, Olga -- Lažanský, Jiří a kol.;
+1045;3-540-76266-3;Visual explorations in finance : with self-organizing maps;258;2000;London;Springer Verlag;2;1;2;;Springer Finance
+1047;80-7169-595-5;Výkladový slovník česko-anglický a anglicko-český : podnikové informační systémy;133;2000;Praha;Grada;1;1;1;;
+1048;80-7226-293-9;Vytváříme WWW stránky a spravujeme moderní web site;12;2000;Praha;Computer Press;4;1;1;;Internet
+1049;80-85896-77-X;Windows NT 4.0 Workstation : Resource Kit;54;1997;Praha;Computer Press;1;1;1;;
+1051;80-86593-14-2;XHTML : průvodce vývojáře;479;2002;Brno;Mobil Media;1;1;1;;
+1052;978-80-251-2360-7;333 tipů a triků pro CSS : [sbírka nejužitečnějších návodů pro váš web];272;2009;Brno;Computer Press;1;1;1;Martin Domes;
+1053;978-80-247-2211-5;Velký průvodce JavaScriptem : tvorba interaktivních webových stránek v praxi;516;2009;Praha;Grada;1;1;1;Dave Thau;
+1054;978-0-07-160078-1;Reshaping your business with Web 2.0 : using the new collaborative technologies to lead business transformation;259;2009;New York, N.Y.;Mc Graw-Hill Book Company;;1;2;Vince Casarez;
+1064;978-80-247-2725-7;XML technologie : principy a aplikace v praxi;267;2008;Praha;Grada;1;1;1;Irena Mlýnková;
+1065;978-80-251-2231-0;Google Analytics : podrobný průvodce webovými statistikami;334;2009;Brno;Computer Press;1;1;1;Brian Clifton;
+1066;978-80-251-2057-6;Programujeme Mashup aplikace pro Web 2.0 v PHP;280;2008;Brno;Computer Press;1;1;1;Shu-Wai Chow;
+1067;978-80-86815-62-6;Efektivní softwarové projekty;255;2007;Brno;Zoner Press;1;1;1;Guckenheimer, Sam -- Perez, Juan J.;Encyklopedie Zoner Press
+1068;978-80-251-2050-7;Bezpečný kód : [techniky a strategie tvorby bezpečných webových aplikací];895;2008;Brno;Computer Press;1;1;1;Howard, Michael -- LeBlanc, David;
+1071;80-247-0526-5;ASP.NET : začínáme programovat : podrobný průvodce začínajícího uživatele;228;2003;Praha;Grada;1;1;1;Písek, Slavoj;
+1072;80-86815-31-5;Google hacking;472;2005;Brno;Zoner Press;1;1;1;Long, Johnny;Encyklopedie Zoner Press
+1075;978-0-8144-1073-8;E-learning 2.0 : proven practices and emerging technologies to achieve real results;236;2009;New York, N.Y.;Amacom;1;1;1;Rosen, Anita;
+1076;978-0-7506-8945-8;eMarketing eXcellence;508;2008;Amsterdam;Butterworth-Heinemann;3;1;2;Chaffey, Dave -- Smith, P. R.;
+1077;978-0-13-613516-6;SOA design pattern;814;2008;Indianapolis, IN;Prentice Hall Inc.;1;1;2;Erl, Thomas;
+1078;978-0-273-70752-3;E-business and e-commerce management : strategy, implementation, and practice;663;2006;New York, N.Y.;Pearson;3;1;2;Chaffey, Dave;
+1082;978-1-4129-1111-5;E-learning : concepts and practice;186;2006;London;SAGE Publications;;1;2;Holmes, Bryn -- Gardner, John;
+1086;978-0-684-83130-5;The codebreakers : the story of secret writing;1181;1996;New York, N.Y.;Scribner;;1;2;Kahn, David;
+1087;0-8144-0721-8;The AMA handbook of e-learning : effective design, implementation, and technology solutions;450;2003;New York, N.Y.;AMACOM;;1;2;Piskurich, George M.;
+1088;0792372042;Information hiding : steganography and watermarking : attacks and countermeasures;137;2001;Boston, MA;Kluwer Academic Publishers;;1;2;Johnson, Neil F. -- Duric, Zoran -- Jajodia, Sushil;
+1090;978-0-387-25464-7;A classical introduction to cryptography : applications for communications security;335;2005;New York, N.Y.;Springer Verlag;;1;2;Vaudenay, Serge;
+1092;80-901984-4-9;Umělá inteligence v modelování a řízení;187;1996;Praha;BEN - technická literatura;;1;1;Pokorný, Miroslav;
+1093;80-7300-141-1;Mobilní roboty : pohony, senzory, řízení;243;2005;Praha;BEN - technická literatura;1;1;1;Novák, Petr;
+1096;80-7300-068-7;Umělá inteligence - hrozba nebo naděje?;142;2003;Praha;BEN - technická literatura;1;1;1;Zelinka, Ivan;
+1097;80-247-0694-6;Myslíme v jazyku Delphi 7 : knihovna zkušeného programátora;578;2003;Praha;Grada;1;1;1;Cantu, Marco;Myslíme v--
+1100;978-0-321-50892-8;The LaTeX Graphics companion;925;2008;Upper Saddle River, N.J.;Addison-Wesley;2;1;2;Goossens, Michel. a kol.;Addison-Wesley series on tools and techniques for computer typesetting
+1101;80-7185-740-8;Krásné písmo ve vývoji latinky II.;656;2005;Praha;Paseka;2;1;1;Muzika, František;
+1102;80-7185-740-8;Krásné písmo ve vývoji latinky I.;657;2005;Praha;Paseka;2;1;1;Muzika, František;
+1103;80-200-0502-1;Umělá inteligence 5;544;2007;Praha;Academia;1;1;1;Mařík, Vladimír -- Štěpánková, Olga -- Lažanský, Jiří a kol.;
+1105;80-200-0502-1;Umělá inteligence;264;1993;Praha;Academia;1;1;1;Mařík, Vladimír -- Štěpánková, Olga -- Lažanský, Jiří a kol.;
+1106;3-540-22494-7;How to solve it : modern heuristics;554;2004;Berlin;Springer Verlag;2;1;2;Michalewicz, Zbigniew -- Fogel, David B.;
+1112;978-0-19-568001-0;Getting started with MATLAB 7 : a quick introduction for scientists and engineers;244;2006;Oxford;Oxford University Press;;1;1;Pratab, Rudra;
+1115;978-0-13-157008-5;Usability engineering : process, products, and examples;314;2008;Upper Saddle River, N.J.;Pearson/Prentice Hall;;1;1;Leventhal, Laura M. -- Barnes, Julie A.;
+1116;978-0-470-18548-3;Handbook of usability testing : how to plan, design, and conduct effective tests;348;2008;Indianapolis, IN;Wiley Publishing;2;1;2;Rubin, Jeffrey -- Chisnell, Dana;
+1117;978-80-251-2309-6;Databáze v C# 2008 : průvodce programátora;424;2009;Brno;Computer Press;1;1;1;Agarwal, Vidya Vrat -- Huddleston, James;
+1120;978-80-7413-008-3;ASP.NET 3.5 a C# 2008 : tvorba dynamických stránek profesionálně;1584;2008;Brno;Zoner Press;1;1;1;MacDonald, Matthew -- Szpuszta, Mario;
+1121;0-471-69420-7;MATLAB : an introduction with applications;343;2005;Hoboken, N.J.;John Wiley & Sons;2;1;2;Gilat, Amos;
+1122;978-0-12-485967-8;Neural networks in finance : gaining predictive edge in the market;243;2005;Burlington, MA;Elsevier Academic Press;;1;2;McNelis, Paul D.;Academic Press advanced finance series
+1128;978-0-387-78188-4;Modern multivariate statistical techniques : regression, classification, and manifold learning Izenman;731;2008;New York, N.Y.;Springer Verlag;;1;2;Izenman, Alan Julian;Springer texts in statistics
+1138;0-9634884-0-6;Visualizing data;360;1993;Murray Hill, N.J.;AT&T Bell Laboratories;;1;2;Cleveland, William S.;
+1142;80-247-0972-4;XML : pohotová referenční příručka : referenční příručka programátora ke XML, XPath, XSLT, XML Schema, SOAP a dalším;342;2006;Praha;Grada;1;1;1;Skonnard, Aaron -- Gudgin, Martin;Průvodce
+1143;80-247-0565-6;XML : začínáme programovat : podrobný průvodce začínajícího uživatele;214;2003;Praha;Grada;1;1;1;Žák, Miroslav;
+1146;978-80-251-2328-7;Mistrovství - databáze : profesionální průvodce tvorbou efektivních databází;584;2009;Brno;Computer Press;;1;1;Conolly, Thomas -- Begg, Carolyn E. -- Holowczak, Richard;
+1150;978-80-251-2221-1;Microsoft Visual Basic 2008 : krok za krokem;440;2008;Brno;Computer Press;1;1;1;Halvorson, Michael;
+1151;978-80-251-2333-1;Adobe Flash CS4 Professional : 100 nejlepších postupů;264;2009;Brno;Computer Press;1;1;1;Schaeffer, Mark;
+1153;978-80-7080-691-3;MATLAB II. : optimalizácia;226;2008;Praha;Vydavatelství VŠCHT;;1;9;Bartko, Róbert;
+1154;80-89018-87-4;Evolučné výpočty a ich využitie v praxi;159;2005;Bratislava;Iris;1;1;9;Sekaj, Ivan;
+1155;80-7225-030-2;Modelování a identifikace systémů;276;1999;Ostrava;Montanex;;1;1;Noskievič, Petr;
+1156;978-80-7204-605-8;Pokročilé metody analýz a modelování v podnikatelství a veřejné správě;340;2008;Brno;Akademické nakladatelství CERM;1;1;1;Dostál, Petr;
+1157;80-7318-355-2;MATLAB - základy pro studenty automatizace a informačních technologií;303;2005;Zlín;Univerzita Tomáše Bati ve Zlíně;1;1;1;Perůtka, Karel;
+1159;978-80-7261-186-7;Moderní management jakosti : principy, postupy, metody;377;2008;Praha;Management Press;1;1;1;Nenadál, Jaroslav a kol.;
+1161;978-80-251-2767-4;PHP 6, MySQL, APACHE : vytváříme webové aplikace;816;2009;Brno;Computer press;;1;1;Boronczyk, Tim a kol.;
+1165;978-80-251-2165-8;Layout : velký průvodce grafickou úpravou;193;2009;Brno;Computer Press;1;1;1;Ambrose, Gavin -- Harris, Paul;
+1167;80-86056-58-9;PLC a automatizace. 1. díl;223;1999;Praha;BEN - technická literatura;1;1;1;Šmejkal, Ladislav -- Martinásková, Marie;
+1169;1-60005-013-1;Business rule revolution : running business the right way;291;2006;Cupertino, CA;Happy About;;1;2;Halle, Barbara von -- Goldberg. Larry;
+1170;978-007-126782-3;Software engineering : a practitioners approach;895;2010;Boston, MA;Mc Graw-Hill Book Company;;1;2;Pressman, Roger S.;
+1172;978-80-251-2334-8;Adobe Flash CS4 Professional : oficiální výukový kurz;389;2009;Brno;Computer Press;;1;1;nezadano;
+1173;978-1-58705-260-6;Security threat mitigation and response : understanding Cisco security MARS;370;2007;;;;1;2;Tesch, Dale -- Abelar, Greg;
+1176;978-80-7413-042-7;WordPress : efektivní publikování na webu;256;2009;Brno;Zoner Press;1;1;1;McNulty, Scott;
+1177;978-1-58720-111-0;Wireless networks first-step;238;2005;Indianapolis, IN;Cisco Press;;1;2;Geier, James T.;First-step series
+1183;978-0-7879-8425-0;E-learning by design;596;2006;San Francisco, CA;Pfeiffer;;1;2;Horton, William K.;
+1184;978-0-7879-6994-3;Graphics for learning : proven guidelines for planning, designing, and evaluating visuals in training materials;504;2004;San Francisco, CA;Pfeiffer;;1;2;Clark, Ruth Colvin -- Lyons, Chopeta C.;
+1185;978-80-251-1681-4;Microsoft Office Project : hotová řešení : [pro verze 2000 až 2007];308;2007;Brno;Computer Press;1;1;1;Hyndrák, Karel;
+1187;80-8063-219-7;Akademická příručka;481;2006;Martin;Osveta;;1;1;Meško, Dušan -- Katuščák, Dušan -- Findra, Ján a kol.;
+1193;1-59140-903-9;Artificial neural networks in real-life applications;375;2006;Hershey, PA;Idea Group Pub.;;1;2;Rabunal, Juan Ramón -- Dorado, Julián;
+1196;978-80-200-1477-1;Modely a systémy;97;2007;Praha;Academia;1;1;1;Křemen, Jaromír;
+1197;80-85977-16-8;Úsvit robotů - soumrak lidstva;219;1999;Praha;Vesmír;1;1;1;Warwick, Kevin;
+1198;80-247-0340-8;JSP - Java Server Pages : podrobný průvodce začínajícího tvůrce;418;2003;Praha;Grada;1;1;1;Bollinger, Gary -- Natarajan, Bharathi;
+1199;80-247-0667-9;Programujeme Jakarta Struts : tvorba webových aplikací se servlety a stránkami JSP;446;2003;Praha;Grada;1;1;1;Cavaness, Chuck;
+1202;978-80-251-1517-6;Z kodéra vývojářem : nástroje a techniky pro opravdové programátory;287;2007;Brno;Computer Press;1;1;1;Gunderloy, Mike;
+1206;978-0-387-79710-6;Combinatorics and graph theory;381;2008;New York, N.Y.;Springer Verlag;2;1;2;John M. Harris, Jeffry L. Hirst, Michael J. Mossinghoff;
+1212;978-0-415-43093-7;Information systems in public administration : understanding e-government;131;2008;New York, N.Y.;Routledge;;1;2;Vincent Homburg;
+1213;978-1-4200-8964-6;The top ten algorithms in data mining;215;2009;Boca Raton;CRC Press;;1;2;Xindong Wu, Vipin Kumar;
+1216;978-0-387-31073-2;Pattern recognition and machine learning;738;2006;New York, N.Y.;Springer Verlag;;1;2;Christopher M Bishop;
+1217;978-0-596-00948-9;Applied software project management;308;2006;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Andrew Stellman, Jennifer Greene;
+1221;1-59059-441-X;Regular expression recipes : a problem-solution approach;289;2005;Berkeley, CA;Apress;;1;2;Nathan A. Good;The experts voice in open source
+1223;978-0-486-40258-1;Combinatorial optimization : algorithms and complexity;496;1998;Mineola, N.Y.;Dover Publications;;1;2;Christos H. Papadimitriou, Kenneth Steiglitz;
+1232;978-1-58450-680-5;Game coding complete;908;2009;Boston, MA;Course Technology;3;1;2;Mike McShaffrey;
+1236;978-0-471-47064-9;Data mining techniques : for marketing, sales, and customer relationship management;643;2004;Indianapolis, IN;Wiley Publishing;2;1;2;Michael J. A. Berry, Gordon Linoff;
+1239;0-262-51191-6;Software engineering for Internet applications;399;2006;Cambridge, MA;MIT Press;;1;2;Eve Astrid Andersson, Philip Greenspun, Andrew Grumet;
+1241;978-0-201-63361-0;Design patterns : elements of reusable object-oriented software;395;1995;Reading, MA;Addison-Wesley;;1;2;Erich Gamma;Addison-Wesley professional computing series
+1242;0-07-005489-4;Schaums outline of theory and problems of graph theory;293;1997;New York, N.Y.;Mc Graw-Hill Book Company;;1;2;V. K. Balakrishnan;
+1245;978-1-84628-034-4;Mathematics for computer graphics;248;2006;London;Springer Verlag;2;1;2;Vince, John;
+1248;978-80-7413-041-0;Silverlight : datové služby;378;2009;Brno;Zoner Press;1;1;1;Papa, John;
+1252;80-251-0795-7;Automatizace a automatizační technika : Prostředky automatizační techniky . III;280;2005;Brno;CP Books;2;1;1;Beneš, Pavel a kol.;
+1253;80-7226-249-1;Automatizace a automatizační technika : Automatické systémy . IV.;166;2000;Praha;Computer Press;1;1;1;Oplatek, František a kol.;Všechny cesty k informacím
+1256;978-80-251-2737-7;Python 3 : výukový kurz;584;2010;Brno;Computer Press;1;1;1;Summerfield, Mark;
+1258;978-80-247-3155-1;Diferencované řízení vztahů se zákazníky : [moderní strategie růstu výkonnosti podniku];268;2009;Praha;Grada;1;1;1;Lošťáková, Hana a kol.;
+1259;978-80-251-2898-5;Umění programování : Seminumerické algoritmy. . 2. díl.;763;2010;Brno;Computer Press;1;1;1;Knuth, Donald Ervin;
+1260;978-80-251-2141-2;Mistrovství ve Windows Presentation Foundation : [aplikace = kód + markup];928;2008;Brno;Computer Press;1;1;1;Petzold, Charles;
+1263;978-80-251-2795-7;Internetový marketing : prosaďte se na webu a sociálních sítích;304;2010;Brno;Computer Press;1;1;1;Janouch, Viktor;
+1264;978-3-540-92200-1;Engineering web applications;349;2009;New York, N.Y.;Springer Verlag;;1;2;Casteleyn, Sven a kol.;
+1265;978-0-596-80302-5;Developing large web applications : [producing code that can grow and thrive] Loudon, Kyle;279;2010;Sebastopol, CA;O\'Reilly Media, Inc.;1;1;2;Loudon, Kyle;
+1267;978-0-596-15381-6;Programming the Semantic Web;280;2009;Sebastopol, CA;O\'Reilly Media, Inc.;1;1;1;Segaran, Toby -- Taylor, Jamie -- Evans, Colin;
+1268;978-80-7300-244-2;Blender : naučte se 3D grafiku;286;2009;Praha;BEN - technická literatura;2;1;1;Pokorný, Pavel;
+1272;978-80-7232-368-5;Java : bohatství knihoven;251;2008;České Budějovice;Kopp;3;1;1;Pavel Herout;
+1273;978-80-7232-328-9;Java : grafické uživatelské prostředí a čeština;316;2009;České Budějovice;Kopp;2;1;1;Pavel Herout;
+1275;80-7178-376-5;Kognitivní psychologie;636;2002;Praha;Portál;1;1;1;Robert J. Sternberg;
+1276;978-0-470-27930-4;Why dont students like school?;228;2009;San Francisco, CA;Jossey-Bass Publishers;1;1;2;Daniel T. Willingham;
+1277;0787960519;E-Learning and the science of instruction : proven guidelines for consumers and designers of multimedia learning;322;2003;San Francisco, CA;Jossey-Bass Publishers;1;1;2;Ruth Colvin Clark, Richard E. Mayer;
+1282;978-0-262-54178-7;Where the action is : the foundations of embodied interaction;233;2004;Massachusetts;MIT Press;;1;2;Paul Dourish;
+1285;978-1-59059-979-2;Spring recipes : a problem-solution approach;727;2008;New York, N.Y.;Apress;;1;2;Gary Mak;
+1286;978-0-321-55346-1;Eclipse plug-ins;878;2009;Upper Saddle River, N.J.;Addison-Wesley;3;1;2;Eric Clayberg, Dan Rubel;
+1288;978-0-13-701287-9;JavaFX : developing rich Internet applications;359;2009;Upper Saddle River, N.J.;Addison-Wesley;;1;2;Jim Clarke, Jim Connors, Eric J. Bruno;
+1289;978-1-4302-1827-2;Practical eclipse rich client platform projects;335;2009;New York, N.Y.;Apress;;1;2;Vladimir Silva;
+1295;978-80-251-3034-6;C# 2010 : rychlý průvodce novinkami a nejlepšími postupy;624;2010;Brno;Computer Press;1;1;1;Trey Nash;
+1296;978-80-7413-094-6;C# 4.0 : řešení praktických programátorských úloh;656;2010;Brno;Zoner Press;1;1;1;Ben Watson;
+1298;978-80-7413-102-8;Řízení životního cyklu aplikací ve Visual Studiu 2010;671;2010;Brno;Zoner Press;1;1;1;Mickey Gousset;
+1300;978-80-251-3152-7;jQuery : kuchařka programátora;436;2010;Brno;Computer Press;1;1;1;;
+1301;0-8039-3647-8;Fundamentals of item response theory;174;1991;Newbury Park, Calif.;Sage Publications;;1;2;Ronald K. Hambleton, Hariharan Swaminathan, H. Jane Rogers;
+1304;978-3-639-07891-6;Visual tracking for augmented reality : edge-based tracking techniques for AR applications;158;2009;Saarbrücken;VDM;;1;2;Georg Klein;
+1305;978-3-211-79169-1;Interactive environments with open-source software : 3D walkthroughs and augmented reality for architects with Blender 2.43, DART 3.0 and ARToolKit 2.72;239;2009;Wien;Springer Verlag;;1;2;Wolfgang Höhl;
+1306;978-0-596-80227-1;Search patterns;180;2010;Sebastopol, CA;O\'Reilly Media, Inc.;;1;2;Peter Morville, Jeffery Callender;
+1308;978-0-201-75867-2;3D user interfaces : theory and practice;478;2005;Boston, MA;Addison-Wesley;;1;2;Doug A. Bowman;
+1310;978-0-12-206093-9;Machine vision : theory, algorithms, practicalities;934;2005;Amsterdam;Elsevier;3;1;2;E. R. Davies;
+1311;978-1-59749-272-0;Pattern recognition;961;2009;Burlington, MA;Academic Press;4;1;2;Sergios Theodoridis, Konstantinos Koutroumbas;
+1312;80-7300-158-6;Technická diagnostika : senzory, metody, analýza signálu;406;2006;Praha;BEN - technická literatura;1;1;2;Marcel Kreidl, Radislav Šmíd;Senzory neelektrických veličin
+1313;978-80-214-3530-8;Kinematika a dynamika mechatronických systémů;158;2007;Brno;Akademické nakladatelství CERM;1;1;1;Robert Grepl;
+1314;978-80-7300-226-8;Modelování mechatronických systémů v Matlab SimMechanics;151;2007;Praha;BEN - technická literatura;1;1;1;Robert Grepl;
+1315;978-80-251-1649-4;Simulace podnikových procesů;201;2007;Brno;Computer Press;1;1;1;Martin Dlouhý;
+1316;978-80-251-2523-6;Automatizace a automatizační technika III : prostředky automatizační techniky;296;2009;Brno;Computer Press;4;1;1;Jan Chlebný;
+1317;978-1-58948-165-7;Building European spatial data infrastructures;91;2007;Redlands, CA;ESRI Press;1;1;2;Ian Masser;
+1319;978-0-13-168728-8;Digital image processing;954;2008;Upper Saddle River, N.J.;Prentice Hall Inc.;3;1;2;Rafael C. Gonzalez, Richard E. Woods;
+1324;978-0-13-235416-5;C++ GUI programming with Qt 4;718;2008;Upper Saddle River, N.J.;Prentice Hall Inc.;2;1;2;Jasmin Blanchette, Mark Summerfield;
+1325;978-0-321-57936-2;Succeeding with agile : software development using Scrum;475;2010;Upper Saddle River, N.J.;Addison-Wesley;;1;2;Mike Cohn;
+1327;978-1-59749-278-2;Programming Lego Mindstorms NXT;187;2008;Burlington, MA;Syngress;;1;2;Owen Bishop;
+1328;978-1-59749-152-5;Building robots with Lego Mindstorms NXT;447;2007;Burlington, MA;Syngress;;1;2;David Astolfo;
+1330;978-1-59327-211-1;The LEGO Mindstorms NXT 2.0 discovery book : a beginners guide to building and programming robots;297;2010;San Francisco, CA;No Starch Press;;1;2;Laurens Valk;
+1331;0-205-27691-1;Multimedia for learning : methods and development;580;2001;Boston, MA;Allyn and Bacon;3;1;2;Stephen M. Alessi, Stanley R. Trollip;
+1332;978-0-7879-9245-3;Better than bullet points : creating engaging e-learning with PowerPoint;338;2008;San Francisco, CA;Pfeiffer;;1;2;Jane Bozarth;
+1333;9780262012430;Introduction to machine learning;537;2010;Cambridge, MA;MIT Press;2;1;2;Ethem Alpaydin;
+1334;978-0-262-51412-5;Semi-supervised learning;508;2010;Cambridge, MA;MIT Press;;1;2;Olivier Chapelle, Bernhard Schölkopf;
+1337;978-0-470-08457-1;Guidance for the verification and validation of neural networks;133;2007;Hoboken, N.J.;IEEE Computer Society;;1;2;Laura L Pullum, Brian J. Taylo,r Majorie A. Darrah;
+1344;978-80-87109-21-2;Dejiny ekonomických teorií;541;2010;Praha;Havlíček Brain Team;1;1;1;Milan Sojka;
+1347;978-3-642-06856-0;Kernel based algorithms for mining huge data sets : supervised, semi-supervised, and unsupervised learning;260;2010;Berlin;Springer Verlag;;1;2;Te-Ming Huang, Vojislav Kecman, Ivica Kopriva;
+1348;978-80-251-2109-2;Adobe Flash CS3 : oficiální výukový kurz;341;2008;Brno;Computer Press;1;1;1;Lukáš Krejčí;
+1356;1-59158-249-0;Multimedia projects in education : designing, producing, and assessing;219;2006;Westport, Conn.;Libraries Unlimited;3;1;2;Karen S. Ivers, Ann E. Barron;
+1357;978-0-8129-7142-2;Color : a natural history of the palette;448;2004;New York, N.Y.;Random House Trade Paperbacks;;1;2;Victoria Finlay;
+1358;978-0-500-20398-9;Digital art;256;2008;London;Thames & Hudson;2;1;2;Christiane Paul;
+1359;978-0-06-121006-8;An eye for color;245;2007;New York, N.Y.;Collins Design;;1;2;Olga Gutierrez de la Roza;
+1360;978-0-470-38135-9;Understanding color : an introduction for designers;258;2011;Hoboken, N.J.;Wiley Publishing;4;1;2;Linda Holtzschue;
+1363;978-0-06-174836-3;The visual miscellaneum : a colorful guide to the worlds most consequential trivia;255;2009;New York, N.Y.;Collins Design;1;1;2;David McCandless;
+1367;978-1-59253-329-9;Complete color harmony workbook : a workbook and guide to creative color combinations;224;2007;Gloucester, Mass.;Rockport Publishers;;1;2;Kiki Eldridge, Lesa Sawahata;
+1368;978-0-500-28629-6;Art of the digital age;223;2006;London;Thames & Hudson;1;1;2;Bruce Wands;
+1370;978-0-7148-4782-5;Art and electronic media;304;2009;London;Phaidon Press;;1;2;Edward A. Shanken;
+1372;978-0-470-53188-4;Supply chain management : best practices;280;2010;Hoboken, N.J.;John Wiley & Sons;2;1;2;David Blanchard;
+1375;978-0-8144-0926-8;Supply chain excellence : a handbook for dramatic improvement using the SCOR model;277;2007;New York, N.Y.;Amacom;2;1;2;Peter Bolstorff, Robert Rosenbaum;
+1378;978-3-639-25776-2;Automated Negotiation in Multi-Agent based Electronic Business : Negotiation in business-to-business (B2B) transactions in supply chain management (SCM) for multi-agent based electronic business (e-business);144;2010;Saarbrucken;VDM;;1;2;Golenur Huq;
+1381;978-1-60426-600-9;Mass communication : living in a media world;660;2011;Washington, D.C.;CQ Press;3;1;2;Ralph E. Hanson;
+1383;978-80-7391-360-1;Grafický design pro samouky : praktický průvodce pro začátečníky;224;2010;Praha;Slovart;;1;1;Tony Seddon, Jane Waterhouse;
+1384;978-0-9563556-0-7;Cloud computing explained : handbook for enterprise implementation;420;2010;London;Recursive Ltd.;;1;2;John Rhoton;
+1387;978-80-251-2820-6;iPhone SDK : průvodce vývojem aplikací pro iPhone a iPod touch;480;2010;Brno;Computer Press;1;1;1;Dave Mark, Jeff LaMarche;
+1388;978-80-251-3145-9;97 klíčových znalostí programátora : [zkušenosti expertů z praxe];240;2010;Brno;Computer Press;;1;1;Kevlin Henney;
+1389;978-80-251-2190-0;C/C++ : hotová řešení;376;2009;Brno;Computer Press;1;1;1;Radim Dostál;
+1390;978-80-251-2654-7;Objective-C 2.0 : výukový kurz programování pro Mac OS X a iPhone;550;2010;Brno;Computer Press;1;1;1;Stephen G. Kochan;
+1392;80-86851-54-0;Datové modelování;177;2006;Praha;Alfa Publishing;1;1;1;Vojtěch Merunka;
+1394;978-80-247-2746-2;CorelDRAW X4 : praktická příručka;127;2009;Praha;Grada;1;1;1;Petr Novotný;
+1395;978-80-247-1266-6;Pascal : pokročilejší programátorské techniky;264;2007;Praha;Grada;1;1;1;Karel Putz;
+1397;978-80-251-3032-2;333 tipů a triků pro GIMP : [rychlá řešení pro každou situaci];268;2010;Brno;Computer Press;1;1;1;Vlastimil Modr;
+1400;978-80-7300-218-3;Evoluční výpočetní techniky : principy a aplikace;534;2009;Praha;BEN - technická literatura;1;1;1;Ivan Zelinka;
+1402;80-7168-590-9;Slovník počítačových pojmů a zkratek;183;1998;Praha;Fortuna;2;1;1;Rudolf Voráček;
+1403;978-80-251-2854-1;97 klíčových znalostí projektového manažera : [zkušenosti expertů z praxe];240;2010;Brno;Computer Press;1;1;1;Barbee Davis;
+1407;978-1-58948-140-4;A to Z GIS : an illustrated dictionary of geographic information systems;268;2006;Redlands, CA;ESRI Press;2;1;2;Tasha Wade, Shelly Sommer;
+1408;0-201-70919-8;Discover Pascal in Delphi;461;2002;Harlow;Addison-Wesley;;1;2;Sue Walmsley, Shirley A. Williams;
+1409;;The business analysts handbook;411;2009;Boston, MA;Course Technology;;1;2;Howard Podeswa;
+1412;978-1-4180-0103-2;Exploring multimedia for designers;286;2008;Clifton Park, NY;Thomson Delmar Learning;;1;2;Ray Villalobos;
+1415;978-80-247-2895-7;Principy krásného webdesignu : průvodce krok za krokem;145;2010;Praha;Grada;1;1;1;Beaird, Jason;
+1417;978-80-251-1660-9;Programátor pragmatik : jak se stát lepším programátorem a vytvářet kvalitní software;266;2007;Brno;Computer Press;1;1;1;Andrew Hunt, David Thomas;
+1419;978-0-471-41829-0;Design for communication : conceptual graphic design basics;255;2003;Hoboken, N.J.;John Wiley & Sons;;1;2;Elizabeth Resnick;
+1421;978-0-596-15414-1;Programming interactivity : a designers guide to processing, Arduino, and openFrameworks;712;2009;Beijing;O\'Reilly Media, Inc.;1;1;2;Joshua J. Noble;
+1422;978-1-60427-007-5;Seven steps to mastering business analysis;353;2009;Ft. Lauderdale, Fla.;J. Ross Pub.;;1;2;Barbara A. Carkenord;
+1423;978-0-13-147381-2;Cross-platform GUI programming with wxWidgets;700;2006;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Julian Smart, Kevin Hock, Stefan Csomor;Bruce Perens Open Source series
+1424;978-0-13-187905-8;An introduction to design patterns in C++ with Qt 4;624;2007;Upper Saddle River, N.J.;Prentice Hall Inc.;;;2;Alan Ezust, Paul Ezust;Bruce Perens Open Source series
+1426;978-3-7212-0145-1;Grid systems in graphic design : a visual communication manual for graphic designers, typographers and three dimensional designers = Raster systeme für die visuelle Gestaltung : ein Handbuch fur Grafiker, Typografen und Ausstellungsgestalter;176;2010;Sulgen;Niggli;7;1;2;Josef Muller-Brockmann;
+1427;978-1-56898-772-9;Graphic design theory : readings from the field;151;2009;New York, N.Y.;Princeton Architectural Press;1;;2;Helen Armstrong;
+1431;0-201-00023-7;Data structures and algorithms;427;1983;Reading, MA;Addison-Wesley;;1;2;Alfred V. Aho, John E. Hopcroft, Jeffrey D. Ullman;
+1433;;Video-based rendering;197;2005;Wellesley, MA;AK Peters;;1;2;Marcus A. Magnor;
+1434;978-1-56881-472-8;GPU Pro : advanced rendering techniques;715;2010;Natick, Mass.;AK Peters;;1;2;Wolfgang F. Engel;
+1435;978-1-58948-041-4;Land administration for sustainable development;487;2010;Redlands, CA;ESRI Press;1;1;2;Ian Williamson;
+1436;978-1-58948-231-9;GIS for decision support and public policy making;189;2009;Redlands, CA;ESRI Press;;1;2;Christopher Thomas, Nancy Sappington;
+1440;0-13-142189-1;Java testing and design : from unit testing to automated Web tests;489;2004;Upper Saddle River, N.J.;Prentice Hall Inc.;;1;2;Frank Cohen;
+1441;1-932394-27-3;SWT/JFace in action;468;2005;Greenwich;Manning;;;2;Matthew Scarpino;
+1444;978-0-13-142246-9;Core J2EE patterns : best practices and design strategies;650;2003;Upper Saddle River, N.J.;Prentice Hall Inc.;2;1;2;Deepak Alur, John Crupi, Dan Malks;
+1445;ISBN;Professional android 2 application development;543;2010;Indianapolis, IN;Wiley Publishing;;1;2;Reto Meier;
+1447;0-201-63181-4;Software inspection;471;1993;Wokingham;Addison-Wesley;;1;2;Tom Gilb, Dorothy Graham, Susannah Finzi;
+1448;978-0-470-04492-6;Handbook of applied algorithms : solving scientific, engineering and practical problems;544;2008;Hoboken, N.J.;Wiley-Interscience;;1;2;Amiya Nayak, Ivan Stojmenovic;
+1449;978-0-321-58571-4;OSGi and Equinox : creating highly modular Java systems;475;2010;Upper Saddle River, N.J.;Addison-Wesley;;1;2;Jeff McAffer, Paul VanderLei, Simon Archer;
+1450;978-0-470-23059-6;Essentials of business processes and information systems;170;2009;Hoboken, N.J.;Wiley/SAP;;1;2;Simha Magal, Jeffrey Word;
+1451;978-1-59253-433-3;Color design workbook : a real-world guide to using color in graphic design;240;2008;Gloucester, Mass.;Rockport Publishers;;1;2;Terry Lee Stone, Sean Adams, Noreen Morioka;
+1452;1-58948-073-2;Advanced spatial analysis : the CASA book of GIS;463;2003;Redlands, CA;ESRI Press;;1;2;Paul Longley, Michael Batty;
+1457;978-0-8176-4760-5;Algorithms and programming : problems and solutions;217;2008;Boston, MA;Birkhaeuser;1;1;2;Alexander Shen;
+1459;SBN 978-0-201-73485-;Peer reviews in software : a practical guide;232;2002;Boston, MA;Addison-Wesley;1;1;2;Wiegers, Karl Eugene;
+1460;978-1-4419-2996-9;Text mining : predictive methods for analyzing unstructured information;237;2010;Yorktown Heights;Springer Verlag;1;1;2;WEISS, S. M. a kol.;
+1462;978-0-387-00163-0;Programming challenges : the programming contest training manual;359;2003;New York, N.Y.;Springer Verlag;1;1;2;SKIENA, S. S. -- REVILLA, M. A.;
+1463;0-8176-4253-6;An introduction to data structures and algorithms;599;2002;Boston, MA;Birkhaeuser;1;1;2;STORER, J. A;
+1465;978-80-251-3036-0;Architektura softwaru;328;2011;Brno;Computer Press;1;1;1;EELES, P. -- CRIPPS, P;
+1467;978-80-251-2923-4;Nenuťte uživatele přemýšlet! : praktický průvodce testováním a opravou chyb použitelnosti webu;165;2010;Brno;Computer Press;1;1;1;Steve Krug;
+1469;978-1-4302-1883-8;Eclipse Rich Ajax Platform : bringing Rich client into the web;141;2008;Berkeley, CA;Apress;;1;2;Fabian Lange;
+1470;978-1-4302-2483-9;AdvancED Flex 4;540;2010;Berkeley, CA;Apress;;1;2;Shashank Tiwari,Elad Elrom;
+1471;978-80-251-3457-3;Jak účinně oslovit média : media relations v podnikání, správě, kultuře i neziskovém sektoru;296;2011;Brno;Computer Press;;;1;Jan Tomandl;
+1474;978-80-251-2731-5;Jádro systému Windows : kompletní průvodce programátora;472;2011;Brno;Computer Press;1;1;1;Martin Dráb;
+1478;978-80-251-3226-5;Adobe InDesign CS5 : oficiální výukový kurz;424;2011;Brno;Computer Press;;1;1;J. Dvořák;
+1479;978-80-251-1726-2;Mistrovství v Linuxu : příkazový řádek, shell, programování;878;2007;Brno;Computer Press;;1;1;Mark G. Sobell;
+1480;978-80-251-2329-4;Mistrovství v Microsoft SQL Server 2008 : [kompletní průvodce databázového experta];864;2009;Brno;Computer Press;;1;1;R. E. Walters;
+1481;978-80-247-3986-1;Excel 2010 : práce s databázemi a kontingenčními tabulkami;168;2011;Praha;Grada;;1;1;Marek Laurenčík;
+1482;"	978-80-251-3289-0";Microsoft Access 2010 : podrobná uživatelská příručka;392;2010;Brno;Computer Press;1;1;1;Aleš Kruczek;
+1483;978-80-251-3607-2;Testování softwaru řízené návrhem;336;2011;Brno;Computer Press;;1;1;Matt Stephens Doug Rosenberg;
+1484;978-80-251-2587-8;1001 tipů a triků pro Microsoft Excel 2007/2010;488;2011;Brno;Computer Press;;1;1;Jiří Číhař;
+1486;978-80-251-2965-4;Zend Framework : programujeme webové aplikace v PHP;416;2010;Brno;Computer Press;1;1;1;Marian Böhmer;
+1489;978-80-86815-57-2;Velká kniha T-SQL & SQL Server 2005 : kompendium znalostí pro začátečníky i profesionály;864;2007;Brno;Zoner Press;1;1;1;Sack, Joseph;
+1496;978-80-247-1844-6;Plánování a kontrola : klíč k úspěchu;135;2007;Praha;Grada;1;1;1;Žůrková, Hana;
+1497;978-80-247-3647-1;Metody komplexního hodnocení podniku;246;2011;Praha;Grada;1;1;1;Vochozka, Marek;
+1498;978-80-247-2759-2;Reporting;221;2010;Praha;Grada;3;1;1;Šoljaková, Libuše -- Fibírová, Jana;
+1500;978-1-58488-996-0;Constrained clustering : advances in algorithms, theory, and applications;441;2009;Boca Raton;CRC Press;1;1;2;Basu, Sugato -- Davidson, Ian;Chapman & Hall/CRC data mining and knowledge discovery series
+1501;0-262-65060-6;Self-organizing map formation : foundations of neural computation;440;2001;Cambridge, MA;MIT Press;;1;2;Obermayer, Klaus -- Sejnowski, Terrence J;Computational neuroscience
+1507;978-80-251-3222-7;Microsoft Office 2010 : podrobná uživatelská příručka;491;2010;Brno;Computer Press;1;1;1;Barilla, Jiří;
+1508;978-80-7402-080-3;333 tipů a triků pro Windows 7;260;2010;Kralice na Hané;Computer Media;1;1;1;Klatovský, Karel;
+1510;978-80-247-3898-7;Excel a Access 2010 : efektivní zpracování dat na počítači;198;2011;Praha;Grada;2;1;1;Pecinovský, Josef;
+1511;978-80-87106-43-3;Průvodce tvorbou dokumentů;222;2011;Bučovice;Martin Stříž;1;1;1;Rybička, Jiří -- Přichystal, Jan -- Čačková, Petra;
+1512;80-251-1088-5;Microsoft Excel : vzorce, funkce, výpočty;567;2006;Brno;Computer Press;1;1;1;Brož, Milan -- Bezvoda, Václav;
+1513;978-80-86686-73-8;Hrátky s Excelem;80;2007;Kralice na Hané;Computer Media;1;1;1;Wolfová, Markéta;
+1518;978-80-247-3158-2;Finanční řízení podniku : moderní metody a trendy;204;2010;Praha;Grada;1;1;1;Romana Nývltová Pavel Marinič;
+1519;978-80-245-1300-3;Ekonometrická analýza;367;2007;Praha;Oeconomica;1;1;1;Roman Hušek;
+1521;978-80-247-3243-5;Průvodce základními statistickými metodami;272;2010;Praha;Grada;1;1;1;Marie Budíková Maria Králová Bohumil Maroš;
+1523;978-80-245-1397-3;Finanční analýza a finanční plánování ve firemní praxi;191;2008;Praha;Oeconomica;1;1;1;Pavel Marinič;
+1527;978-0-8141-4593-7;Preventing plagiarism : tips and techniques;117;2007;Urbana, Ill.;National Council of Teachers of English;;1;2;Laura Hennessey DeSena;
+1529;978-80-251-3118-3;Jak na působivý grafický design : návrhy brožur, log, webů, newsletterů, vizitek či plakátů;239;2011;Brno;Computer Press;1;1;1;John McWade;
+1530;978-80-251-2967-8;Grafický design : typografie;175;2010;Brno;Computer Press;1;1;1;Gavin Ambrose Paul Harris;
+1534;978-0-9808469-0-4;HTML5 & CSS3 for the real world;342;2011;Collingwood;SitePoint;1;1;2;Alexis Goldstein Louis Lazaris Estelle Weyl;
+1535;;Ekonomický slovník : anglicko-český a česko-anglický : anglicko-slovenský a slovensko-anglický;;2009;Brno;;;2;1;;
+1536;;Slovník platinium, velký : ekonomický, technický, lékařský;;2010;Brno;;;2;1;;
+1538;0-321-48681-1;Compilers : principles, techniques, & tools;1009;2007;Boston, MA;Pearson/Addison Wesley;2;1;2;Alfred V Aho;
+1539;980-235-028-1;Arbustos tropicales ornamentales;295;1998;Caracas, Venezuela;Sociedad de Ciencias Naturales La Salle;;1;4;Jesus. Hoyos;
+1540;997-29733-1-X;Arboles utiles de la Amazonia peruana : un manual con apuntes de identificacion, ecologia y propagacion de las especies;506;2003;Lima;;;1;4;Carlos R. Reynel;
