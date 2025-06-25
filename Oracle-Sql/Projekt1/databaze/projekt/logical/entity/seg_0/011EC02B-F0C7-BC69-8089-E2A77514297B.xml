@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="011EC02B-F0C7-BC69-8089-E2A77514297B" name="Region">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:46:55 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_regionu" id="394FAC02-064C-C77C-ACC1-A26D98C561D1">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:47:34 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="název_regionu" id="37639E7F-727A-C4BE-22D6-5B9649596FE1">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:26:12 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zaměstnance" id="3557447B-FDEC-54EF-247F-A16881ACA158">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:28:06 UTC</createdTime>
+<generatorID>F3AEB2A3-D287-863F-E1A6-246840A0E2ED</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>458C68C2-2124-091E-1E20-8C839C15FD94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DE9F13D-7C8F-4EEA-91BD-D70F94EFC469" name="region PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:47:40 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>394FAC02-064C-C77C-ACC1-A26D98C561D1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="F7F28C4D-C916-E532-F1BB-F9CE4B23A6D9" name="název_regionu UK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:10:15 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>37639E7F-727A-C4BE-22D6-5B9649596FE1</newElementsIDs>
+<usedAttributes>
+<attributeRef>37639E7F-727A-C4BE-22D6-5B9649596FE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

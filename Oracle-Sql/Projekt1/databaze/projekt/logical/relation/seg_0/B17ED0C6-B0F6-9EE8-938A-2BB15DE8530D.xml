@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="má" directorySegmentName="seg_0" id="B17ED0C6-B0F6-9EE8-938A-2BB15DE8530D">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:21:37 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<sourcePk>77BEA0EF-D250-9EAE-79FE-FD7DEE5DD49C</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>má</nameOnSource>
+<nameOnTarget>je součástí</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3F6D3A63-1691-2619-D428-ED4B97424C35</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>191B0BEA-C9A6-E051-AB2A-39CE2D8390CA</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

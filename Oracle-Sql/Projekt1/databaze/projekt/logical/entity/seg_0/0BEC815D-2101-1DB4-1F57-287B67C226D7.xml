@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0BEC815D-2101-1DB4-1F57-287B67C226D7" name="Cena_pokoje">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:35:20 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="platnost_od" id="021ECEB2-A471-9FDC-1414-AD92F4E1A6AF">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:35:40 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="platnost_do" id="5284066C-C251-50D5-3633-CE79E6434D46">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:35:50 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cena_na_noc" id="281D15BA-DB21-5C21-912D-036AFF15A3AE">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:35:28 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_pokoje" id="4D25E5EF-8167-7BC2-4A5E-754BC482C3E9">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:45:48 UTC</createdTime>
+<generatorID>F85534DD-2501-0C1C-E2C6-11A9D2E7F24A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>ADC7E658-A34F-2AF7-F7D5-2F09FC30EC64</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="643ED807-4D90-5FEA-9B7A-4849420F83F1">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:45:48 UTC</createdTime>
+<generatorID>F85534DD-2501-0C1C-E2C6-11A9D2E7F24A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>6E80FA0A-3E20-132C-2C4B-502E26D922CE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_podlaží" id="368CD5F6-27E7-547E-B388-DC298191EAEB">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:45:48 UTC</createdTime>
+<generatorID>F85534DD-2501-0C1C-E2C6-11A9D2E7F24A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>311E2E88-4043-2CAE-431E-31C5C98F8F5E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21F54B5C-219E-7764-DEDD-525A1F57E18A" name="cena_pokoje PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:35:47 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>021ECEB2-A471-9FDC-1414-AD92F4E1A6AF</attributeRef>
+<attributeRef>4D25E5EF-8167-7BC2-4A5E-754BC482C3E9</attributeRef>
+<attributeRef>643ED807-4D90-5FEA-9B7A-4849420F83F1</attributeRef>
+<attributeRef>368CD5F6-27E7-547E-B388-DC298191EAEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0281A77D-C019-6A02-83F1-B91E2192C619" name="Zákazník">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:51:17 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zákazníka" id="93049C4D-6FA7-8179-807C-51E00E9C2338">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:32:42 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jméno_zákazníka" id="105128F2-3E75-C8DA-4E4F-5D18EFEF21DD">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:32:51 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="příjmení_zákazníka" id="6E82C188-7993-1C9D-F5CE-D4164277BDE5">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:32:59 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_narození_zákazníka" id="5171919C-3FD8-54E2-8065-FCD98E99B260">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:33:04 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_dokladu_zákazníka" id="B82AF787-DE5B-58F0-7354-7AB642AF6168">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:33:25 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telefon_zákazníka" id="7CED5235-0660-C757-C0DC-B4F520EDBE13">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:34:00 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_zákazníka" id="033C6D6C-ED4C-E4AB-4C45-1FB000D4E268">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:34:08 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_bankovního_účtu" id="9276D07C-A99B-7BCD-BCC6-8B2CC619B4AD">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:59:51 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C5AD36B5-2B26-250F-33F9-BC450D6512AC" name="Zákazník PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:32:49 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>93049C4D-6FA7-8179-807C-51E00E9C2338</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1A3F7369-8A37-D35E-3F40-D4F3AE238F9E" name="číslo_bankovního_účtu UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:02:18 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>9276D07C-A99B-7BCD-BCC6-8B2CC619B4AD</newElementsIDs>
+<usedAttributes>
+<attributeRef>9276D07C-A99B-7BCD-BCC6-8B2CC619B4AD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="407D347F-2AE7-6D91-0DA3-5E2C4802F15E" name="e-mail_zákazníka UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:02:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>033C6D6C-ED4C-E4AB-4C45-1FB000D4E268</newElementsIDs>
+<usedAttributes>
+<attributeRef>033C6D6C-ED4C-E4AB-4C45-1FB000D4E268</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3720DDAA-0B9B-B513-0302-FA4BE3348A84" name="telefon_zákazníka UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:03:09 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>7CED5235-0660-C757-C0DC-B4F520EDBE13</newElementsIDs>
+<usedAttributes>
+<attributeRef>7CED5235-0660-C757-C0DC-B4F520EDBE13</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="B6F9CEB6-D3B0-93AB-5340-0DF91F76EB9D" name="číslo_dokladu_zákazníka UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:03:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>B82AF787-DE5B-58F0-7354-7AB642AF6168</newElementsIDs>
+<usedAttributes>
+<attributeRef>B82AF787-DE5B-58F0-7354-7AB642AF6168</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

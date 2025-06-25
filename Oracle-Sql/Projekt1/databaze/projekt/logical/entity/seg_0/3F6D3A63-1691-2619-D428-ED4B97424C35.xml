@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F6D3A63-1691-2619-D428-ED4B97424C35" name="Hotel">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:40:20 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_hotelu" id="9FBDC40F-6DB8-D67D-C667-67C0DDB7641E">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:40:45 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="název_hotelu" id="8800A8E9-9DB7-2BF5-B8F7-529441FB713E">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:40:56 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="počet_hvězd" id="B3CF7900-894B-49D0-AFA3-EA32795A70C9">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:19:33 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="adresa_hotelu" id="3964E095-E1DE-3FF3-0C41-E0B03C02777B">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:20:42 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_země" id="13AE9988-B035-E603-8C90-D0BE7ECD629F">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 19:00:55 UTC</createdTime>
+<generatorID>C1491DE1-C831-4330-5F09-F79DF70D782C</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>BDF8046F-FDAC-889A-4786-ABCD86A645BC</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_regionu" id="D36D6125-7AC5-64DA-91D2-BDF5E6459393">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 19:34:11 UTC</createdTime>
+<generatorID>C1491DE1-C831-4330-5F09-F79DF70D782C</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>07E4F319-73F4-85AF-F212-32C69CDD4801</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77BEA0EF-D250-9EAE-79FE-FD7DEE5DD49C" name="Hotel PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:40:53 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9FBDC40F-6DB8-D67D-C667-67C0DDB7641E</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="FEE18815-DBC6-7406-12E2-D5279ECFA6FE" name="adresa_hotelu UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:05:04 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>3964E095-E1DE-3FF3-0C41-E0B03C02777B</newElementsIDs>
+<usedAttributes>
+<attributeRef>3964E095-E1DE-3FF3-0C41-E0B03C02777B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

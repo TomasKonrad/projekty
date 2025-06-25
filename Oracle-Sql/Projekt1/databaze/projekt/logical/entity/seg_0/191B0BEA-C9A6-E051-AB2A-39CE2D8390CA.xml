@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="191B0BEA-C9A6-E051-AB2A-39CE2D8390CA" name="Zázemí_hotelu">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 20:00:44 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_hotelu" id="94CA53F8-5B8D-1741-BE57-550A537615B1">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 20:01:59 UTC</createdTime>
+<generatorID>B17ED0C6-B0F6-9EE8-938A-2BB15DE8530D</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>9FBDC40F-6DB8-D67D-C667-67C0DDB7641E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="množství" id="0F969EEE-AAE0-95B1-F091-BFD2536D6E0F">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 20:02:18 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zázemí" id="A8FA5C58-DABB-E74C-9662-83DC0299392D">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 20:04:25 UTC</createdTime>
+<generatorID>A6D9A508-8320-C0BF-F32A-46CF7DCC27AA</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>C5205402-48EE-32C8-6176-55C2ED88CEAA</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F1F5DDC1-DC78-4B09-108F-19C246C2060E" name="zázemí_hotelu PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 20:01:59 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>94CA53F8-5B8D-1741-BE57-550A537615B1</attributeRef>
+<attributeRef>A8FA5C58-DABB-E74C-9662-83DC0299392D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="90B7E108-DADF-7CCD-2BC0-734CAD38FE1F" name="Cena_položky">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:32:36 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cena_za_kus" id="305706D6-1EFD-4548-8D99-47BD272DDE2B">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:32:44 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="platnost_od" id="86251C17-8BA1-03BA-7EA5-4E53B8E3F7C3">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:32:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="platnost_do" id="1AC46C3D-1989-6C14-AD63-8A8BC61BD5D4">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:33:24 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_položky" id="1EF487B2-CB0A-5990-8CAB-E5048EFA950E">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:36:37 UTC</createdTime>
+<generatorID>C99CDB1A-C7EA-F4E5-8413-C4ACA529D89F</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>5B65F77F-94D2-4E4C-69F4-386580E2AC03</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21D519A4-449C-84F9-4B69-C5A2BD27F430" name="cena_položky PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:33:21 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>86251C17-8BA1-03BA-7EA5-4E53B8E3F7C3</attributeRef>
+<attributeRef>1EF487B2-CB0A-5990-8CAB-E5048EFA950E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

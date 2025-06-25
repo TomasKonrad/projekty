@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="80B44EAE-EA57-E73A-3982-5698F37E9B11" name="Vybavení_pokoje">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:09:46 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="číslo_pokoje" id="8E65F7CB-480F-B0F2-EE0C-14BB2EAE7EB8">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-04 15:00:04 UTC</createdTime>
+<generatorID>45C20FE4-FD35-DA54-DC4D-F0EA22D92ADD</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>ADC7E658-A34F-2AF7-F7D5-2F09FC30EC64</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="množství" id="AA120C06-A379-AAB7-796A-2949C3D2E8E7">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-04 15:08:19 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_vybavení" id="566B412C-D078-550C-FE14-9330DEF5CF2D">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:32:47 UTC</createdTime>
+<generatorID>BA93098F-F0EE-7492-75E9-43846CF659E5</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>CACFF389-E2DD-DCBE-374E-F84B18D08969</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="57C5A047-C350-3FBF-DFB0-3DA3DA31C3EF">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:38:02 UTC</createdTime>
+<generatorID>45C20FE4-FD35-DA54-DC4D-F0EA22D92ADD</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>6E80FA0A-3E20-132C-2C4B-502E26D922CE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_podlaží" id="B6F757F5-FD92-85B8-1B0D-87A9FDAE23B6">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:38:02 UTC</createdTime>
+<generatorID>45C20FE4-FD35-DA54-DC4D-F0EA22D92ADD</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>311E2E88-4043-2CAE-431E-31C5C98F8F5E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9718F11-43F0-D6A9-13CD-AE5ACB8862B0" name="vybavení_pokoje PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:19:04 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8E65F7CB-480F-B0F2-EE0C-14BB2EAE7EB8</attributeRef>
+<attributeRef>57C5A047-C350-3FBF-DFB0-3DA3DA31C3EF</attributeRef>
+<attributeRef>B6F757F5-FD92-85B8-1B0D-87A9FDAE23B6</attributeRef>
+<attributeRef>566B412C-D078-550C-FE14-9330DEF5CF2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

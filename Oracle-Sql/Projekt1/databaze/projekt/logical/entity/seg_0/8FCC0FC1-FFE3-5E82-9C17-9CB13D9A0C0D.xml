@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8FCC0FC1-FFE3-5E82-9C17-9CB13D9A0C0D" name="Lokace_hotelu">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 18:58:13 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_země" id="BDF8046F-FDAC-889A-4786-ABCD86A645BC">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 18:59:17 UTC</createdTime>
+<generatorID>44F1B204-CB7A-1679-1510-AA27D3CD909D</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>093950F7-101E-FE74-78E8-FF3D89C46492</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_regionu" id="07E4F319-73F4-85AF-F212-32C69CDD4801">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 19:34:11 UTC</createdTime>
+<generatorID>A6D73801-CDC1-80BE-D9BC-74090593A989</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>394FAC02-064C-C77C-ACC1-A26D98C561D1</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60B18F75-2237-0F0B-A886-EF9D5D49F75A" name="Lokace_hotelu PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 18:59:17 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BDF8046F-FDAC-889A-4786-ABCD86A645BC</attributeRef>
+<attributeRef>07E4F319-73F4-85AF-F212-32C69CDD4801</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

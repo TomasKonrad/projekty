@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="029322B2-3338-5BC8-2C28-9B608C92B204" name="Oddělení">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:50:18 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_oddělení" id="36E89D1F-5CCC-9DE9-9903-69063DED068B">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:51:06 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="název_oddělení" id="53F11A43-CAD2-EC1A-2165-30DE0851C2C3">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:51:29 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="3A5F7136-52FE-1BB8-3E69-B5F62C208316">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:53:33 UTC</createdTime>
+<generatorID>1FD76CD4-0024-C52F-32D9-BADEA6127A18</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>9FBDC40F-6DB8-D67D-C667-67C0DDB7641E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="698F6D91-40D5-0F43-DA81-34D20DB91D72" name="Oddělení PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:51:27 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>36E89D1F-5CCC-9DE9-9903-69063DED068B</attributeRef>
+<attributeRef>3A5F7136-52FE-1BB8-3E69-B5F62C208316</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

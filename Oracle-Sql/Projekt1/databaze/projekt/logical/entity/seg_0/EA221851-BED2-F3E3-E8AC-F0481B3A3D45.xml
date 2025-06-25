@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EA221851-BED2-F3E3-E8AC-F0481B3A3D45" name="Vybavení">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:21:48 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_vybavení" id="CACFF389-E2DD-DCBE-374E-F84B18D08969">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:21:58 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="název_vybavení" id="E53BF8F7-DD7B-7B61-4503-FE0E89703BDB">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-04 15:04:21 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="typ_vybavení" id="8A84EF23-3EAA-5001-18E8-0837DD86EB11">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:22:13 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="461BA3EE-1FBA-B9A1-77B6-A5D7D496EB3F" name="Vybavení PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:22:19 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CACFF389-E2DD-DCBE-374E-F84B18D08969</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

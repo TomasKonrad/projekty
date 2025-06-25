@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D2A7126-97CE-28BB-A9B7-269515267A6F" name="Evidence_minibaru">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-04 15:44:39 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Datum_evidence" id="EC93701D-BCBA-5D17-A421-2699A7D81988">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 19:13:50 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="čas_evidence" id="B99D2553-1D12-87A2-3598-2A6BF3AD9954">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-04 15:53:20 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_minibaru" id="71165166-814B-D59A-A881-10D170A16389">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:16:17 UTC</createdTime>
+<generatorID>5A5A7751-2E90-EACB-C956-DE399B2F1B86</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>95407AD4-BFEF-11BA-B5BD-72D3444488C7</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_položky" id="5A06ACEC-6805-71F7-0D83-2CFF4E1F193E">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:44:50 UTC</createdTime>
+<generatorID>B5C45730-41D8-D4DE-834D-16CBBE6BA594</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>5B65F77F-94D2-4E4C-69F4-386580E2AC03</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stav_položky" id="5C403F0E-8B19-2557-D261-954777F60F4E">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 19:52:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zaměstnance" id="6FDCC626-CA3A-0FF8-C359-4FA3CF39EB84">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 15:52:18 UTC</createdTime>
+<generatorID>BEAFB7AF-6661-A4C0-6396-1ABEC9FAA424</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>458C68C2-2124-091E-1E20-8C839C15FD94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F2D7CD9-53A2-C252-0AB7-60FF8B6F7A56" name="evidence_minibaruv1 PK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-06 15:20:40 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71165166-814B-D59A-A881-10D170A16389</attributeRef>
+<attributeRef>5A06ACEC-6805-71F7-0D83-2CFF4E1F193E</attributeRef>
+<attributeRef>EC93701D-BCBA-5D17-A421-2699A7D81988</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BE339025-66CE-A0DA-D5FB-49BA93332ACE" name="Podlaží">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:02:22 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="číslo_podlaží" id="A5708108-6A4B-B14B-E047-94F3F32572F4">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:03:28 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="45594DCC-688A-E445-9D93-8FA0AC5C136A">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:05:44 UTC</createdTime>
+<generatorID>3834F203-3922-03F9-2195-D84AB23B331A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>9FBDC40F-6DB8-D67D-C667-67C0DDB7641E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="591D0140-F0D6-069E-B83B-3C59F7B9333C" name="podlaží PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 16:02:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45594DCC-688A-E445-9D93-8FA0AC5C136A</attributeRef>
+<attributeRef>A5708108-6A4B-B14B-E047-94F3F32572F4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3241F16F-B6AC-6625-A554-9C1C4F957F26" name="Zaměstnanec">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:50:15 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zaměstnance" id="458C68C2-2124-091E-1E20-8C839C15FD94">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:50:25 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jméno_zaměstnance" id="07DDFADD-815C-6698-4FF3-1BE704F79B55">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:50:35 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="příjmení_zaměstnance" id="82A41F9E-921C-9CDB-D4FE-94DE26DA9D1B">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:51:23 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="plat" id="44907229-76AD-8E75-5F61-A7102288E3A1">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:58:50 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_oddělení" id="BA88E7D2-C86B-FA9A-1E1C-90B7C6F9F8DD">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-01 16:55:23 UTC</createdTime>
+<generatorID>8FC82B0D-CE5F-191A-DE12-3B72AA26FFDF</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>36E89D1F-5CCC-9DE9-9903-69063DED068B</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="6250306A-924C-A506-2D9B-E771B22501D8">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-06 19:22:54 UTC</createdTime>
+<generatorID>8FC82B0D-CE5F-191A-DE12-3B72AA26FFDF</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>3A5F7136-52FE-1BB8-3E69-B5F62C208316</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pracovní_pozice" id="A92D3C9E-DE87-1983-BF97-245E354FE7B3">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:26:54 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_zaměstnance1" id="BBB7A333-5B08-90D6-CC95-81D0D1B2B982">
+<createdBy>rysst</createdBy>
+<createdTime>2025-03-07 18:30:10 UTC</createdTime>
+<generatorID>3087CDA5-5B31-28DA-2D6D-1FED04DC0688</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>458C68C2-2124-091E-1E20-8C839C15FD94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email_zaměstnance" id="911A4887-BA1A-2324-0797-B44A2800CF12">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:05:41 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="61CA8897-8041-CC67-E29E-1FAF3F801B01" name="zaměstnanci PK">
+<createdBy>rysst</createdBy>
+<createdTime>2025-02-28 15:50:32 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>458C68C2-2124-091E-1E20-8C839C15FD94</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5C3B82DC-7F02-5CDD-CAFF-8692EFF9FD1E" name="email_zaměstnance UK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:10:28 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<newElementsIDs>911A4887-BA1A-2324-0797-B44A2800CF12</newElementsIDs>
+<usedAttributes>
+<attributeRef>911A4887-BA1A-2324-0797-B44A2800CF12</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

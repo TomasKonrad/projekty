@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2AC7E99E-2D86-C63B-6307-066774673A8F" name="Evidence_úklidu">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:57:52 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_zaměstnance" id="62B295F0-6911-EAAB-CAD0-9BD93D66E3E0">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 16:59:11 UTC</createdTime>
+<generatorID>67AC5FE0-B0DC-768D-5613-BFE2FC1D6E12</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>458C68C2-2124-091E-1E20-8C839C15FD94</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="datum_úklidu" id="A07B137E-E34A-4386-0BF4-958B5278C959">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 17:00:27 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_pokoje" id="8AED529B-DA33-30F4-59DC-B7761C2DE98B">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 17:02:43 UTC</createdTime>
+<generatorID>EAFBF012-C2F5-C4E1-FA70-3BA706A27D2A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>ADC7E658-A34F-2AF7-F7D5-2F09FC30EC64</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_hotelu" id="2E67492D-FD74-D887-274B-AB038EB10D1E">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 17:02:43 UTC</createdTime>
+<generatorID>EAFBF012-C2F5-C4E1-FA70-3BA706A27D2A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>6E80FA0A-3E20-132C-2C4B-502E26D922CE</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="číslo_podlaží" id="7318D989-FBB0-870A-C80F-36BC5E9E27A7">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 17:02:43 UTC</createdTime>
+<generatorID>EAFBF012-C2F5-C4E1-FA70-3BA706A27D2A</generatorID>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<referedAttribute>311E2E88-4043-2CAE-431E-31C5C98F8F5E</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6A57DAD3-EF86-8536-8BA8-241AC5BD73EA" name="Evidence_úklidu PK">
+<createdBy>Pavel</createdBy>
+<createdTime>2025-03-08 17:00:23 UTC</createdTime>
+<ownerDesignName>projekt</ownerDesignName>
+<engineerTo>
+<item key="884427BD-0DB3-2E79-0E66-5593C31B0932" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A07B137E-E34A-4386-0BF4-958B5278C959</attributeRef>
+<attributeRef>8AED529B-DA33-30F4-59DC-B7761C2DE98B</attributeRef>
+<attributeRef>2E67492D-FD74-D887-274B-AB038EB10D1E</attributeRef>
+<attributeRef>7318D989-FBB0-870A-C80F-36BC5E9E27A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
