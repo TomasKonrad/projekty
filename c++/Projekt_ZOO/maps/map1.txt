@@ -1,0 +1,16 @@
+15 15
+0,0,Bush
+9,0,Bush
+8,3,Bush
+3,9,Bush
+4,6,Bush
+5,0,Bush
+8,11,Exit,2,1,5
+7,11,Wall
+7,12,Wall
+8,12,Wall
+9,12,Wall
+9,11,Wall
+5,5,SwordTile
+11,6,GoblinTile
+5,10,GoblinTile

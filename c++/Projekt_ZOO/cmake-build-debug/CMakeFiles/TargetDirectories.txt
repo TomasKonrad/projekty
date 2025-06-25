@@ -1,0 +1,3 @@
+C:/Users/rysst/zoo_zs2024_xjanek/Projekt_ZOO/cmake-build-debug/CMakeFiles/PROJEKT_ZOO.dir
+C:/Users/rysst/zoo_zs2024_xjanek/Projekt_ZOO/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/rysst/zoo_zs2024_xjanek/Projekt_ZOO/cmake-build-debug/CMakeFiles/rebuild_cache.dir

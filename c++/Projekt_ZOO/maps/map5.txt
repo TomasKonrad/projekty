@@ -1,0 +1,6 @@
+5 5
+0,0,Ground
+1,1,Exit,4,0,4
+2,2,ArmorTile
+3,3,AxeTile
+4,5,BossTile
