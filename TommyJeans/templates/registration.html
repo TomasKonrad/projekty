@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <header class="topbar">
+    <nav class="nav">
+      <a href="../home">Home</a>
+      <a href="#">collection</a>
+      <a href="#">order</a>
+      <a href="../login">account</a>
+    </nav>
+  </header>
+
+  <main>
+      <div class="welcome">
+          <h1>Welcome in our family</h1>
+          <p>nějaký text k vytvoreni uctu</p>
+      </div>
+      <section class="auth-card">
+      <h1 class="auth-title">Create account</h1>
+
+      <form class="auth-form" method="post" action="/login">
+        <label class="field">
+          <span class="label">Name</span>
+          <input class="input" type="text" name="name" placeholder="Gejmr" required />
+        </label>
+
+        <label class="field">
+          <span class="label">Email</span>
+          <input class="input" type="email" name="email" placeholder="gejmr@example.com" required />
+        </label>
+
+        <label class="field">
+          <span class="label">Password</span>
+          <input class="input" type="password" name="password" placeholder="••••••••" required />
+        </label>
+
+         <div class="auth-row">
+          <label class="remember">
+            <input type="checkbox" name="remember" />
+            <span>I agree to create an account</span>
+          </label>
+        </div>
+
+        <button class="btn primary auth__submit" type="submit">Create account</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; TommyJeans 2025</p>
+  </footer>
+
+</body>
+</html>
