@@ -1,0 +1,49 @@
+{% extends "base_test.html" %}
+{% block title %}Tommy Jeans{% endblock %}
+
+{% block content %}
+  <div class="home-page">
+    <section class="hero-section" style="background-image: url('{{ url_for('static', path='images/hero_bg.jpg') }}');">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Tommy Jeans</h1>
+            <div class="hero-buttons">
+                <a href="{{ url_for('collection_woman_ui') }}" class="btn-hero btn-hero--primary">Ženy</a>
+                <a href="{{ url_for('collection_ui') }}" class="btn-hero btn-hero--primary">Všechny produkty</a>
+                <a href="{{ url_for('collection_men_ui') }}" class="btn-hero btn-hero--primary">Muži</a>
+            </div>
+        </div>
+    </section>
+
+
+<section class="container-narrow">
+    <div class="card text-card text-center">
+        <p>Tommy Jeans je ikonická značka, která definuje styl generací. Naše nová kolekce přináší svěží pohled na klasický denim a streetwear.</p>
+        <p>Objevte kvalitu, udržitelnost a design, který vás odliší. Každý kousek je navržen s důrazem na detail a pohodlí pro každodenní nošení.</p>
+    </div>
+</section>
+
+
+    <section class="feature-section container-narrow">
+        <div class="feature-grid">
+            <div class="feature-image">
+                <img src="{{ url_for('static', path='images/autor.jpg') }}" alt="Feature">
+            </div>
+            <div class="feature-text card text-card">
+                <h2>Projekt JEANS</h2>
+                <p>Tento projekt byl vypracován jako potenciální základ pro Tommy Jeans stránku, která sice již existuje, ale ne pro lokální outlety v České Republice. Design není finalní, některé věci se mohou do budoucna změnit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" style="background-image: url('{{ url_for('static', path='images/explore.jpg') }}');">
+        <div class="overlay"></div>
+
+        <div class="cta-content">
+            <h2>Objev svůj "style"</h2>
+            <p>Připojte se k nám a získejte přístup k exkluzivním nabídkám a novinkám jako první.</p>
+            <a href="{{ url_for('register_ui') }}" class="btn-hero btn-hero--primary">Join Now</a>
+        </div>
+    </section>
+</div>
+{% endblock %}

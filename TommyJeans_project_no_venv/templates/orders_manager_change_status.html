@@ -1,0 +1,57 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+{% block title %}Změnit status objednávky{% endblock %}
+
+{% block content %}
+<div class="page">
+    <!-- Hlavička stránky -->
+    <div class="page__header">
+        <div class="page__titles">
+            <span class="page__kicker">Administrace</span>
+            <h2 class="page__title">Změna stavu</h2>
+            <p class="page__subtitle">Aktualizace stavu pro objednávku #{{ order_id }}</p>
+        </div>
+        <div class="page__actions">
+            <!-- Tlačítko zpět -->
+            <a href="{{ url_for('orders_manager_ui') }}" class="button button--secondary">
+                &larr; Zpět na seznam objednávek
+            </a>
+        </div>
+    </div>
+
+    <!-- Hlavní karta s formulářem -->
+    <div class="card form-card">
+{#    <div class="card form-card" style="max-width: 500px; margin: 0 auto;">#}
+        
+        <!-- Zobrazení chyb -->
+        {% if request.session.get('flash_error') %}
+        <div style="background-color: #ffebee; border: 1px solid #ef9a9a; color: #c62828; padding: 1rem; border-radius: 0.75rem; margin-bottom: 1rem;">
+            {{ request.session.pop('flash_error') }}
+        </div>
+        {% endif %}
+
+        <div class="form-card">
+            <form action="{{ url_for('change_status_post') }}" method="post">
+                <label for="order_id_display">ID Objednávky</label>
+                <input type="text" id="order_id_display" value="#{{ order_id }}" readonly>
+                <input type="hidden" name="order_id" value="{{ order_id }}">
+
+                <label for="status_name">Nový status</label>
+                    <select id="status_name" name="status_name" required>
+                    <option value="" disabled selected>Vyberte...</option>
+
+                    {% for status in statuses %}
+                        <option value="{{ status }}" >
+                            {{ status }}
+                        </option>
+                    {% endfor %}
+
+                    </select>
+                <div class="button-in-form">
+                    <button type="submit" class="button">Uložit změnu</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

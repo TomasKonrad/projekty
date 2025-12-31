@@ -1,0 +1,141 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    {% set current_user = get_user(request) %}
+    <main class="dashboard">
+        <header class="dashboard__header">
+            <div>
+                {% if current_user %}
+                    <p class="dashboard__kicker">Vítej, {{ current_user.username }}</p>
+                {% else %}
+                    <p class="dashboard__kicker">Analytics</p>
+                {% endif %}
+                <h1 class="dashboard__title">Dashboard</h1>
+            </div>
+            <div class="dashboard__actions">
+                <form method="get" action="{{ url_for('home_ui') }}">
+                      <button type="submit" class="btn-primary">
+                           zpět na uživatelské rozhraní
+                      </button>
+                </form>
+            </div>
+        </header>
+
+        <div class="dashboard__columns">
+            <div class="dashboard__column dashboard__column--left">
+                <div class="dashboard__row">
+                    {% if user and user.role == 'shop_assistant' %}
+                    <article class="card">
+                        <div class="dash-cart">
+                            <div class="card__label">Správa objednávek</div>
+                            <form method="get" action="{{ url_for('orders_manager_ui') }}">
+                                <button type="submit" class="btn-primary">
+                                    Seznam objednávek
+                                </button>
+                            </form>
+                        </div>
+                    </article>
+                    {% endif %}
+
+                    {% if user and user.role == 'shop_assistant' %}
+                    <article class="card">
+                    <div class="dash-cart">
+                        <div class="card__label">Správa produktů</div>
+                        <form method="get" action="{{ url_for('products_ui') }}">
+                            <button type="submit" class="btn-primary">
+                                Seznam produktů
+                            </button>
+                        </form>
+                        <form method="get" action="{{ url_for('create_product_ui') }}">
+                            <button type="submit" class="btn-primary">
+                                Přidat produkt
+                            </button>
+                        </form>
+                    </div>
+                    </article>
+                    {% endif %}
+
+                    {% if user and user.role == 'admin' %}
+                    <article class="card">
+                    <div class="dash-cart">
+                        <div class="card__label">Správa uživatelů</div>
+                        <form method="get" action="{{ url_for('users_manager_ui') }}">
+                            <button type="submit" class="btn-primary">
+                                Seznam uživatelů
+                            </button>
+                        </form>
+                    </div>
+                    </article>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="dashboard__column dashboard__column--right">
+
+                <article class="card activity-card">
+                    <header class="activity-card__header">
+                        <h2>Statistické údaje</h2>
+                    </header>
+
+                    <ul class="activity-list">
+                        <li>
+                            <div>
+                                <h3>Počet objednávek</h3>
+                            </div>
+                            <div class="activity-meta">
+                                <strong>{{ total_orders }}</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Počet produktů</h3>
+                            </div>
+                            <div class="activity-meta">
+                                <strong>{{ total_products }}</strong>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h3>Počet registrovaných uživatelů</h3>
+                            </div>
+                            <div class="activity-meta">
+                                <strong>{{ total_users }}</strong>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+{#                <article class="card mini-card">#}
+{#                    <div class="mini-card__value">3k</div>#}
+{#                    <p>Comments</p>#}
+{#                    <div class="progress-bar">#}
+{#                        <span></span>#}
+{#                    </div>#}
+{#                </article>#}
+{##}
+{#                <article class="card">#}
+{#                    <div class="card__label">Post Stats</div>#}
+{#                    <div class="chart-placeholder tall">Bar/line graph placeholder</div>#}
+{#                    <div class="completed-block">#}
+{#                        <div>#}
+{#                            <p>Completed Posts</p>#}
+{#                            <small>Current Week</small>#}
+{#                        </div>#}
+{#                        <strong>874</strong>#}
+{#                    </div>#}
+{#                </article>#}
+{##}
+{#                <article class="card mini-card">#}
+{#                    <div class="mini-card__value">10k</div>#}
+{#                    <p>Links Shared</p>#}
+{#                    <div class="progress-bar dark">#}
+{#                        <span></span>#}
+{#                    </div>#}
+{#                </article>#}
+            </div>
+        </div>
+    </main>
+
+
+{% endblock %}

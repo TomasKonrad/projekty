@@ -1,0 +1,88 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+
+{% block title %}Přidat nový produkt{% endblock %}
+
+{% block content %}
+<div class="page">
+    <!-- Hlavička stránky -->
+    <div class="page__header">
+        <div class="page__titles">
+            <span class="page__kicker">Administrace</span>
+            <h2 class="page__title">Nový produkt</h2>
+            <p class="page__subtitle">Vyplňte údaje pro přidání nového zboží do nabídky.</p>
+        </div>
+        <div class="page__actions">
+            <!-- Tlačítko zpět -->
+            <a href="{{ url_for('products_ui') }}" class="button button--secondary">
+                &larr; Zpět na seznam produktů
+            </a>
+        </div>
+    </div>
+
+    <div class="card form-card">
+        <div class="form-card">
+            <form action="{{ url_for('create_product_ui_post') }}" method="post">
+                <label for="product_name">Název produktu</label>
+                    <input type="text" id="product_name" name="product_name" value="{{ form.product_name }}" required placeholder="Např. Tommy Tričko BASIC">
+
+                <label for="price">Cena (Kč)</label>
+                    <input type="number" id="price" name="price" value="{{ form.price }}" required min="0" step="1" placeholder="699">
+
+                <label for="year">Rok kolekce</label>
+                    <input type="number" id="year" name="year" value="{{ form.year }}" required min="1985" max="2050" placeholder="2025">
+
+                <label for="category">Kategorie (Pohlaví)</label>
+                    <select id="category" name="category" required>
+                        <option value="" disabled {% if not form.category %}selected{% endif %}>Vyberte...</option>
+                        <!-- Dynamický cyklus pro kategorie -->
+                        {% for cat in options.categories %}
+                            <option value="{{ cat }}" {% if form.category == cat %}selected{% endif %}>
+                                {{ cat }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                <label for="type_name">Typ oblečení</label>
+                    <select id="type_name" name="type_name" required>
+                         <option value="" disabled {% if not form.type %}selected{% endif %}>Vyberte...</option>
+                         <!-- Dynamický cyklus pro typy -->
+                         {% for t in options.types %}
+                            <option value="{{ t }}" {% if form.type == t %}selected{% endif %}>
+                                {{ t }}
+                            </option>
+                         {% endfor %}
+                    </select>
+
+                <label for="size">Velikost</label>
+                    <select id="size" name="size" required>
+                         <option value="" disabled {% if not form.size %}selected{% endif %}>Vyberte...</option>
+                         <!-- Dynamický cyklus pro velikosti -->
+                         {% for s in options.sizes %}
+                            <option value="{{ s }}" {% if form.size == s %}selected{% endif %}>
+                                {{ s }}
+                            </option>
+                         {% endfor %}
+                    </select>
+
+                <label for="material">Materiál</label>
+                    <select id="material" name="material" required>
+                         <option value="" disabled {% if not form.material %}selected{% endif %}>Vyberte...</option>
+                         <!-- Dynamický cyklus pro materiály -->
+                         {% for m in options.materials %}
+                            <option value="{{ m }}" {% if form.material == m %}selected{% endif %}>
+                                {{ m }}
+                            </option>
+                         {% endfor %}
+                    </select>
+
+                <label for="description">Popis produktu</label>
+                    <textarea id="description" name="description" rows="4" placeholder="Detailní popis zboží...">{{ form.description }}</textarea>
+
+                <div class="button-in-form">
+                    <button type="submit" class="button">Přidat produkt</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

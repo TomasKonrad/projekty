@@ -1,0 +1,102 @@
+{% extends "base_test.html" %}
+{% block title %}Kolekce{% endblock %}
+
+{% block content %}
+<div class="page">
+
+  <!-- Zobrazení Flash zpráv ze Session (úspěch/chyba při mazání) -->
+  {% if request.session.get('flash_error') %}
+      <div style="background-color: #ffebee; color: #c62828; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #ef9a9a;">
+          {{ request.session.pop('flash_error') }}
+      </div>
+  {% endif %}
+  {% if request.session.get('flash_success') %}
+      <div style="background-color: #e8f5e9; color: #2e7d32; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #a5d6a7;">
+          {{ request.session.pop('flash_success') }}
+      </div>
+  {% endif %}
+
+  <div class="page__header">
+    <div class="page__titles">
+      <h2 class="page__title">Tommy Jeans WOMAN</h2>
+      <p class="page__subtitle">Prohlédni si dostupné produkty.</p>
+    </div>
+
+      <div class="page__actions">
+        <!-- filtr tlačítka -->
+      <div class="filters-group">
+        <a href="{{ url_for('collection_men_ui') }}" class="button">men</a>
+        <a href="{{ url_for('collection_woman_ui') }}" class="button">woman</a>
+        <a href="{{ url_for('collection_ui') }}" class="button">all</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mřížka produktů -->
+  {% if products|length == 0 %}
+    <div class="card">
+      <p style="text-align: center; color: var(--muted);">Zatím zde nejsou žádné produkty.</p>
+    </div>
+  {% else %}
+    <div class="products-grid">
+      {% for product in products %}
+      <div class="product-card">
+        <div class="product-card__image">
+            {% if product.type == 'Tričko' %}
+                {% set image_filename = 'tshirt_blue.jpg' %}
+            {% elif product.type == 'Bunda' %}
+                {% set image_filename = 'jacket.jpg' %}
+            {% elif product.type == 'Mikina' %}
+                {% set image_filename = 'hoodie.jpg' %}
+            {% elif product.type == 'Kalhoty' %}
+                {% set image_filename = 'trousers.jpg' %}
+            {% elif product.type == 'Šála' %}
+                {% set image_filename = 'scarf.jpg' %}
+            {% endif %}
+
+            {% if image_filename %}
+                <img src="{{ url_for('static', path='images/' + image_filename) }}" alt="{{ product.product_name }}">
+            {% else %}
+                <span class="material-symbols-outlined" style="font-size: 48px;">inventory_2</span>
+            {% endif %}
+        </div>
+
+        <div class="product-card__content">
+          <h3 class="product-card__title">{{ product.product_name }}</h3>
+          <div class="product-card__meta">
+            {{ product.type}} - {{ product.material}}
+          </div>
+
+{#          <div class="product-card__price">#}
+{#            {{ "%.0f"|format(product.price) }} Kč#}
+{#          </div>#}
+{##}
+{#          <div class="product-card__actions">#}
+{#            <form action="{{ url_for('carts_post') }}" method="post">#}
+{#              <input type="hidden" name="product_id" value="{{ product.id }}">#}
+{#              <button type="submit" class="btn-add-cart">#}
+{#                Do košíku#}
+{#              </button>#}
+{#            </form>#}
+{#          </div>#}
+            <div class="product-card__footer">
+             <div class="product-card__price">
+            {{ "%.0f"|format(product.price) }} Kč
+          </div>
+
+          <div class="product-card__actions">
+            <form action="{{ url_for('carts_post') }}" method="post">
+              <input type="hidden" name="product_id" value="{{ product.id }}">
+              <button type="submit" class="btn-add-cart">
+                Do košíku
+              </button>
+            </form>
+          </div>
+            </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,103 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+{% block title %}Správa objednávek{% endblock %}
+
+{% block content %}
+<div class="page">
+
+  <!-- Flash reports-->
+  {% if request.session.get('flash_error') %}
+      <div style="background-color: #ffebee; color: #c62828; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #ef9a9a;">
+          {{ request.session.pop('flash_error') }}
+      </div>
+  {% endif %}
+  {% if request.session.get('flash_success') %}
+      <div style="background-color: #e8f5e9; color: #2e7d32; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #a5d6a7;">
+          {{ request.session.pop('flash_success') }}
+      </div>
+  {% endif %}
+
+  <!-- Hlavička stránky -->
+  <div class="page__header">
+    <div class="page__titles">
+      <span class="page__kicker">Administrace</span>
+      <h2 class="page__title">Správa objednávek</h2>
+      <p class="page__subtitle">Přehled všech objednávek v systému.</p>
+    </div>
+    <!-- Zde můžeme v budoucnu přidat třeba filtry, teď je prázdné -->
+    <div class="page__actions">
+    </div>
+  </div>
+
+  <!-- Tabulka objednávek -->
+  <div class="card table-card stack-md">
+    <h3 style="margin:0 0 1rem 0;">Seznam objednávek</h3>
+
+    {% if orders|length == 0 %}
+      <p style="margin:0; color: var(--muted);">Zatím nebyly vytvořeny žádné objednávky.</p>
+    {% else %}
+      <table class="data orders-table" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr style="background: #faf7f2;">
+                <th style="text-align: left; padding: 0.75rem;">ID</th>
+                <th style="text-align: left; padding: 0.75rem;">Datum vytvoření</th>
+                <th style="text-align: left; padding: 0.75rem;">Stav</th>
+                <th style="text-align: left; padding: 0.75rem;">Cena celkem</th>
+                <th style="text-align: left; padding: 0.75rem;">Datum doručení</th>
+                <th style="text-align: center; padding: 0.75rem;">Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for order in orders %}
+          <tr style="border-bottom: 1px solid #eee;">
+
+            <!-- ID -->
+            <td style="padding: 0.75rem;">#{{ order.id }}</td>
+
+            <!-- Datum vytvoření (formátováno, pokud je string, jinak uprav filter) -->
+            <td style="padding: 0.75rem;">
+                {{ order.created_at }}
+            </td>
+
+            <!-- Status (Status name) -->
+            <td style="padding: 0.75rem;">
+                <span style="font-weight: bold;">
+                    {{ order.status_name }}
+                </span>
+            </td>
+
+            <!-- Cena -->
+            <td style="padding: 0.75rem;">{{ "%.0f"|format(order.total_price) }} Kč</td>
+            
+            <!-- Datum doručení -->
+            <td style="padding: 0.75rem;">
+                {% if order.delivery_date %}
+                    {{ order.delivery_date }}
+                {% else %}
+                    <span style="color: var(--muted);">-</span>
+                {% endif %}
+            </td>
+
+            <!-- Tlačítko Akce -->
+          <td>
+            <div class="cart-actions">
+                <!-- Formulář pro změnu statusu -->
+                <form method="get" action="{{ url_for('change_status_ui') }}">
+                    <!-- Předáváme ID objednávky (order.id) -->
+                <input type="hidden" name="order_id" value="{{ order.id }}">
+
+                <button type="submit" class="cart-btn cart-btn--decrease">
+                    Změnit status
+                </button>
+                </form>
+            </div>
+          </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}

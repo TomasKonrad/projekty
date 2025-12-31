@@ -1,0 +1,49 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+{% block title %}Produkt aktualizován{% endblock %}
+
+{% block content %}
+<!-- Hlavní kontejner stránky podle sekce 7 v CSS -->
+<div class="page" style="align-items: center; justify-content: center; min-height: 60vh;">
+
+    <!-- Karta pro obsah (sekce 8 v CSS) -->
+    <div class="card" style="max-width: 600px; text-align: center; padding: 3rem;">
+
+        <!-- Ikona úspěchu (volitelné, ale vypadá to lépe) -->
+        <span class="material-symbols-outlined" style="font-size: 64px; color: #4caf50; margin-bottom: 1rem;">check_circle</span>
+
+        <!-- Nadpis -->
+        <h1 class="page__title" style="color: var(--accent-dark); margin-bottom: 1rem;">
+            Úprava dokončena!
+        </h1>
+
+        <!-- Text s potvrzením -->
+        <p style="font-size: 1.1rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5;">
+            Produkt <strong>{{ product_name }}</strong> byl úspěšně aktualizován v databázi.
+        </p>
+
+        <!-- ID Produktu -->
+        <div style="margin-bottom: 2.5rem; font-size: 1.2rem; font-weight: 700; color: var(--text);">
+            ID produktu: <span style="color: var(--accent);">#{{ product_id }}</span>
+        </div>
+
+        <!-- Tlačítka -->
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+
+            <!-- Tlačítko "Zpět na seznam" -->
+            <a href="{{ url_for('products_ui') }}" class="button"
+               style="background: transparent; border: 1px solid var(--muted); color: var(--muted);">
+                Zpět na seznam
+            </a>
+
+            <!-- Tlačítko "Upravit další" (nebo zpět na detail) -->
+            <!-- Může vést znovu na formulář pro nový produkt nebo zpět na úpravu tohoto -->
+            <a href="{{ url_for('create_product_ui') }}" class="btn-primary">
+                Přidat nový produkt
+            </a>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

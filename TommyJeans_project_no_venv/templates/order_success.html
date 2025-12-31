@@ -1,0 +1,45 @@
+{% extends "base_test.html" %}
+
+{% block content %}
+<!-- Hlavní kontejner stránky podle sekce 7 v CSS -->
+<div class="page" style="align-items: center; justify-content: center; min-height: 60vh;">
+
+    <!-- Karta pro obsah (sekce 8 v CSS) -->
+    <div class="card" style="max-width: 600px; text-align: center; padding: 3rem;">
+
+        <!-- Nadpis s vaší barvou -->
+        <h1 class="page__title" style="color: var(--accent-dark); margin-bottom: 1rem;">
+            Děkujeme za vaši objednávku!
+        </h1>
+
+        <!-- Text s potvrzením (využívá --muted barvu z CSS) -->
+        <p style="font-size: 1.1rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5;">
+            Vaše objednávka byla úspěšně vytvořena a nyní ji zpracováváme.
+        </p>
+
+        <!-- ID objednávky -->
+        <div style="margin-bottom: 2.5rem; font-size: 1.2rem; font-weight: 700; color: var(--text);">
+            ID objednávky: <span style="color: var(--accent);">#{{ order_id }}</span>
+        </div>
+
+        <!-- Tlačítka -->
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+
+            <!-- Tlačítko "Zpět" (sekundární styl - outline varianta) -->
+            <!-- Poznámka: V CSS nemáte explicitní .btn-secondary, takže použijeme inline styly
+                 pro "ghost" efekt, který ladí s vaším .button -->
+            <a href="{{ url_for('collection_ui') }}" class="button"
+               style="background: transparent; border: 1px solid var(--muted); color: var(--muted);">
+                Zpět do obchodu
+            </a>
+
+            <!-- Tlačítko "Moje objednávky" (hlavní akce - vaše .btn-primary) -->
+            <a href="{{ url_for('orders_ui') }}" class="btn-primary">
+                Moje objednávky
+            </a>
+
+        </div>
+    </div>
+
+</div>
+{% endblock %}

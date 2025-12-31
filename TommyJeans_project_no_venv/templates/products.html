@@ -1,0 +1,92 @@
+{% extends "dash_base.html" %}
+{% block title %}Produkty{% endblock %}
+
+{% block content %}
+<div class="page">
+
+  <!-- Zobrazení Flash zpráv ze Session (úspěch/chyba při mazání) -->
+  {% if request.session.get('flash_error') %}
+      <div style="background-color: #ffebee; color: #c62828; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #ef9a9a;">
+          {{ request.session.pop('flash_error') }}
+      </div>
+  {% endif %}
+  {% if request.session.get('flash_success') %}
+      <div style="background-color: #e8f5e9; color: #2e7d32; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #a5d6a7;">
+          {{ request.session.pop('flash_success') }}
+      </div>
+  {% endif %}
+
+  <div class="page__header">
+    <div class="page__titles">
+      <span class="page__kicker">Databáze</span>
+      <h2 class="page__title">Produkty</h2>
+      <p class="page__subtitle">Přehled všech produktů v e-shop databázi.</p>
+    </div>
+    <div class="page__actions">
+      {% set current_user = get_user(request) %}
+      {% if current_user and current_user.role in ['shop_assistant'] %}
+        <a href="{{ url_for('create_product_ui') }}" class="button">Přidat produkt</a>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="card table-card stack-md">
+    <h3 style="margin:0 0 1rem 0;">Seznam produktů</h3>
+
+    {% if products|length == 0 %}
+      <p style="margin:0; color: var(--muted);">Žádné produkty k zobrazení.</p>
+    {% else %}
+      <table class="data" style="width: 100%; border-collapse: collapse;">
+        <thead>
+            <tr style="background: #faf7f2;">
+                <th style="text-align: left; padding: 0.75rem;">ID</th>
+                <th style="text-align: left; padding: 0.75rem;">Název</th>
+                <th style="text-align: left; padding: 0.75rem;">Cena</th>
+                <th style="text-align: right; padding: 0.75rem;">Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for pr in products %}
+          <tr style="border-bottom: 1px solid #eee;">
+
+            <td style="padding: 0.75rem;">#{{ pr.id }}</td>
+
+            <td style="padding: 0.75rem;">
+                <strong>{{ pr.product_name }}</strong>
+                {% if pr.description %}
+                    <br><span style="font-size: 0.85rem; color: var(--muted);">{{ pr.description }}</span>
+                {% endif %}
+            </td>
+
+            <td style="padding: 0.75rem;">{{ "%.0f"|format(pr.price) }} Kč</td>
+
+            <td>
+                <div class="cart-actions">
+                    <form method="get" action="{{ url_for('update_product_ui') }}" style="display: inline;">
+                        <input type="hidden" name="product_id" value="{{ pr.id }}">
+                        <button type="submit" class="cart-btn cart-btn--decrease">
+                            Upravit produkt
+                        </button>
+                    </form>
+
+                    <form action="{{ url_for('products_ui_delete') }}" method="post">
+                        <input type="hidden" name="product_id" value="{{ pr.id }}">
+                        <button type="submit" class="cart-btn cart-btn--remove">
+                            Smazat
+                        </button>
+                    </form>
+
+                </div>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+    {% if not (current_user and current_user.role in ['shop_assistant']) %}
+      <p style="font-size:0.75rem;color:var(--muted);margin-top:1rem;">Správa produktů je dostupná pouze personálu.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

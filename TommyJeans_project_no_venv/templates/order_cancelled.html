@@ -1,0 +1,41 @@
+{% extends "base_test.html" %}
+
+{% block title %}Objednávka zrušena{% endblock %}
+
+{% block content %}
+<!-- Hlavní kontejner stránky -->
+<div class="page" style="align-items: center; justify-content: center; min-height: 60vh;">
+
+    <!-- Karta pro obsah -->
+    <div class="card" style="max-width: 600px; text-align: center; padding: 3rem;">
+
+        <!-- Ikonka nebo vizuální prvek (volitelné, ale hezké) -->
+        <div style="margin-bottom: 1.5rem;">
+            <span class="material-symbols-outlined" style="font-size: 4rem; color: #ea5d61;">
+                cancel
+            </span>
+        </div>
+
+        <!-- Nadpis -->
+        <h1 class="page__title" style="color: var(--text); margin-bottom: 1rem;">
+            Objednávka byla zrušena
+        </h1>
+
+        <!-- Vysvětlující text -->
+        <p style="font-size: 1.1rem; color: var(--muted); margin-bottom: 1.5rem; line-height: 1.5;">
+            Vaše objednávka <strong style="color: var(--text);">#{{ order_id }}</strong> byla na vaši žádost úspěšně stornována. 
+            Nevznikají vám žádné další závazky.
+        </p>
+
+        <!-- Jediné tlačítko pro návrat -->
+        <div style="margin-top: 2rem;">
+            <!-- Odkaz na orders_ui podle požadavku -->
+            <a href="{{ url_for('orders_ui') }}" class="btn-primary" style="background: var(--accent-dark);">
+                Zpět na přehled objednávek
+            </a>
+        </div>
+        
+    </div>
+
+</div>
+{% endblock %}

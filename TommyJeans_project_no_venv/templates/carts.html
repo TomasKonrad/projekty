@@ -1,0 +1,88 @@
+{% extends "base_test.html" %}
+{% block title %}Košík{% endblock %}
+
+{% block content %}
+<div class="page">
+  <div class="page__header">
+    <div class="page__titles">
+      <h2 class="page__title">Tvůj nákupní košík</h2>
+      <p class="page__subtitle">Zkontroluj si vybrané produkty před objednávkou.</p>
+    </div>
+    <div class="page__actions">
+        {% if products|length != 0 %}
+            <a href="{{ url_for('collection_ui') }}" class="button button--secondary">Pokračovat v nákupu</a>
+        {% endif %}
+    </div>
+  </div>
+
+  <div class="card table-card">
+    {% if products|length == 0 %}
+      <div style="padding: 20px; text-align: center;">
+          <p style="margin-bottom: 15px;">Váš košík je momentálně prázdný.</p>
+          <a href="{{ url_for('collection_ui') }}" class="button">Přejít do obchodu</a>
+      </div>
+    {% else %}
+      <table class="data">
+        <thead>
+            <tr>
+                <th>Produkt</th>
+                <th>Velikost</th>
+                <th>Cena/ks</th>
+                <th>Množství</th>
+                <th>Celkem</th>
+                <th style="text-align: center;">Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in products %}
+              <tr>
+                <td>
+                    <!-- Zobrazíme název i detaily pod sebe -->
+                    <strong>{{ item.product_name }}</strong><br>
+                    <span style="font-size: 0.85rem; color: var(--muted);">
+                        {{ item.type_name or '' }} {% if item.material_name %}, {{ item.material_name }}{% endif %}
+                    </span>
+                </td>
+                <td>{{ item.size_name }}</td>
+                <td>{{ "%.0f"|format(item.price) }} Kč</td>
+                <td>{{ item.quantity }} ks</td>
+                <td><strong>{{ "%.0f"|format(item.quantity_price) }} Kč</strong></td>
+                <td>
+                    <div class="cart-actions">
+
+                        <!-- Tlačítko: Odebrat 1ks -->
+                        <form action="{{ url_for('carts_decrease_post') }}" method="post" style="display:block; width: 100%;">
+                            <input type="hidden" name="product_id" value="{{ item.product_id }}">
+                            <button type="submit" class="cart-btn cart-btn--decrease" title="Snížit množství kusů o 1">
+                                Odebrat 1ks
+                            </button>
+                        </form>
+
+                    <!-- Tlačítko smazat -->
+                        <form action="{{ url_for('carts_delete') }}" method="post" style="display:inline;">
+                            <input type="hidden" name="product_id" value="{{ item.product_id }}">
+                            <button type="submit" class="cart-btn cart-btn--remove">
+                                Odstranit
+                            </button>
+                        </form>
+                    </div>
+                </td>
+              </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+
+      <!-- Řádek s celkovým součtem -->
+       <div class="cart-total-row">
+          <p class="cart-total-label">Celková cena:</p>
+          <p class="cart-total-price">{{ "%.0f"|format(total_price) }} Kč</p>
+       </div>
+
+      <!-- Tlačítko Objednat -->
+      <div style="margin-top: 20px; text-align: right;">
+          <a href="{{ url_for('checkout_ui') }}" class="button button--primary">Přejít k objednávce &rarr;</a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

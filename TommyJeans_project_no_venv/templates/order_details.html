@@ -1,0 +1,113 @@
+{% extends "base_test.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="page">
+        
+        <!-- 1. Hlavička stránky -->
+        <div class="page__header">
+            <div class="page__titles">
+                <h1 class="page__title">Detail objednávky #{{ order.id }}</h1>
+                <div class="page__subtitle">
+                    <span>Vytvořeno: {{ order.created_at }}</span>
+                </div>
+            </div>
+            
+            <!-- Akce (např. Zpět) -->
+            <div class="page__actions">
+                <a href="{{ url_for('orders_ui') }}" class="button button--primary">
+                    ← Zpět na přehled
+                </a>
+            </div>
+        </div>
+
+                <div class="card table-card">
+                    <div style="padding: 0 1.5rem 1rem 1.5rem; border-bottom: 1px solid #f0ece4;">
+                        <h3 style="margin: 0;">Zakoupené položky</h3>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="text-align: left;">Produkt</th>
+                                <th style="text-align: center;">Množství</th>
+                                <th style="text-align: right;">Cena za kus</th>
+                                <th style="text-align: right;">Celkem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for product in order.products %}
+                            <tr>
+                                <td>
+                                    <strong>{{ product.product_name }}</strong>
+                                </td>
+                                <td style="text-align: center;">{{ product.quantity }} ks</td>
+                                <td style="text-align: right;">{{ product.unit_price }} Kč</td>
+                                <td style="text-align: right; font-weight: 600;">{{ product.subtotal }} Kč</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="card order-summary">
+                    <h3 style="margin: 0; font-size: 1.1rem;">Souhrn objednávky</h3>
+
+                    <div style="display: flex; justify-content: space-between; color: var(--muted); font-size: 0.9rem;">
+                        <span>Stav objednávky:</span>
+                        <strong style="color: var(--text);">{{ order.status_name }}</strong>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; color: var(--muted); font-size: 0.9rem;">
+                        <span>Doručovací adresa:</span>
+                        <strong style="color: var(--text);">{{ order.address }}</strong>
+                    </div>
+
+                    <div style="display: flex; justify-content: space-between; color: var(--muted); font-size: 0.9rem;">
+                        <span>Způsob platby:</span>
+                        <strong style="color: var(--text);">{{ order.payment_method }}</strong>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between; color: var(--muted); font-size: 0.9rem;">
+                        <span>Datum doručení:</span>
+                        <strong style="color: var(--text);">{{ order.delivery_date }}</strong>
+                    </div>
+
+                    <div style="border-top: 1px solid #f0ece4; margin: 0.5rem 0;"></div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span style="font-size: 1rem;">Celková cena</span>
+                        <strong style="font-size: 1.5rem; color: var(--accent-dark);">{{ order.total_price }} Kč</strong>
+                    </div>
+                </div>
+
+                <!-- Tlačítka akcí (volitelné) -->
+                {% if order.status_name == 'Přijatá' %}
+                    <div class="card order-cancel-box">
+                        <p class="order-cancel-box__text">
+                        Objednávka zatím nebyla odeslána. Můžete ji zrušit.
+                        </p>
+
+                        <form action="{{ url_for('cancel_order', order_id=order.id) }}" method="POST" class="order-cancel-form">
+                            <div class="order-cancel-checkbox">
+                            <input
+                                type="checkbox"
+                                id="confirm_cancel"
+                                name="confirm_cancel"
+                                required
+                                >
+                                <label for="confirm_cancel">
+                                    Potvrzuji, že chci trvale zrušit objednávku.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="button btn-cancel-order">
+                                Zrušit objednávku
+                            </button>
+                        </form>
+                    </div>
+                {% endif %}
+
+    </div>
+{% endblock %}

@@ -1,0 +1,91 @@
+{#{% extends "base.html" %}#}
+{% extends "dash_base.html" %}
+{% block title %}Správa objednávek{% endblock %}
+
+{% block content %}
+<div class="page">
+
+  <!-- Flash reports-->
+  {% if request.session.get('flash_error') %}
+      <div style="background-color: #ffebee; color: #c62828; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #ef9a9a;">
+          {{ request.session.pop('flash_error') }}
+      </div>
+  {% endif %}
+  {% if request.session.get('flash_success') %}
+      <div style="background-color: #e8f5e9; color: #2e7d32; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem; border: 1px solid #a5d6a7;">
+          {{ request.session.pop('flash_success') }}
+      </div>
+  {% endif %}
+
+  <!-- Hlavička stránky -->
+  <div class="page__header">
+    <div class="page__titles">
+      <span class="page__kicker">Administrace</span>
+      <h2 class="page__title">Správa uživatelů</h2>
+      <p class="page__subtitle">Přehled všech uživatelů v systému.</p>
+    </div>
+    <div class="page__actions">
+        <!--Zatím nic-->
+    </div>
+  </div>
+
+  <!-- Tabulka uživatelů -->
+  <div class="card table-card">
+    {% if list_users|length == 0 %}
+      <p style="margin:0; color: var(--muted);">Nebyly nalezeni žádní uživatelé.</p>
+    {% else %}
+      <table class="data">
+        <thead>
+            <tr style="background: #faf7f2;">
+                <th style="text-align: left; padding: 0.75rem;">ID</th>
+                <th style="text-align: left; padding: 0.75rem;">Jméno</th>
+                <th style="text-align: left; padding: 0.75rem;">Role</th>
+                <th style="text-align: right; padding: 0.75rem;">Akce</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for user in list_users %}
+          <tr style="border-bottom: 1px solid #eee;">
+
+            <!-- ID -->
+            <td style="padding: 0.75rem;">#{{ user.id }}</td>
+
+            <!-- Status (Status name) -->
+            <td style="padding: 0.75rem;">
+                <span style="font-weight: bold;">
+                    {{ user.username }}
+                </span>
+            </td>
+
+            <!-- Role -->
+            <td style="padding: 0.75rem;">
+                <span style="font-weight: bold;">
+                    {{ user.role }}
+                </span>
+            </td>
+
+            <td>
+                <div class="cart-actions">
+                    <form method="get" action="{{ url_for('change_user_role_ui') }}" style="display: inline;">
+                        <input type="hidden" name="user_id" value="{{ user.id }}">
+                        <button type="submit" class="cart-btn cart-btn--decrease">
+                            Změnit roli
+                        </button>
+                    </form>
+                    <form action="{{ url_for('users_manager_ui_delete_user') }}" method="post" style="display:inline;">
+                        <input type="hidden" name="user_id" value="{{ user.id }}">
+                        <button type="submit" class="cart-btn cart-btn--remove">
+                            Smazat
+                        </button>
+                    </form>
+                </div>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends "base_test.html" %}
+{% block title %}Přihlášení{% endblock %}
+
+{% block content %}
+<div class="page">
+  <div class="page__header">
+    <div class="page__titles">
+      <h2 class="page__title">Přihlášení</h2>
+      <p class="page__subtitle">Vítejte zpět!</p>
+    </div>
+  </div>
+
+  <div class="card form-card">
+    {% if error %}
+      <p class="error" style="margin:0;">{{ error }}</p>
+    {% endif %}
+    <form method="post" action="{{ url_for('login_post') }}">
+      <label>Uživatelské jméno
+        <input type="text" name="username" required>
+      </label>
+      <label>Heslo
+        <input type="password" name="password" required>
+      </label>
+        <div style="text-align: center; margin-top: 1rem; font-size: 0.9rem; color: var(--muted);">
+        <span>Jste tu nový?</span>
+        <a href="{{ url_for('register_ui') }}" style="color: var(--accent); text-decoration: none; font-weight: 600; margin-left: 5px;">
+          Zaregistrujte se
+        </a>
+      </div>
+      <button type="submit">Přihlásit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

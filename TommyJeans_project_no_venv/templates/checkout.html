@@ -1,0 +1,88 @@
+{% extends "base_test.html" %}
+{% block title %}Dokončení objednávky{% endblock %}
+
+{% block content %}
+<div class="page">
+  <div class="page__header">
+    <div class="page__titles">
+      <h2 class="page__title">Pokladna</h2>
+      <p class="page__subtitle">Zkontrolujte zboží a vyplňte doručovací údaje.</p>
+    </div>
+    <!-- Tlačítko zpět na editaci košíku -->
+    <div class="page__actions">
+        <a href="{{ url_for('carts_ui') }}" class="button button--secondary">Upravit košík</a>
+    </div>
+  </div>
+
+  <!-- OTEVÍRÁME FORMULÁŘ PRO CELOU SEKCI -->
+  <form action="{{ url_for('checkout_post') }}" method="post">
+
+      <div class="card table-card">
+          <table class="data">
+            <thead>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Velikost</th>
+                    <th>Cena/ks</th>
+                    <th>Množství</th>
+                    <th>Celkem</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in products %}
+                  <tr>
+                    <td>
+                        <strong>{{ item.product_name }}</strong><br>
+                        <span style="font-size: 0.85rem; color: var(--muted);">
+                            {{ item.type_name }} {{ item.material_name }}
+                        </span>
+                    </td>
+                    <td>{{ item.size_name }}</td>
+                    <td>{{ "%.0f"|format(item.price) }} Kč</td>
+                    <td>{{ item.quantity }} ks</td>
+                    <td><strong>{{ "%.0f"|format(item.quantity_price) }} Kč</strong></td>
+                  </tr>
+                {% endfor %}
+            </tbody>
+          </table>
+            <!-- Řádek s celkovým součtem -->
+        <div class="cart-total-row">
+          <p class="cart-total-label">Celková cena:</p>
+          <p class="cart-total-price">{{ "%.0f"|format(total_price) }} Kč</p>
+       </div>
+      </div>
+
+      <!-- 2. FORMULÁŘ PRO ADRESU A PLATBU (Nový blok pod tabulkou) -->
+      <div class="card card-form">
+          <h3 style="margin-bottom: 1rem;">Doručovací údaje</h3>
+
+          <!-- Adresa -->
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="addr" style="display:block; margin-bottom: 0.5rem; font-weight:bold;">Adresa doručení:</label>
+              <textarea id="addr" name="address" required
+                        style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; min-height: 80px;"
+                        placeholder="například: Unipetrolská 358, Nové Butovice"></textarea>
+          </div>
+
+          <!-- Platba -->
+          <div class="form-group" style="margin-bottom: 2rem;">
+              <label for="payment" style="display:block; margin-bottom: 0.5rem; font-weight:bold;">Způsob platby:</label>
+              <select id="payment" name="payment_method"
+                      style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px;">
+                  <option value="card">Platba kartou</option>
+                  <option value="cash">Dobírka</option>
+                  <option value="transfer">Bankovní převod</option>
+              </select>
+          </div>
+
+          <!-- Tlačítko Odeslat -->
+          <div style="text-align: center;">
+              <button type="submit" class="button button--primary" style="width: 100%; padding: 15px; font-size: 1.1rem;">
+                  Závazně objednat
+              </button>
+          </div>
+      </div>
+
+  </form>
+</div>
+{% endblock %}

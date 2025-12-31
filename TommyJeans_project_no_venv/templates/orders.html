@@ -1,0 +1,64 @@
+{% extends "base_test.html" %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <div class="page">
+        <!-- Hlavička stránky -->
+        <div class="page__header">
+            <div class="page__titles">
+                <h1 class="page__title">Moje objednávky</h1>
+                <p class="page__subtitle">Aktuální počet všech Vaších objednávek: <span style="color: black; font-size: 1.2rem;">{{ orders|length }}</span></p>
+            </div>
+            <div class="page__actions">
+            {% set current_user = get_user(request) %}
+            <!-- Tlačítko pro přidání nového produktu (viditelné pro adminy a asistenty) -->
+            {% if current_user and current_user.role in ['shop_assistant'] %}
+                <a href="{{ url_for('orders_manager_ui') }}" class="button">správa objednávek</a>
+            {% endif %}
+    </div>
+        </div>
+
+        <!-- Seznam objednávek -->
+        <div class="stack-lg">
+            {% for order in orders %}
+            <div class="card order-card">
+
+                <!-- Levá část: Ikona, Číslo, Datum -->
+                <div class="order-card__left">
+                    <div class="order-card__icon">
+                        #{{ order.id }}
+                    </div>
+
+                    <div class="order-card__info">
+                        <h3>Objednávka č. {{ order.id }}</h3>
+                        <p>Vytvořeno: {{ order.created_at }}</p>
+                        <p>Stav objednávky: <span style="color:black;">{{ order.status_name }}</span></p>
+                    </div>
+                </div>
+
+                <!-- Pravá část: Cena a tlačítko -->
+                <div class="order-card__right">
+                    <div class="order-price">
+                        <span>Celkem</span>
+                        <strong>{{ order.total_price }} Kč</strong>
+                    </div>
+
+{#                    <form method="get" action="{{ url_for('order_detail_ui') }}" style="display: inline;">#}
+{#                        <input type="hidden" name="order_id" value="{{ order.id }}">#}
+{#                        <button type="submit" class="cart-btn">#}
+{#                            Zobrazit detail#}
+{#                        </button>#}
+{#                    </form>#}
+
+                    <a href="/orders/{{ order.id }}" class="btn-ghost">
+                        Zobrazit detail
+                    </a>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
