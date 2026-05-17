@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SportApp</string>
+    <string name="navigate_back">Navigate back</string>
+    <string name="you_have_no_sports_activity">You have no sport activity</string>
+    <string name="invalid_value">Invalid value</string>
+    <string name="add_sport">Add sport Activity</string>
+    <string name="sport_title">Title</string>
+    <string name="sport_place">Place</string>
+    <string name="sport_in_duration_minutes">Duration (minutes)</string>
+    <string name="sport_burned_calories">Burned calories</string>
+    <string name="sport_description">Description</string>
+    <string name="type_of_activity">Type of activity</string>
+    <string name="save_sport_activity">Save sport activity</string>
+    <string name="top_bar_list_of_activities">List of activities</string>
+    <string name="detail">Detail</string>
+    <string name="statistics">Statistics</string>
+    <string name="count_activities">Number of activities</string>
+    <string name="total_minutes">Total minutes of activity</string>
+    <string name="most_common_activity">Most common activity</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_confirm">Confirm</string>
+    <string name="delete_dialog_title">Delete sport?</string>
+    <string name="delete_dialog_message">Are you sure you want to delete this sportActvity? If you do it, you can not get it back!</string>
+    <string name="statistic_title">Sport statistics</string>
+    <string name="sport_type_of_activity">Type of activity</string>
+</resources>
