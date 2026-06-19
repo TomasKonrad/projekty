@@ -1,0 +1,19 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /bins/{binId} {
+      // cteni povoli vsem — kontejnery jsou verejny data
+      allow read: if true;
+      // zapis povoli vsem — emulator nepodporuje produkni Auth tokeny,
+      // takze request.auth je vzdy null; produkni pravidla budou strizsi
+      allow write: if true;
+    }
+    match /users/{userId} {
+      allow read, write: if true;
+    }
+    //povoleni vytvoreni reportu pouze pro prihlasene
+    match /reports/{reportId} {
+      allow read, write: if true;
+    }
+  }
+}
