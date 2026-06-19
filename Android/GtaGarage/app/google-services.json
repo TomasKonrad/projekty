@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "436094592206",
+    "project_id": "gta-garage-android",
+    "storage_bucket": "gta-garage-android.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436094592206:android:7e90c814b41c11c0895c9f",
+        "android_client_info": {
+          "package_name": "cz.mendelu.gtagarage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQt_DgvI4G6NCunRmZT0SQGc97tPAKvME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
