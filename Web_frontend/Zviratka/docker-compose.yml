@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: nuxt3-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - path: .env
+        required: false

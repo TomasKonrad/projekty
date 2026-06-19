@@ -1,0 +1,27 @@
+:root {
+    --color-primary:          #0369a1;
+    --color-primary-light:    #e0f2fe;
+    --color-primary-hover:    #05a9ff;
+    --color-secondary:        #0891b2;
+    --color-secondary-bg:     rgba(255, 255, 255, 0.15);
+    --color-secondary-border: rgba(255, 255, 255, 0.3);
+    --color-secondary-text:   #ffffff;
+    --color-accent:           #059669;
+
+    --color-bg:           #f0f9ff;
+    --color-surface:      #ffffff;
+    --color-border:       #bae6fd;
+    --color-border-dark:  #275384;
+    --color-card-bg:      #d7ecf3;
+    --color-game-easy:    #b4ff5d;
+    --color-game-medium:  #fdc050;
+    --color-game-hard:    #f75e5e;
+    --color-game-gamer:   #047756;
+
+    --color-text:           #0c1a2e;
+    --color-text-muted:     #64748b;
+    --color-text-negative:  #d30505;
+    --color-negative-light: #fee2e2;
+
+    background: linear-gradient(135deg, #0c4a6e 0%, #0891b2 100%);
+}
