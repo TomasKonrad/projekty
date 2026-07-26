@@ -1,0 +1,28 @@
+:root {
+    /* Fyzika & Spacing */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+
+    /* Záměrně ostré hrany evokující okna terminálu */
+    --radius-sm: 0px;
+    --radius-md: 2px;
+    --radius-lg: 4px;
+
+    /* Temná paleta (VS Code / Dark IDE styl) */
+    --color-bg: #0d1117;          /* Téměř černá, základní plocha */
+    --color-surface: #161b22;     /* Lehce světlejší panely (jako okno editoru) */
+    --color-border: #30363d;      /* Tenké linky oddělující sekce */
+
+    /* Text */
+    --color-text-main: #c9d1d9;   /* Světle šedá (nikdy ne čistě bílá) pro čitelnost */
+    --color-text-muted: #8b949e;  /* Komentáře v kódu / méně důležitý text */
+
+    /* Akcent - Neonová barva (Vyber si jednu: Zelená, Tyrkysová, nebo Oranžová) */
+    /* Zde je příklad kyber-tyrkysové (vypadá super jako klíčová slova v IDE) */
+    --color-accent: #2dd4bf;
+    --color-accent-hover: #14b8a6;
+}
