@@ -4,13 +4,13 @@
     <div class="nav-container">
       <!-- Logo / Název -->
       <div class="logo">
-        <NuxtLink to="/">rysstar@portfolio:~$</NuxtLink>
+        <NuxtLink to="/">rysstar</NuxtLink>
       </div>
 
       <!-- Navigační odkazy (ve stylu souborů) -->
       <nav class="nav-links">
-        <NuxtLink to="/" class="nav-link">index.html</NuxtLink>
-        <NuxtLink to="/projects" class="nav-link">projekty.vue</NuxtLink>
+        <NuxtLink to="/#projekty" class="nav-link">projekty</NuxtLink>
+        <NuxtLink to="/#kontakt" class="nav-link">kontakt</NuxtLink>
       </nav>
     </div>
   </header>
@@ -67,3 +67,5 @@
   border-bottom: 2px solid var(--color-accent);
 }
 </style>
+<script setup lang="ts">
+</script>

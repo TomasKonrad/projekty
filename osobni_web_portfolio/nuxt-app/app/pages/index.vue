@@ -16,54 +16,22 @@
     <section class="tech-section">
       <h3 class="section-title">/* Můj Tech Stack */</h3>
 
-      <div class="tech-grid">
-        <!-- Kotlin -->
-        <div class="tech-card">
-          <Icon name="logos:kotlin" class="tech-icon" />
-          <span>Kotlin</span>
-        </div>
-
-        <!-- Android -->
-        <div class="tech-card">
-          <Icon name="logos:android-icon" class="tech-icon" />
-          <span>Android</span>
-        </div>
-
-        <!-- Vue.js -->
-        <div class="tech-card">
-          <Icon name="logos:vue" class="tech-icon" />
-          <span>Vue.js</span>
-        </div>
-
-        <!-- Nuxt.js -->
-        <div class="tech-card">
-          <Icon name="logos:nuxt-icon" class="tech-icon" />
-          <span>Nuxt 3</span>
-        </div>
-
-        <!-- Firebase -->
-        <div class="tech-card">
-          <Icon name="logos:firebase" class="tech-icon" />
-          <span>Firebase</span>
-        </div>
-
-        <!-- TypeScript / JavaScript -->
-        <div class="tech-card">
-          <Icon name="logos:typescript-icon" class="tech-icon" />
-          <span>TypeScript</span>
-        </div>
-
-        <!-- Figma -->
-        <div class="tech-card">
-          <Icon name="logos:figma" class="tech-icon" />
-          <span>Figma</span>
-        </div>
-
-        <!-- Git -->
-        <div class="tech-card">
-          <Icon name="logos:git-icon" class="tech-icon" />
-          <span>Git</span>
-        </div>
+      <div class="tech-icons-wrapper">
+        <Icon name="logos:kotlin" class="tech-icon" />
+        <Icon name="logos:android-vertical" class="tech-icon" />
+        <Icon name="logos:material-ui" class="tech-icon" />
+        <Icon name="devicon:swift" class="tech-icon" />
+        <Icon name="simple-icons:apple" class="tech-icon" />
+        <Icon name="logos:vue" class="tech-icon" />
+        <Icon name="logos:nuxt" class="tech-icon" />
+        <Icon name="logos:firebase" class="tech-icon" />
+        <Icon name="logos:figma" class="tech-icon" />
+        <Icon name="logos:python" class="tech-icon" />
+        <Icon name="logos:java" class="tech-icon" />
+        <Icon name="devicon:cplusplus" class="tech-icon" />
+        <Icon name="logos:tailwindcss" class="tech-icon" />
+        <Icon name="logos:php" class="tech-icon" />
+        <Icon name="logos:oracle" class="tech-icon" />
       </div>
     </section>
 
@@ -71,29 +39,81 @@
       <h3 class="section-title">/* Vybrané práce */</h3>
 
       <div class="projects-grid">
-        <!-- První projekt -->
         <ProjectCard
-            title="Správce Výdajů"
-            description="Mobilní aplikace v Kotlinu pro sledování osobních financí. Obsahuje generování grafů a zálohu do Firebase."
-            :technologies="['Kotlin', 'Firebase', 'MVVM']"
-            image="/img/vydeje-app.jpg"
-            link="#"
+            v-for="(projekt, index) in seznamProjektu"
+            :key="index"
+            :title="projekt.title"
+            :description="projekt.description"
+            :technologies="projekt.technologies"
+            :image="projekt.image"
+            :link="projekt.link"
         />
-
-        <!-- Druhý projekt -->
-        <ProjectCard
-            title="Osobní Portfolio"
-            description="Webová prezentace s vlastním design systémem postavená na Nuxt 3. Plně responzivní s důrazem na čistý kód."
-            :technologies="['Nuxt 3', 'Vue.js', 'CSS']"
-            image="/img/portfolio-web.jpg"
-            link="#"
-        />
-
       </div>
     </section>
 
   </div>
 </template>
+
+<script setup>
+const seznamProjektu = [
+  {
+    title: "Udrž Danův Acer Nitro 15 naživu",
+    description: "Webová hra, kde udržujete Danuv notebook při životě.",
+    technologies: ['Vue', 'Nuxt'],
+    image: "/img/vydeje-app.jpg",
+    link: "#"
+  },
+  {
+    title: "Monster Tinder",
+    description: "Seznamka inspirovaná mobilní seznamkou Tinder s propojením na api Mockapi.io.",
+    technologies: ['Vue', 'Nuxt', 'MockApi'],
+    image: "/img/portfolio-web.jpg",
+    link: "#"
+  },
+  {
+    title: "Svět zvířat",
+    description: "Webová aplikace o zvířatech včetně her",
+    technologies: ['Vue', 'Nuxt', 'INaturalist API, Wikimedia API, Docker'],
+    image: "/img/portfolio-web.jpg",
+    link: "#"
+  },
+  {
+    title: "Tommy Jeans e-shop",
+    description: "Webový e-shop s oblečením značky Tommy Jeans",
+    technologies: ['Python', 'RestAPI', 'FlaskAPI'],
+    image: "/img/portfolio-web.jpg",
+    link: "#"
+  },
+  {
+    title: "Mendle Phone [1]",
+    description: "Návrh designu webu mířené pro specifickou skupinu za pomocí nástroje Figma a Affinity",
+    technologies: ['Figma'],
+    image: "/img/MendlePhone.png",
+    link: "#"
+  },
+  {
+    title: "SportApp",
+    description: "První jednoduchá Android aplikace zaměřená na zaznamenávání sportovních aktivit ",
+    technologies: ['Kotlin', 'Android', 'Material 3'],
+    image: "/img/portfolio-web.jpg",
+    link: "#"
+  },
+  {
+    title: "GtaGarage",
+    description: "Manager Nemovitostí a vozidel pro hru GTA V jako mobilní aplikace",
+    technologies: ['Kotlin', 'Android', 'Material 3', 'Figma', 'Firebase'],
+    image: "/img/Feathure_graphic.png",
+    link: "#"
+  },
+  {
+    title: "Kosher",
+    description: "Mobilní aplikace pro získání lokace a informací o sběrných dvorech, koších, kontejnerek po celém světě",
+    technologies: ['Swift', 'iOS', 'Gemini', 'Figma', 'Firebase'],
+    image: "/img/portfolio-web.jpg",
+    link: "#"
+  },
+]
+</script>
 
 <style scoped>
 .page-container {
@@ -128,40 +148,18 @@
 }
 
 /* --- 2. TECH SEKCE --- */
-.tech-grid {
-  display: grid;
-  /* Vytvoří malé čtvercové karty vedle sebe (min. šířka 100px) */
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  gap: var(--space-3);
-}
-
-.tech-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: var(--space-4) var(--space-2);
+.tech-icons-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap; /* Zalomí řádek, když dojde místo */
+  gap: var(--space-6); /* Mezera mezi ikonami (např. 24px) */
+  align-items: center; /* Srovná je na střed řádku */
   justify-content: center;
-  gap: var(--space-2);
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
-.tech-card:hover {
-  border-color: var(--color-accent);
-  transform: translateY(-4px); /* Lehké "vyskočení" nahoru */
+  margin-top: var(--space-4);
 }
 
 /* Velikost ikony a textu */
 .tech-icon {
-  font-size: 6.5rem; /* Zvětšíme ikonu */
-}
-
-.tech-card span {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--color-text-main);
+  font-size: 4rem;
 }
 
 /* --- 3. PROJEKTY SEKCE --- */

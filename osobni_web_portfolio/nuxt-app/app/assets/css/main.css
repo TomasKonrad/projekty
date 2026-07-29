@@ -19,18 +19,23 @@
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 
     /* Temná paleta (VS Code / Dark IDE styl) */
-    --color-bg: #0d1117;          /* Téměř černá, základní plocha */
-    --color-surface: #161b22;     /* Lehce světlejší panely (jako okno editoru) */
-    --color-border: #30363d;      /* Tenké linky oddělující sekce */
+    --color-bg: #ffffff;          /* Téměř černá, základní plocha */
+    --color-surface: #e4e6e8;     /* Lehce světlejší panely (jako okno editoru) */
+    --color-border: #3a3737;      /* Tenké linky oddělující sekce */
 
     /* Text */
-    --color-text-main: #c9d1d9;   /* Světle šedá (nikdy ne čistě bílá) pro čitelnost */
-    --color-text-muted: #8b949e;  /* Komentáře v kódu / méně důležitý text */
+    --color-text-main: #1c1b1b;   /* Světle šedá (nikdy ne čistě bílá) pro čitelnost */
+    --color-text-muted: #464849;  /* Komentáře v kódu / méně důležitý text */
 
     /* Akcent - Neonová barva (Vyber si jednu: Zelená, Tyrkysová, nebo Oranžová) */
     /* Zde je příklad kyber-tyrkysové (vypadá super jako klíčová slova v IDE) */
-    --color-accent: #2dd4bf;
-    --color-accent-hover: #14b8a6;
+    --color-accent: #dd8716;
+    --color-accent-hover: #8e5100;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -41,7 +46,7 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text-main);
     font-family: var(--font-sans);
-    line-height: 1.6;
+    /*line-height: 1.6;*/
 }
 
 h1, h2, h3, .nav-link, .btn {
