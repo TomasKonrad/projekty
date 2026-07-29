@@ -29,8 +29,9 @@
 
     /* Akcent - Neonová barva (Vyber si jednu: Zelená, Tyrkysová, nebo Oranžová) */
     /* Zde je příklad kyber-tyrkysové (vypadá super jako klíčová slova v IDE) */
-    --color-accent: #dd8716;
-    --color-accent-hover: #8e5100;
+    --color-accent: #2563eb; /* Krásná středně modrá (Tailwind Blue 600) */
+    --color-accent-hover: #1d4ed8; /* Tmavší modrá pro hover (Blue 700) */
+    --color-accent-light: #eff6ff;
 }
 
 html, body {
@@ -46,7 +47,17 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text-main);
     font-family: var(--font-sans);
-    /*line-height: 1.6;*/
+    /* Měkký "mesh" gradient pomocí několika kruhových přechodů */
+    background-image:
+            radial-gradient(at 80% 0%, rgba(219, 234, 254, 0.6) 0px, transparent 50%),   /* Pravý horní roh - ledově modrá */
+            radial-gradient(at 20% 30%, rgba(239, 246, 255, 0.7) 0px, transparent 50%),  /* Levý bok - nejsvětlejší modrá */
+            radial-gradient(at 90% 80%, rgba(243, 244, 246, 0.6) 0px, transparent 50%),  /* Pravý dolní roh - jemná šedá */
+            radial-gradient(at 10% 100%, rgba(219, 234, 254, 0.4) 0px, transparent 40%); /* Levý dolní roh - ledově modrá */
+
+    /* Fixní pozadí je klíčové! */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 h1, h2, h3, .nav-link, .btn {

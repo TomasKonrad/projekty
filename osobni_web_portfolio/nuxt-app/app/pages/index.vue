@@ -6,15 +6,15 @@
         <img src="/img/profilovka.jpg" alt="Rysstar Profil" class="profile-image" />
       </div>
 
-      <p class="hero-bio">
-        Student a vývojář z Prahy. Baví mě tvořit mobilní appky, čisté weby v Nuxtu a propojovat je s cloudem přes Firebase.
-        Mám silný základ v matematice a aplikuji statistiku do reálných projektů.
+      <p>
+        Jsem 21. letý vysokoškolský student IT, který aktuálně studuje zaměření na vývoj mobilních a webových aplikací. Tato stránka slouží jako prezentace mého portfolia uložené na Githubu.
+        Níže se můžete podívat vizuálně a mé projekty. Teším se, jaké projekty ať už v týmu nebo samostatně ještě vytvořím.
       </p>
     </section>
 
     <!-- 2. SEKCE: TECHNOLOGIE -->
     <section class="tech-section">
-      <h3 class="section-title">/* Můj Tech Stack */</h3>
+      <h3 class="section-title">Používané technologie</h3>
 
       <div class="tech-icons-wrapper">
         <Icon name="logos:kotlin" class="tech-icon" />
@@ -36,7 +36,7 @@
     </section>
 
     <section id="projekty" class="projects-section">
-      <h3 class="section-title">/* Vybrané práce */</h3>
+      <h3 class="section-title">Portfolio</h3>
 
       <div class="projects-grid">
         <ProjectCard
@@ -49,6 +49,10 @@
             :link="projekt.link"
         />
       </div>
+    </section>
+
+    <section>
+      <p>Libí se Vám projekty a máte zájem o moje know-how? Níže na mě najdete kontakt a můžeme se domluvit.</p>
     </section>
 
   </div>
@@ -73,7 +77,7 @@ const seznamProjektu = [
   {
     title: "Svět zvířat",
     description: "Webová aplikace o zvířatech včetně her",
-    technologies: ['Vue', 'Nuxt', 'INaturalist API, Wikimedia API, Docker'],
+    technologies: ['Vue', 'Nuxt', 'INaturalist API', 'Wikimedia API', 'Docker'],
     image: "/img/portfolio-web.jpg",
     link: "#"
   },
@@ -107,9 +111,9 @@ const seznamProjektu = [
   },
   {
     title: "Kosher",
-    description: "Mobilní aplikace pro získání lokace a informací o sběrných dvorech, koších, kontejnerek po celém světě",
+    description: "Mobilní aplikace jako pomocník pro třídění odpadu",
     technologies: ['Swift', 'iOS', 'Gemini', 'Figma', 'Firebase'],
-    image: "/img/portfolio-web.jpg",
+    image: "/img/kosher.jpg",
     link: "#"
   },
 ]

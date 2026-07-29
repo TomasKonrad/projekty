@@ -1,46 +1,53 @@
 <template>
   <article class="project-card">
 
-    <!-- OBRÁZEK PROJEKTU -->
+    <!-- OBRÁZEK PROJEKTU (Nyní zaoblený uvnitř) -->
     <NuxtLink :to="link" class="image-link">
       <div class="image-wrapper">
-        <!-- Zástupný obrázek, dokud nepošleš skutečnou prop 'image' -->
         <img
             :src="image || 'https://via.placeholder.com/600x400/161b22/8b949e?text=Image_Not_Found'"
             :alt="`Náhled projektu ${title}`"
             class="project-image"
         />
-        <!-- Malý překryv v rohu evokující příponu souboru -->
-        <span class="file-badge">{{ title.toLowerCase().replace(/\s+/g, '_') }}.exe</span>
       </div>
     </NuxtLink>
 
-    <!-- TEXTOVÁ ČÁST -->
+    <!-- TEXTOVÁ ČÁST (Bílé pozadí) -->
     <div class="card-body">
-      <h3 class="card-title">
-        <NuxtLink :to="link">{{ title }}</NuxtLink>
-      </h3>
+
+      <!-- HLAVIČKA S NÁZVEM -->
+      <div class="card-header">
+        <div>
+          <h3 class="card-title">
+            <NuxtLink :to="link">{{ title }}</NuxtLink>
+          </h3>
+        </div>
+      </div>
 
       <p class="card-desc">{{ description }}</p>
 
-      <!-- SEZNAM TECHNOLOGIÍ -->
-      <div class="tech-stack">
-        <span v-for="tech in technologies" :key="tech" class="tech-tag">
-          {{ tech }}
-        </span>
-      </div>
+      <!-- SPODNÍ ŘÁDEK: TECHNOLOGIE (pilulky) A TLAČÍTKO "SEE MORE" -->
+      <div class="card-footer">
 
-      <!-- ODKAZ -->
-      <NuxtLink :to="link" class="card-action">
-        spustit_projekt() <span>&rarr;</span>
-      </NuxtLink>
+        <!-- Seznam technologií jako štítky (z prvního návrhu) -->
+        <div class="tech-stack">
+          <span v-for="tech in technologies" :key="tech" class="tech-tag">
+            {{ tech }}
+          </span>
+        </div>
+
+        <!-- ODKAZ JAKO VELKÉ TLAČÍTKO S GRADIENTEM -->
+        <NuxtLink :to="link" class="action-btn">
+          See more
+        </NuxtLink>
+
+      </div>
     </div>
 
   </article>
 </template>
 
 <script setup>
-// Definice vlastností (Props), které karta přijímá zvenčí
 defineProps({
   title: {
     type: String,
@@ -56,11 +63,11 @@ defineProps({
   },
   image: {
     type: String,
-    default: '' // Není povinný, máme fallback
+    default: ''
   },
   link: {
     type: String,
-    default: '#' // Zatím odkaz nikam
+    default: '#'
   }
 })
 </script>
@@ -68,128 +75,124 @@ defineProps({
 <style scoped>
 /* HLAVNÍ OBRYS KARTY */
 .project-card {
-  background-color: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  overflow: hidden; /* Aby obrázek nepřetekl přes zakulacené rohy */
+  background-color: var(--color-bg);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: var(--font-sans);
 }
 
 .project-card:hover {
-  border-color: var(--color-accent);
-  transform: translateY(-4px); /* Efekt mírného nadzvednutí při najetí myší */
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
-/* OBRÁZEK */
 .image-link {
   display: block;
   overflow: hidden;
-  border-bottom: 1px solid var(--color-border);
+  border-radius: 16px 16px 4px 4px;
 }
 
 .image-wrapper {
   position: relative;
-  aspect-ratio: 16 / 9; /* Vynutí poměr stran 16:9 pro všechny obrázky */
+  aspect-ratio: 16 / 9;
   width: 100%;
 }
 
 .project-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Obrázek vyplní obdélník a neořízne se zdeformovaně */
-  transition: transform 0.4s ease;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-/* Efekt přiblížení obrázku po najetí myší na kartu */
 .project-card:hover .project-image {
-  transform: scale(1.05);
-}
-
-/* Malý štítek přes obrázek */
-.file-badge {
-  position: absolute;
-  bottom: var(--space-2);
-  right: var(--space-2);
-  background-color: rgba(13, 17, 23, 0.85); /* Poloprůhledné pozadí */
-  color: var(--color-text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  padding: 2px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--color-border);
-  backdrop-filter: blur(4px);
+  transform: scale(1.03);
 }
 
 /* TEXTOVÁ ČÁST */
 .card-body {
-  padding: var(--space-4);
+  padding: 16px 8px 8px 8px; /* Padding okolo textu */
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
-  flex: 1; /* Roztáhne se na max výšku v gridu */
+  flex: 1;
+}
+
+/* HLAVIČKA */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
 }
 
 .card-title {
-  margin: 0;
-  font-size: 1.25rem;
+  margin: 0 0 4px 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .card-title a {
-  color: var(--color-text-main);
+  color: inherit;
   text-decoration: none;
-  font-family: var(--font-mono);
 }
 
-.card-title a:hover {
-  color: var(--color-accent);
-}
-
+/* POPIS */
 .card-desc {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
+  color: #666;
+  font-size: 0.9rem;
   line-height: 1.5;
-  margin: 0;
-  flex: 1; /* Odtlačí technologie a odkaz dolů */
+  margin: 0 0 24px 0;
+  flex: 1;
 }
 
-/* TECHNOLOGIE */
+/* PATIČKA (Tech stack + Tlačítko) */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Zarovná tlačítko a tagy na střed */
+  gap: 16px;
+  margin-top: auto;
+}
+
+/* TECHNOLOGIE (Jemné světlé pilulky) */
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-2);
-  margin-top: var(--space-2);
+  gap: 6px;
 }
 
 .tech-tag {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, monospace);
   font-size: 0.75rem;
-  color: var(--color-text-main);
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
+  color: #666;
+  background: rgba(0, 0, 0, 0.04);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 99px; /* Tvar pilulky */
 }
 
-/* AKČNÍ ODKAZ */
-.card-action {
-  font-family: var(--font-mono);
-  color: var(--color-accent);
+/* TLAČÍTKO "SEE MORE" (Velká pilulka s modrým gradientem) */
+.action-btn {
+  /* Tmavě modrá s přechodem do světlejší modré */
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
   text-decoration: none;
-  font-size: 0.9rem;
-  align-self: flex-start;
-  margin-top: var(--space-2);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  padding: 10px 24px;
+  border-radius: 99px; /* Tvar pilulky */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3); /* Jemný modrý stín */
+  flex-shrink: 0; /* Zaručí, že se tlačítko nezmenší, když bude hodně tagů */
 }
 
-.card-action span {
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover .card-action span {
-  transform: translateX(4px); /* Šipka popojede doprava */
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
 }
 </style>
