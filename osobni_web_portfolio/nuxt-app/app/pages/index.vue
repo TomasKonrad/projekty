@@ -17,21 +17,23 @@
       <h3 class="section-title">Používané technologie</h3>
 
       <div class="tech-icons-wrapper">
-        <Icon name="logos:kotlin" class="tech-icon" />
-        <Icon name="logos:android-vertical" class="tech-icon" />
-        <Icon name="logos:material-ui" class="tech-icon" />
-        <Icon name="devicon:swift" class="tech-icon" />
-        <Icon name="simple-icons:apple" class="tech-icon" />
-        <Icon name="logos:vue" class="tech-icon" />
-        <Icon name="logos:nuxt" class="tech-icon" />
-        <Icon name="logos:firebase" class="tech-icon" />
-        <Icon name="logos:figma" class="tech-icon" />
-        <Icon name="logos:python" class="tech-icon" />
-        <Icon name="logos:java" class="tech-icon" />
-        <Icon name="devicon:cplusplus" class="tech-icon" />
-        <Icon name="logos:tailwindcss" class="tech-icon" />
-        <Icon name="logos:php" class="tech-icon" />
-        <Icon name="logos:oracle" class="tech-icon" />
+        <!-- U ikon, kde byl text, je použita přípona -icon nebo jiná sada -->
+        <Icon name="logos:kotlin-icon" class="tech-icon" title="Kotlin" />
+        <Icon name="logos:android-icon" class="tech-icon" title="Android" />
+        <Icon name="logos:material-ui" class="tech-icon" title="Material UI" />
+        <Icon name="devicon:swift" class="tech-icon" title="Swift" />
+        <!-- Apple ikonka bude díky CSS níže bílá, aby byla vidět na temném pozadí -->
+        <Icon name="simple-icons:apple" class="tech-icon apple-icon" title="Apple" />
+        <Icon name="logos:vue" class="tech-icon" title="Vue.js" />
+        <Icon name="logos:nuxt-icon" class="tech-icon" title="Nuxt" />
+        <Icon name="logos:firebase" class="tech-icon" title="Firebase" />
+        <Icon name="logos:figma" class="tech-icon" title="Figma" />
+        <Icon name="logos:python" class="tech-icon" title="Python" />
+        <Icon name="logos:java" class="tech-icon" title="Java" />
+        <Icon name="devicon:cplusplus" class="tech-icon" title="C++" />
+        <Icon name="logos:tailwindcss-icon" class="tech-icon" title="Tailwind CSS" />
+        <Icon name="devicon:php" class="tech-icon" title="PHP" />
+        <Icon name="devicon:oracle" class="tech-icon" title="Oracle" />
       </div>
     </section>
 
@@ -126,29 +128,44 @@ const seznamProjektu = [
   padding: var(--space-6) var(--space-4);
 }
 
-/* --- PROFILOVÁ FOTKA --- */
+/* --- PROFILOVÁ FOTKA (Space Glassmorphism) --- */
 .profile-wrapper {
-  margin-bottom: var(--space-4); /* Odstrčí text pod fotkou kousek dolů */
+  margin-bottom: 24px; /* Odstrčí text pod fotkou kousek dolů */
   display: flex;
-  justify-content: center; /* Zarovná obsah wrapperu doprostřed */
-  width: 100%; /* Zajistí, že se střed počítá z celé šířky obrazovky */
+  justify-content: center;
+  width: 100%;
 }
 
 .profile-image {
-  width: 120px;  /* Šířka fotky */
-  height: 120px; /* Výška fotky (musí být stejná jako šířka, abychom měli kruh) */
-  border-radius: 50%; /* Tato vlastnost vytvoří dokonalý kruh */
-  object-fit: cover; /* Zaručí, že se obdélníková fotka ořízne a nedeformuje */
+  width: 140px;  /* Zvětšil jsem fotku ze 120px na 140px, aby v hero sekci více vynikla */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
 
-  /* Stylování rámečku, aby to sedělo do IDE stylu */
-  border: 3px solid var(--color-accent);
-  background-color: var(--color-surface); /* Kdyby se fotka nenačetla */
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  /* Odstraněn tvrdý plný rámeček.
+     Místo něj poloprůhledná bílá linka tvořící dojem "skleněného" okraje */
+  border: 2px solid rgba(255, 255, 255, 0.2);
+
+  /* Pozadí pod fotkou s mírným blur efektem pro případ načítání */
+  background-color: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Jemný stín, který ukotví fotku v prostoru (mírně modrý nádech) */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 15px rgba(59, 130, 246, 0.1);
+
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .profile-image:hover {
-  border-color: var(--color-accent); /* Při najetí myší se rámeček rozsvítí */
-  transform: scale(1.05); /* Lehce se zvětší */
+  /* Při najetí se bílý "skleněný" rámeček změní na tvou akcentní modrou */
+  border-color: rgba(59, 130, 246, 0.8);
+
+  /* Vznesení fotky */
+  transform: translateY(-5px) scale(1.05);
+
+  /* Efekt neonové záře do prostoru (vesmírný hologram) */
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 130, 246, 0.5);
 }
 
 /* --- 2. TECH SEKCE --- */

@@ -1,7 +1,7 @@
 <template>
   <article class="project-card">
 
-    <!-- OBRÁZEK PROJEKTU (Nyní zaoblený uvnitř) -->
+    <!-- OBRÁZEK PROJEKTU -->
     <NuxtLink :to="link" class="image-link">
       <div class="image-wrapper">
         <img
@@ -12,10 +12,10 @@
       </div>
     </NuxtLink>
 
-    <!-- TEXTOVÁ ČÁST (Bílé pozadí) -->
+    <!-- TEXTOVÁ ČÁST (Dark Glassmorphism) -->
     <div class="card-body">
 
-      <!-- HLAVIČKA S NÁZVEM -->
+      <!-- HLAVIČKA -->
       <div class="card-header">
         <div>
           <h3 class="card-title">
@@ -26,17 +26,15 @@
 
       <p class="card-desc">{{ description }}</p>
 
-      <!-- SPODNÍ ŘÁDEK: TECHNOLOGIE (pilulky) A TLAČÍTKO "SEE MORE" -->
+      <!-- PATIČKA (Tech stack + Tlačítko) -->
       <div class="card-footer">
 
-        <!-- Seznam technologií jako štítky (z prvního návrhu) -->
         <div class="tech-stack">
           <span v-for="tech in technologies" :key="tech" class="tech-tag">
             {{ tech }}
           </span>
         </div>
 
-        <!-- ODKAZ JAKO VELKÉ TLAČÍTKO S GRADIENTEM -->
         <NuxtLink :to="link" class="action-btn">
           See more
         </NuxtLink>
@@ -73,23 +71,34 @@ defineProps({
 </script>
 
 <style scoped>
-/* HLAVNÍ OBRYS KARTY */
+/* HLAVNÍ OBRYS KARTY - TMAVÉ SKLO */
 .project-card {
-  background-color: var(--color-bg);
+  /* Tmavě modro-černé poloprůhledné pozadí */
+  background-color: rgba(15, 23, 42, 0.4);
+
+  /* Efekt rozostření pozadí (mlhovina se pod kartou rozmaže) */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  /* Jemný poloprůhledný světlý rámeček simulující odlesk hrany skla */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
   border-radius: 24px;
   padding: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Hlubší tmavý stín */
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-family: var(--font-sans);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  font-family: var(--font-sans, system-ui, sans-serif);
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border-color: rgba(59, 130, 246, 0.4); /* Rámeček při najetí lehce zmodrá */
 }
 
+/* OBRÁZEK */
 .image-link {
   display: block;
   overflow: hidden;
@@ -115,7 +124,7 @@ defineProps({
 
 /* TEXTOVÁ ČÁST */
 .card-body {
-  padding: 16px 8px 8px 8px; /* Padding okolo textu */
+  padding: 16px 8px 8px 8px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -133,33 +142,39 @@ defineProps({
   margin: 0 0 4px 0;
   font-size: 1.35rem;
   font-weight: 700;
-  color: #1a1a1a;
+  color: #ffffff; /* Bílý text pro nadpis */
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Lepší čitelnost na skle */
 }
 
 .card-title a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.card-title a:hover {
+  color: #60a5fa; /* Světle modrá při najetí */
 }
 
 /* POPIS */
 .card-desc {
-  color: #666;
+  color: #cbd5e1; /* Světle šedá/stříbrná pro popis */
   font-size: 0.9rem;
   line-height: 1.5;
   margin: 0 0 24px 0;
   flex: 1;
 }
 
-/* PATIČKA (Tech stack + Tlačítko) */
+/* PATIČKA */
 .card-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Zarovná tlačítko a tagy na střed */
+  align-items: center;
   gap: 16px;
   margin-top: auto;
 }
 
-/* TECHNOLOGIE (Jemné světlé pilulky) */
+/* TECHNOLOGIE (Pilulky pro tmavý režim) */
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -169,30 +184,34 @@ defineProps({
 .tech-tag {
   font-family: var(--font-mono, monospace);
   font-size: 0.75rem;
-  color: #666;
-  background: rgba(0, 0, 0, 0.04);
-  border: none;
+  color: #e2e8f0; /* Velmi světle šedá */
+  background: rgba(255, 255, 255, 0.1); /* Poloprůhledná bílá */
+  border: 1px solid rgba(255, 255, 255, 0.05);
   padding: 4px 10px;
-  border-radius: 99px; /* Tvar pilulky */
+  border-radius: 99px;
+  backdrop-filter: blur(4px);
 }
 
-/* TLAČÍTKO "SEE MORE" (Velká pilulka s modrým gradientem) */
+/* TLAČÍTKO "SEE MORE" (Záře v temnotě) */
 .action-btn {
-  /* Tmavě modrá s přechodem do světlejší modré */
+  /* Původní modrý gradient se k vesmíru hodí perfektně */
   background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   color: white;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
   padding: 10px 24px;
-  border-radius: 99px; /* Tvar pilulky */
+  border-radius: 99px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3); /* Jemný modrý stín */
-  flex-shrink: 0; /* Zaručí, že se tlačítko nezmenší, když bude hodně tagů */
+
+  /* Přidal jsem "neonový" stín, aby tlačítko ve vesmíru svítilo */
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  flex-shrink: 0;
 }
 
 .action-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+  /* Silnější neonová záře při najetí */
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
 }
 </style>

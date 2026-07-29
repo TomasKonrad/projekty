@@ -11,10 +11,24 @@
 </template>
 
 <style scoped>
+/* PATIČKA - DARK GLASSMORPHISM */
 .footer {
-  border-top: 1px solid var(--color-border);
-  padding: var(--space-4);
-  background-color: var(--color-surface);
+  /* Skleněný odlesk na horní hraně */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+
+  /* Tmavé poloprůhledné pozadí */
+  background-color: rgba(10, 15, 30, 0.6);
+
+  /* Efekt rozostření pozadí pod patičkou */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  /* Přidáme stín směřující nahoru, pro lepší oddělení od obsahu */
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
+
+  /* Vytvoří hezký odstup od zbytku stránky, pokud není nastavený jinde */
+  margin-top: 64px;
 }
 
 .footer-container {
@@ -23,30 +37,34 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-mono);
-  color: var(--color-text-muted);
+  font-family: var(--font-mono, monospace);
+  color: #cbd5e1; /* Světle stříbrná barva pro text */
   font-size: 0.9rem;
 }
 
 .social-links {
   display: flex;
-  gap: var(--space-4);
+  gap: 24px;
 }
 
 .social-links a {
-  color: var(--color-text-muted);
+  color: #cbd5e1;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-  color: var(--color-accent);
+  /* Při najetí zmodrá a získá jemnou neonovou záři */
+  color: #3b82f6;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
 }
 
 /* Úprava pro mobilní zobrazení */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
-    gap: var(--space-3);
+    gap: 16px;
+    text-align: center;
   }
 }
 </style>
