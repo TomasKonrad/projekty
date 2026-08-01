@@ -40,16 +40,21 @@
     <section id="projekty" class="projects-section">
       <h3 class="section-title">Portfolio</h3>
 
-      <div class="projects-grid">
-        <ProjectCard
-            v-for="(projekt, index) in seznamProjektu"
-            :key="index"
-            :title="projekt.title"
-            :description="projekt.description"
-            :technologies="projekt.technologies"
-            :image="projekt.image"
-            :link="projekt.link"
-        />
+      <div class="projects-section">
+        <div v-if="pending">Načítám projekty...</div>
+
+        <!-- Vykreslení karet -->
+        <div v-else class="projects-grid">
+          <ProjectCard
+              v-for="projekt in projekty"
+              :key="projekt.path"
+              :title="projekt.title"
+              :description="projekt.description"
+              :technologies="projekt.meta.technologies"
+              :image="projekt.meta.image"
+              :link="projekt.path"
+          />
+        </div>
       </div>
     </section>
 
@@ -61,6 +66,11 @@
 </template>
 
 <script setup>
+const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () => {
+  return queryCollection('projekty').all()
+})
+
+/*
 const seznamProjektu = [
   {
     title: "Udrž Danův Acer Nitro 15 naživu",
@@ -119,6 +129,7 @@ const seznamProjektu = [
     link: "#"
   },
 ]
+*/
 </script>
 
 <style scoped>
