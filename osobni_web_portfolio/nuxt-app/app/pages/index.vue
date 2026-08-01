@@ -66,28 +66,28 @@ const seznamProjektu = [
     title: "Udrž Danův Acer Nitro 15 naživu",
     description: "Webová hra, kde udržujete Danuv notebook při životě.",
     technologies: ['Vue', 'Nuxt'],
-    image: "/img/vydeje-app.jpg",
+    image: "/img/udrz_acer.png",
     link: "#"
   },
   {
     title: "Monster Tinder",
     description: "Seznamka inspirovaná mobilní seznamkou Tinder s propojením na api Mockapi.io.",
     technologies: ['Vue', 'Nuxt', 'MockApi'],
-    image: "/img/portfolio-web.jpg",
+    image: "/img/MonsterTinder.png",
     link: "#"
   },
   {
     title: "Svět zvířat",
     description: "Webová aplikace o zvířatech včetně her",
     technologies: ['Vue', 'Nuxt', 'INaturalist API', 'Wikimedia API', 'Docker'],
-    image: "/img/portfolio-web.jpg",
+    image: "/img/Svet_zvirat_nahled.png",
     link: "#"
   },
   {
     title: "Tommy Jeans e-shop",
     description: "Webový e-shop s oblečením značky Tommy Jeans",
     technologies: ['Python', 'RestAPI', 'FlaskAPI'],
-    image: "/img/portfolio-web.jpg",
+    image: "/img/Tommy_jeans_eshop.png",
     link: "#"
   },
   {
@@ -101,7 +101,7 @@ const seznamProjektu = [
     title: "SportApp",
     description: "První jednoduchá Android aplikace zaměřená na zaznamenávání sportovních aktivit ",
     technologies: ['Kotlin', 'Android', 'Material 3'],
-    image: "/img/portfolio-web.jpg",
+    image: "/img/SportsApp.png",
     link: "#"
   },
   {
