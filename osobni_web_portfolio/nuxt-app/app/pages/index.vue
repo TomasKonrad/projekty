@@ -74,7 +74,7 @@ const seznamProjektu = [
     description: "Seznamka inspirovaná mobilní seznamkou Tinder s propojením na api Mockapi.io.",
     technologies: ['Vue', 'Nuxt', 'MockApi'],
     image: "/img/MonsterTinder.png",
-    link: "#"
+    link: "/projekty/monster-tinder"
   },
   {
     title: "Svět zvířat",
