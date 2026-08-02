@@ -59,17 +59,31 @@ const prev = () => {
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
+  align-items: center;
 }
 
 .carousel-slide {
   min-width: 100%;
+  justify-content: center;
 }
 
 .carousel-slide img {
-  width: 100%;
-  display: block;
-  aspect-ratio: 16 / 9;
+  min-width: 100%;
+  display: flex;
+  justify-content: center; /* Vycentruje úzké mobilní obrázky horizontálně */
+}
+
+.carousel-slide img {
+  /* Odstraněno: width: 100% a aspect-ratio: 16/9 */
+  max-width: 100%;
+  height: auto; /* Výška se přizpůsobí přirozenému poměru stran obrázku */
+
+  /* POJISTKA: Aby nudlovitý mobilní screenshot na velkém desktop monitoru
+     neroztáhl stránku na 2 metry na výšku. 75vh = 75 % výšky obrazovky. */
+  max-height: 75vh;
+
   object-fit: contain;
+  display: block;
 }
 
 /* Glassmorphism navigační tlačítka */

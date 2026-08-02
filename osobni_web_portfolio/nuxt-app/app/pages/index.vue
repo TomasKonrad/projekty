@@ -58,10 +58,6 @@
       </div>
     </section>
 
-    <section>
-      <p>Libí se Vám projekty a máte zájem o moje know-how? Níže na mě najdete kontakt a můžeme se domluvit.</p>
-    </section>
-
   </div>
 </template>
 
