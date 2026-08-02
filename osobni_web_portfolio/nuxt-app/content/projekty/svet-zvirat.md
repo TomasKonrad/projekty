@@ -8,3 +8,7 @@ path: /projekty/svet_zvirat_nahled.png
 
 ::project-carousel{:images='["/img/Svet_zvirat/sv1.png", "/img/Svet_zvirat/sv2.png", "/img/Svet_zvirat/sv3.png", "/img/Svet_zvirat/sv4.png", "/img/Svet_zvirat/sv5.png", "/img/Svet_zvirat/sv6.png", "/img/Svet_zvirat/sv7.png", "/img/Svet_zvirat/sv8.png"]'}
 ::
+
+Detailnější popis v přípravě...
+
+Zdrojový kód na [GitHubu](https://github.com/TomasKonrad/projekty/tree/main/Web_frontend/Zviratka).

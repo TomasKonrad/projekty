@@ -13,3 +13,7 @@ Tohle je detailní popis mého projektu Monster Tinder. V této aplikaci si mů�
 
 ## Jak to funguje
 Aplikace využívá **Vue 3** a **Nuxt**. Pro ukládání dat jsem zvolil MockApi, což mi umožnilo rychle prototypovat...
+
+Detailnější popis v přípravě...
+
+Zdrojový kód na [GitHubu](https://github.com/TomasKonrad/projekty/tree/main/Web_frontend/tinder_seznamka).

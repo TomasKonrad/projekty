@@ -8,3 +8,7 @@ path: /projekty/kosher
 
 ::project-carousel{:images='["/img/Kosher/kos1.jpg", "/img/Kosher/kos2.jpg", "/img/Kosher/kos3.jpg", "/img/Kosher/kos4.jpg", "/img/Kosher/kos6.jpg", "/img/Kosher/kos10.jpg", "/img/Kosher/kos11.jpg"]'}
 ::
+
+Detailnější popis v přípravě...
+
+Zdrojový kód na [GitHubu](https://github.com/TomasKonrad/projekty/tree/main/iOS).

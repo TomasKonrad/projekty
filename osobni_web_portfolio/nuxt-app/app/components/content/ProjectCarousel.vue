@@ -6,11 +6,9 @@
       </div>
     </div>
 
-    <!-- Skleněná navigační tlačítka -->
     <button v-if="images.length > 1" @click="prev" class="nav-btn prev-btn">❮</button>
     <button v-if="images.length > 1" @click="next" class="nav-btn next-btn">❯</button>
 
-    <!-- Tečky dole -->
     <div v-if="images.length > 1" class="carousel-dots">
       <span
           v-for="(_, index) in images"
@@ -52,8 +50,6 @@ const prev = () => {
   overflow: hidden;
   margin: 32px 0;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  /* Vesmírný rámeček */
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .carousel-track {
@@ -70,31 +66,24 @@ const prev = () => {
 .carousel-slide img {
   min-width: 100%;
   display: flex;
-  justify-content: center; /* Vycentruje úzké mobilní obrázky horizontálně */
+  justify-content: center;
 }
 
 .carousel-slide img {
-  /* Odstraněno: width: 100% a aspect-ratio: 16/9 */
   max-width: 100%;
-  height: auto; /* Výška se přizpůsobí přirozenému poměru stran obrázku */
-
-  /* POJISTKA: Aby nudlovitý mobilní screenshot na velkém desktop monitoru
-     neroztáhl stránku na 2 metry na výšku. 75vh = 75 % výšky obrazovky. */
+  height: auto;
   max-height: 75vh;
 
   object-fit: contain;
   display: block;
 }
 
-/* Glassmorphism navigační tlačítka */
 .nav-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(15, 23, 42, 0.5);
-  backdrop-filter: blur(8px);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--color-accent);
+  color: var(--color-text-main);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -107,8 +96,8 @@ const prev = () => {
 }
 
 .nav-btn:hover {
-  background: rgba(59, 130, 246, 0.6);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--color-accent-hover);
+  border-color: var(--color-bg-tag);
 }
 
 .prev-btn { left: 16px; }
@@ -131,14 +120,13 @@ const prev = () => {
 .dot {
   width: 8px;
   height: 8px;
-  background: rgba(255, 255, 255, 0.3);
+  background: var(--color-dot-bg);
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .dot.active {
-  background: #3b82f6;
-  box-shadow: 0 0 8px #3b82f6;
+  background: var(--color-accent);
 }
 </style>

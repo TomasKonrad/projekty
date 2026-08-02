@@ -8,3 +8,7 @@ path: /projekty/sport-app
 
 ::project-carousel{:images='["/img/Sport_app/sport1.png", "/img/Sport_app/sport2.png", "/img/Sport_app/sport3.png", "/img/Sport_app/sport4.png", "/img/Sport_app/sport5.png"]'}
 ::
+
+Detailnější popis v přípravě...
+
+Zdrojový kód na [GitHubu](https://github.com/TomasKonrad/projekty/tree/main/Android/SportApp).

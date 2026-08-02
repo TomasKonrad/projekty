@@ -1,8 +1,11 @@
 <template>
   <footer id="kontakt" class="footer">
     <div class="footer-container">
-      <p>&copy; {{ new Date().getFullYear() }} Rysstar.</p>
+      <b>&copy; {{ new Date().getFullYear() }} Rysstar.</b>
       <div class="social-links">
+        <a href="mailto:tomaskonrad2017@gmail.com?subject=Zájem%20o%20spolupráci%20(Portfolio)">
+          e-mail
+        </a>
         <a href="https://github.com/TomasKonrad/projekty/tree/main" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-konr%C3%A1d-3822b2349/" target="_blank">LinkedIn</a>
       </div>

@@ -7,8 +7,7 @@
       </div>
 
       <p>
-        Jsem 21. letý vysokoškolský student IT, který aktuálně studuje zaměření na vývoj mobilních a webových aplikací. Tato stránka slouží jako prezentace mého portfolia uložené na Githubu.
-        Níže se můžete podívat vizuálně a mé projekty. Teším se, jaké projekty ať už v týmu nebo samostatně ještě vytvořím.
+        Jsem 21letý student informačních technologií se specializací na vývoj mobilních a webových aplikací. Tento web slouží jako interaktivní ukázka mé práce – odráží mé technické znalosti, využívané technologie a přístup k řešení problémů (zdrojové kódy naleznete na mém GitHubu). Rád posouvám své hranice a těším se na nové výzvy a projekty, na kterých se budu moci podílet samostatně či v rámci vývojářského týmu.
       </p>
     </section>
 
@@ -36,7 +35,7 @@
     </section>
 
     <section id="projekty" class="projects-section">
-      <h3 class="section-title">Portfolio</h3>
+      <h3 class="section-title">Aktuální portfolio</h3>
 
       <div class="projects-section">
         <div v-if="pending">Načítám projekty...</div>

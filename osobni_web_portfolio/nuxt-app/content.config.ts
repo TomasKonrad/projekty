@@ -5,7 +5,7 @@ export default defineContentConfig({
         // Tímto definujeme kolekci "projekty"
         projekty: defineCollection({
             type: 'page',
-            source: 'projekty/**/*.md' // Říká, ať hledá v content/projekty/
+            source: 'projekty/**/*.md'
         })
     }
 })

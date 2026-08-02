@@ -1,10 +1,17 @@
 <template>
   <main class="project-detail">
-    <!-- Kontrola, zda se data načetla -->
     <div v-if="project">
       <header class="detail-header">
         <h1>{{ project.title }}</h1>
         <p class="description">{{ project.description }}</p>
+        <a
+            v-if="project.meta.github"
+            :href="project.meta.github"
+            target="_blank"
+            class="github-text-link"
+        >
+          Zdrojový kód projektu (GitHub) &rarr;
+        </a>
       </header>
 
       <div class="content-body">
@@ -26,8 +33,6 @@ import { useRoute } from 'vue-router'
 
 const route = useRoute()
 
-// Nový způsob načítání dat v Nuxt Content v3
-// 'projekty' je název kolekce z content.config.ts
 const { data: project } = await useAsyncData(route.path, () => {
   return queryCollection('projekty').path(route.path).first()
 })
@@ -38,32 +43,37 @@ const { data: project } = await useAsyncData(route.path, () => {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
-  color: #cbd5e1;
 }
 
 .detail-header h1 {
-  font-size: 2.5rem;
-  color: #ffffff;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
-  margin-bottom: 16px;
+  color: var(--color-text-main);
 }
 
 .description {
   font-size: 1.1rem;
-  color: #94a3b8;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  color: var(--color-text-main);
 }
 
-.content-body :deep(h2) {
-  color: #ffffff;
-  margin-top: 40px;
+/* STYL PRO TEXTOVÝ ODKAZ NA GITHUB */
+.github-text-link {
+  display: inline-block;
+  color: var(--color-accent); /* Tvá modrá barva */
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.github-text-link:hover {
+  color: var(--color-accent-hover);
+  border-bottom: 1px solid var(--color-accent-hover);
+  transform: translateX(4px);
+}
+
+.content-body {
+  margin-top: 16px;
   margin-bottom: 16px;
-}
-
-.content-body :deep(p) {
-  line-height: 1.7;
-  margin-bottom: 24px;
 }
 
 .error-page {
@@ -72,7 +82,7 @@ const { data: project } = await useAsyncData(route.path, () => {
 }
 
 .back-link {
-  color: #3b82f6;
+  color: var(--color-accent-hover);
   text-decoration: none;
   font-weight: bold;
 }
