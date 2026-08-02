@@ -3,11 +3,5 @@ title: Mendle Phone [1]
 description: Návrh designu webu mířené pro specifickou skupinu za pomocí nástroje Figma a Affinity
 technologies: ['Figma']
 image: /img/MendlePhone.png
-path: /projekty/monster-tinder
+path: /projekty/mendle-phone
 ---
-
-title: "Mendle Phone [1]",
-description: "Návrh designu webu mířené pro specifickou skupinu za pomocí nástroje Figma a Affinity",
-technologies: ['Figma'],
-image: "/img/MendlePhone.png",
-link: "#"

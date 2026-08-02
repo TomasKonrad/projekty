@@ -69,7 +69,7 @@ const prev = () => {
   width: 100%;
   display: block;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Glassmorphism navigační tlačítka */

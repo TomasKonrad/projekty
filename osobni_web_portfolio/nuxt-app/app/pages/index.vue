@@ -69,67 +69,6 @@
 const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () => {
   return queryCollection('projekty').all()
 })
-
-/*
-const seznamProjektu = [
-  {
-    title: "Udrž Danův Acer Nitro 15 naživu",
-    description: "Webová hra, kde udržujete Danuv notebook při životě.",
-    technologies: ['Vue', 'Nuxt'],
-    image: "/img/udrz_acer.png",
-    link: "#"
-  },
-  {
-    title: "Monster Tinder",
-    description: "Seznamka inspirovaná mobilní seznamkou Tinder s propojením na api Mockapi.io.",
-    technologies: ['Vue', 'Nuxt', 'MockApi'],
-    image: "/img/MonsterTinder.png",
-    link: "/projekty/monster-tinder"
-  },
-  {
-    title: "Svět zvířat",
-    description: "Webová aplikace o zvířatech včetně her",
-    technologies: ['Vue', 'Nuxt', 'INaturalist API', 'Wikimedia API', 'Docker'],
-    image: "/img/Svet_zvirat_nahled.png",
-    link: "#"
-  },
-  {
-    title: "Tommy Jeans e-shop",
-    description: "Webový e-shop s oblečením značky Tommy Jeans",
-    technologies: ['Python', 'RestAPI', 'FlaskAPI'],
-    image: "/img/Tommy_jeans_eshop.png",
-    link: "#"
-  },
-  {
-    title: "Mendle Phone [1]",
-    description: "Návrh designu webu mířené pro specifickou skupinu za pomocí nástroje Figma a Affinity",
-    technologies: ['Figma'],
-    image: "/img/MendlePhone.png",
-    link: "#"
-  },
-  {
-    title: "SportApp",
-    description: "První jednoduchá Android aplikace zaměřená na zaznamenávání sportovních aktivit ",
-    technologies: ['Kotlin', 'Android', 'Material 3'],
-    image: "/img/SportsApp.png",
-    link: "#"
-  },
-  {
-    title: "GtaGarage",
-    description: "Manager Nemovitostí a vozidel pro hru GTA V jako mobilní aplikace",
-    technologies: ['Kotlin', 'Android', 'Material 3', 'Figma', 'Firebase'],
-    image: "/img/Feathure_graphic.png",
-    link: "#"
-  },
-  {
-    title: "Kosher",
-    description: "Mobilní aplikace jako pomocník pro třídění odpadu",
-    technologies: ['Swift', 'iOS', 'Gemini', 'Figma', 'Firebase'],
-    image: "/img/kosher.jpg",
-    link: "#"
-  },
-]
-*/
 </script>
 
 <style scoped>
