@@ -3,7 +3,7 @@
   <div class="page-container">
     <section class="hero-section">
       <div class="profile-wrapper">
-        <img src="/img/profilovka.jpg" alt="Rysstar Profil" class="profile-image" />
+        <img src="/img/profilovka2.jpg" alt="Rysstar Profil" class="profile-image" />
       </div>
 
       <p>
@@ -17,12 +17,10 @@
       <h3 class="section-title">Používané technologie</h3>
 
       <div class="tech-icons-wrapper">
-        <!-- U ikon, kde byl text, je použita přípona -icon nebo jiná sada -->
         <Icon name="logos:kotlin-icon" class="tech-icon" title="Kotlin" />
         <Icon name="logos:android-icon" class="tech-icon" title="Android" />
         <Icon name="logos:material-ui" class="tech-icon" title="Material UI" />
         <Icon name="devicon:swift" class="tech-icon" title="Swift" />
-        <!-- Apple ikonka bude díky CSS níže bílá, aby byla vidět na temném pozadí -->
         <Icon name="simple-icons:apple" class="tech-icon apple-icon" title="Apple" />
         <Icon name="logos:vue" class="tech-icon" title="Vue.js" />
         <Icon name="logos:nuxt-icon" class="tech-icon" title="Nuxt" />
@@ -74,44 +72,37 @@ const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () =>
   padding: var(--space-6) var(--space-4);
 }
 
-/* --- PROFILOVÁ FOTKA (Space Glassmorphism) --- */
+/* --- PROFILOVÁ FOTKA --- */
 .profile-wrapper {
-  margin-bottom: 24px; /* Odstrčí text pod fotkou kousek dolů */
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 .profile-image {
-  width: 140px;  /* Zvětšil jsem fotku ze 120px na 140px, aby v hero sekci více vynikla */
-  height: 140px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
-
-  /* Odstraněn tvrdý plný rámeček.
-     Místo něj poloprůhledná bílá linka tvořící dojem "skleněného" okraje */
-  border: 2px solid rgba(255, 255, 255, 0.2);
-
-  /* Pozadí pod fotkou s mírným blur efektem pro případ načítání */
-  background-color: rgba(15, 23, 42, 0.4);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  /* Jemný stín, který ukotví fotku v prostoru (mírně modrý nádech) */
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 15px rgba(59, 130, 246, 0.1);
-
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.profile-image:hover {
-  /* Při najetí se bílý "skleněný" rámeček změní na tvou akcentní modrou */
-  border-color: rgba(59, 130, 246, 0.8);
+.hero-section {
+  display: flex;
+  font-size: medium;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: left;
+}
 
-  /* Vznesení fotky */
-  transform: translateY(-5px) scale(1.05);
-
-  /* Efekt neonové záře do prostoru (vesmírný hologram) */
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(59, 130, 246, 0.5);
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* --- 2. TECH SEKCE --- */

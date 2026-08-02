@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer id="kontakt" class="footer">
     <div class="footer-container">
       <p>&copy; {{ new Date().getFullYear() }} Rysstar.</p>
       <div class="social-links">
@@ -11,23 +11,9 @@
 </template>
 
 <style scoped>
-/* PATIČKA - DARK GLASSMORPHISM */
 .footer {
-  /* Skleněný odlesk na horní hraně */
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #efe5e5;
   padding: 24px;
-
-  /* Tmavé poloprůhledné pozadí */
-  background-color: rgba(10, 15, 30, 0.6);
-
-  /* Efekt rozostření pozadí pod patičkou */
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  /* Přidáme stín směřující nahoru, pro lepší oddělení od obsahu */
-  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.2);
-
-  /* Vytvoří hezký odstup od zbytku stránky, pokud není nastavený jinde */
   margin-top: 64px;
 }
 
@@ -37,29 +23,31 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--font-mono, monospace);
-  color: #cbd5e1; /* Světle stříbrná barva pro text */
-  font-size: 0.9rem;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .social-links {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
 
 .social-links a {
-  color: #cbd5e1;
+  color: var(--color-text-main);
   text-decoration: none;
   transition: all 0.3s ease;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 99px; /* Pilulkový tvar */
+  background-color: #f3f4f6; /* Světle šedé pozadí tlačítka */
 }
 
 .social-links a:hover {
-  /* Při najetí zmodrá a získá jemnou neonovou záři */
-  color: #3b82f6;
-  text-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+  color: var(--color-accent-hover);
+  transform: translateY(-2px);
 }
 
-/* Úprava pro mobilní zobrazení */
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
