@@ -35,7 +35,6 @@
   gap: 16px;
 }
 
-/* LOGO */
 .logo a {
   color: var(--color-text-navbar);
   text-decoration: none;
@@ -43,10 +42,6 @@
   font-size: 3rem;
   font-weight: 300;
   transition: all 0.3s ease;
-}
-
-.logo a:hover {
-  color: var(--color-accent-hover);
 }
 
 .nav-links {
@@ -63,7 +58,15 @@
   border-bottom: 2px solid transparent;
 }
 
-.nav-link:hover {
-  color: var(--color-accent-hover);
+@media (min-width: 768px) {
+
+  .logo a:hover {
+    color: var(--color-accent-hover);
+  }
+
+  .nav-link:hover {
+    color: var(--color-accent-hover);
+  }
+
 }
 </style>

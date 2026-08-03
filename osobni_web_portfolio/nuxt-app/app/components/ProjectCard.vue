@@ -9,10 +9,7 @@
         />
       </div>
     </NuxtLink>
-
     <div class="card-body">
-
-      <!-- HLAVIČKA -->
       <div class="card-header">
         <div>
           <h3 class="card-title">
@@ -20,24 +17,18 @@
           </h3>
         </div>
       </div>
-
       <p class="card-desc">{{ description }}</p>
-
       <div class="card-footer">
-
         <div class="tech-stack">
           <span v-for="tech in technologies" :key="tech" class="tech-tag">
             {{ tech }}
           </span>
         </div>
-
         <NuxtLink :to="link" class="action-btn">
           See more
         </NuxtLink>
-
       </div>
     </div>
-
   </article>
 </template>
 
@@ -81,13 +72,6 @@ defineProps({
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  border-color: rgba(59, 130, 246, 0.4);
-}
-
-/* OBRÁZEK */
 .image-link {
   display: block;
   overflow: hidden;
@@ -105,10 +89,6 @@ defineProps({
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
-}
-
-.project-card:hover .project-image {
-  transform: scale(1.03);
 }
 
 .card-body {
@@ -136,10 +116,6 @@ defineProps({
   color: inherit;
   text-decoration: none;
   transition: color 0.2s ease;
-}
-
-.card-title a:hover {
-  color: var(--color-accent-hover);
 }
 
 .card-desc {
@@ -182,8 +158,24 @@ defineProps({
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.action-btn:hover {
-  background: var(--color-accent-hover);
-  transform: translateY(-2px);
+@media (min-width: 768px) {
+  .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border-color: rgba(59, 130, 246, 0.4);
+  }
+
+  .project-card:hover .project-image {
+    transform: scale(1.03);
+  }
+
+  .card-title a:hover {
+    color: var(--color-accent-hover);
+  }
+
+  .action-btn:hover {
+    background: var(--color-accent-hover);
+    transform: translateY(-2px);
+  }
 }
 </style>

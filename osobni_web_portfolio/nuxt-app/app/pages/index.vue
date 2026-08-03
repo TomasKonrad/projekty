@@ -1,4 +1,3 @@
-<!-- pages/index.vue -->
 <template>
   <div class="page-container">
     <section class="hero-section">
@@ -11,7 +10,6 @@
       </p>
     </section>
 
-    <!-- 2. SEKCE: TECHNOLOGIE -->
     <section class="tech-section">
       <h3 class="section-title">Používané technologie</h3>
 
@@ -36,11 +34,10 @@
 
     <section id="projekty" class="projects-section">
       <h3 class="section-title">Aktuální portfolio</h3>
-
       <div class="projects-section">
-        <div v-if="pending">Načítám projekty...</div>
-
-        <!-- Vykreslení karet -->
+        <div v-if="pending">
+          Načítám projekty...
+        </div>
         <div v-else class="projects-grid">
           <ProjectCard
               v-for="projekt in projekty"
@@ -71,7 +68,6 @@ const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () =>
   padding: var(--space-6) var(--space-4);
 }
 
-/* --- PROFILOVÁ FOTKA --- */
 .profile-wrapper {
   margin-bottom: 24px;
   display: flex;
@@ -97,32 +93,22 @@ const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () =>
   text-align: left;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-  }
-}
-
-/* --- 2. TECH SEKCE --- */
 .tech-icons-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Zalomí řádek, když dojde místo */
-  gap: var(--space-6); /* Mezera mezi ikonami (např. 24px) */
-  align-items: center; /* Srovná je na střed řádku */
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  align-items: center;
   justify-content: center;
   margin-top: var(--space-4);
 }
 
-/* Velikost ikony a textu */
 .tech-icon {
   font-size: 4rem;
 }
 
-/* --- 3. PROJEKTY SEKCE --- */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Na mobilu (výchozí) je 1 sloupec */
+  grid-template-columns: 1fr;
   gap: var(--space-5);
 }
 
@@ -130,6 +116,13 @@ const { data: projekty, pending } = await useAsyncData('vsechny-projekty', () =>
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
   }
 }
 </style>
